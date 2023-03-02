@@ -1,0 +1,459 @@
+{
+	"info": {
+		"_postman_id": "148844d6-20f1-4f8b-a839-f18cb55349b6",
+		"name": "itemclass-Talend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TC01_Validate the API return success message",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "VAZHAGaitton3wmFQFl8MOUyeGor",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/bq/products/itemclass?Dept=BW&orderBy=test",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"bq",
+						"products",
+						"itemclass"
+					],
+					"query": [
+						{
+							"key": "Dept",
+							"value": "BW"
+						},
+						{
+							"key": "orderBy",
+							"value": "test"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC02_Validate the API accepts input parameter",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "VAZHAGaitton3wmFQFl8MOUyeGor",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/bq/products/itemclass?Dept=BW&orderBy=test",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"bq",
+						"products",
+						"itemclass"
+					],
+					"query": [
+						{
+							"key": "Dept",
+							"value": "BW"
+						},
+						{
+							"key": "orderBy",
+							"value": "test"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC03_Validate the API using POST method instead of GET",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "VAZHAGaitton3wmFQFl8MOUyeGor",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/bq/products/itemclass?Dept=BW&orderBy=test",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"bq",
+						"products",
+						"itemclass"
+					],
+					"query": [
+						{
+							"key": "Dept",
+							"value": "BW"
+						},
+						{
+							"key": "orderBy",
+							"value": "test"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC04_Validate Response for invalid URL",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "VAZHAGaitton3wmFQFl8MOUyeGor",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/bq/products/itemclass?Dept=BW&orderBy=test",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"bq",
+						"products",
+						"itemclass"
+					],
+					"query": [
+						{
+							"key": "Dept",
+							"value": "BW"
+						},
+						{
+							"key": "orderBy",
+							"value": "test"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC05_Schema Validation for Input parameter \"Dept\"",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "VAZHAGaitton3wmFQFl8MOUyeGor",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/bq/products/itemclass?Dept=BW&orderBy=test",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"bq",
+						"products",
+						"itemclass"
+					],
+					"query": [
+						{
+							"key": "Dept",
+							"value": "BW"
+						},
+						{
+							"key": "orderBy",
+							"value": "test"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC06_Check for Input parameter \"Dept\" as blank",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "VAZHAGaitton3wmFQFl8MOUyeGor",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/bq/products/itemclass?Dept=BW&orderBy=test",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"bq",
+						"products",
+						"itemclass"
+					],
+					"query": [
+						{
+							"key": "Dept",
+							"value": "BW"
+						},
+						{
+							"key": "orderBy",
+							"value": "test"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC07_Schema Validation for Input parameter \"orderBy\"",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "VAZHAGaitton3wmFQFl8MOUyeGor",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/bq/products/itemclass?Dept=BW&orderBy=test",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"bq",
+						"products",
+						"itemclass"
+					],
+					"query": [
+						{
+							"key": "Dept",
+							"value": "BW"
+						},
+						{
+							"key": "orderBy",
+							"value": "test"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC08_Check for Input parameter \"orderBy\" as blank",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "VAZHAGaitton3wmFQFl8MOUyeGor",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/bq/products/itemclass?Dept=BW&orderBy=test",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"bq",
+						"products",
+						"itemclass"
+					],
+					"query": [
+						{
+							"key": "Dept",
+							"value": "BW"
+						},
+						{
+							"key": "orderBy",
+							"value": "test"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC09_Check for Input parameter \"Dept\" and \"orderBy\" as blank",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "VAZHAGaitton3wmFQFl8MOUyeGor",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/bq/products/itemclass?Dept=BW&orderBy=test",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"bq",
+						"products",
+						"itemclass"
+					],
+					"query": [
+						{
+							"key": "Dept",
+							"value": "BW"
+						},
+						{
+							"key": "orderBy",
+							"value": "test"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC10_Schema Validation for Input parameter \"Dept\"and \"orderBy\"",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "VAZHAGaitton3wmFQFl8MOUyeGor",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/bq/products/itemclass?Dept=BW&orderBy=test",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"bq",
+						"products",
+						"itemclass"
+					],
+					"query": [
+						{
+							"key": "Dept",
+							"value": "BW"
+						},
+						{
+							"key": "orderBy",
+							"value": "test"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

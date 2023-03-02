@@ -1,0 +1,1930 @@
+{
+	"info": {
+		"_postman_id": "5e94bb92-c667-4526-b75a-8f3f3d37fd81",
+		"name": "getstoreorderdashboard-QA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TC01_Validate API getstoreorderdashboard returns store order and count details",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://thevision.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://thevision.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "85_H46hqErYY5NbVM8poJ8GnZfvajz6Wuqw0v36scE8nPUOSUqH_L_QDfm9XdoSp3YmQWWqyosOVuxL-EQ3PCsXArFg1:gwIF-9iI7ciwDfMSTwiE_5qUVwktktUiKU7ivSjUP5X9l_r2DXNz6QCFew1iVdVf_ROvNYZLxvntCqGLNvhdHhkqGGk_EECH_y-8076j9GWpBZMlUHGu2ebKQvb2tJJjEyTL0Q2"
+					},
+					{
+						"key": "api-token",
+						"value": "pfxa688e17b-5d81-2c9d-38a2-588541595f87"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"url": {
+					"raw": "https://svcthevision.groceryoutlet.com/api/rto/getstoreorderdashboard?cb=1664209621829&showNotStarted=true&status=0,5,10,70,80,90,100,999&storeNbr=34&windowDate=9%2F26%2F2022",
+					"protocol": "https",
+					"host": [
+						"svcthevision",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"getstoreorderdashboard"
+					],
+					"query": [
+						{
+							"key": "cb",
+							"value": "1664209621829"
+						},
+						{
+							"key": "showNotStarted",
+							"value": "true"
+						},
+						{
+							"key": "status",
+							"value": "0,5,10,70,80,90,100,999"
+						},
+						{
+							"key": "storeNbr",
+							"value": "34"
+						},
+						{
+							"key": "windowDate",
+							"value": "9%2F26%2F2022"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC02_Validate Response Paramters",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://thevision.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://thevision.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "85_H46hqErYY5NbVM8poJ8GnZfvajz6Wuqw0v36scE8nPUOSUqH_L_QDfm9XdoSp3YmQWWqyosOVuxL-EQ3PCsXArFg1:gwIF-9iI7ciwDfMSTwiE_5qUVwktktUiKU7ivSjUP5X9l_r2DXNz6QCFew1iVdVf_ROvNYZLxvntCqGLNvhdHhkqGGk_EECH_y-8076j9GWpBZMlUHGu2ebKQvb2tJJjEyTL0Q2"
+					},
+					{
+						"key": "api-token",
+						"value": "pfxa688e17b-5d81-2c9d-38a2-588541595f87"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"url": {
+					"raw": "https://svcthevision.groceryoutlet.com/api/rto/getstoreorderdashboard?cb=1664209621829&showNotStarted=true&status=0,5,10,70,80,90,100,999&storeNbr=34&windowDate=9%2F26%2F2022",
+					"protocol": "https",
+					"host": [
+						"svcthevision",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"getstoreorderdashboard"
+					],
+					"query": [
+						{
+							"key": "cb",
+							"value": "1664209621829"
+						},
+						{
+							"key": "showNotStarted",
+							"value": "true"
+						},
+						{
+							"key": "status",
+							"value": "0,5,10,70,80,90,100,999"
+						},
+						{
+							"key": "storeNbr",
+							"value": "34"
+						},
+						{
+							"key": "windowDate",
+							"value": "9%2F26%2F2022"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC03_Response Comparison before and after",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://thevision.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://thevision.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "85_H46hqErYY5NbVM8poJ8GnZfvajz6Wuqw0v36scE8nPUOSUqH_L_QDfm9XdoSp3YmQWWqyosOVuxL-EQ3PCsXArFg1:gwIF-9iI7ciwDfMSTwiE_5qUVwktktUiKU7ivSjUP5X9l_r2DXNz6QCFew1iVdVf_ROvNYZLxvntCqGLNvhdHhkqGGk_EECH_y-8076j9GWpBZMlUHGu2ebKQvb2tJJjEyTL0Q2"
+					},
+					{
+						"key": "api-token",
+						"value": "pfxa688e17b-5d81-2c9d-38a2-588541595f87"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"url": {
+					"raw": "https://svcthevision.groceryoutlet.com/api/rto/getstoreorderdashboard?cb=1664209621829&showNotStarted=true&status=0,5,10,70,80,90,100,999&storeNbr=34&windowDate=9%2F26%2F2022",
+					"protocol": "https",
+					"host": [
+						"svcthevision",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"getstoreorderdashboard"
+					],
+					"query": [
+						{
+							"key": "cb",
+							"value": "1664209621829"
+						},
+						{
+							"key": "showNotStarted",
+							"value": "true"
+						},
+						{
+							"key": "status",
+							"value": "0,5,10,70,80,90,100,999"
+						},
+						{
+							"key": "storeNbr",
+							"value": "34"
+						},
+						{
+							"key": "windowDate",
+							"value": "9%2F26%2F2022"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC04_Validate Response for invalid URL",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://thevision.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://thevision.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "85_H46hqErYY5NbVM8poJ8GnZfvajz6Wuqw0v36scE8nPUOSUqH_L_QDfm9XdoSp3YmQWWqyosOVuxL-EQ3PCsXArFg1:gwIF-9iI7ciwDfMSTwiE_5qUVwktktUiKU7ivSjUP5X9l_r2DXNz6QCFew1iVdVf_ROvNYZLxvntCqGLNvhdHhkqGGk_EECH_y-8076j9GWpBZMlUHGu2ebKQvb2tJJjEyTL0Q2"
+					},
+					{
+						"key": "api-token",
+						"value": "pfxa688e17b-5d81-2c9d-38a2-588541595f87"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"url": {
+					"raw": "https://svcthevision.groceryoutlet.com/api/rto/getstoreorderdashboard?cb=1664209621829&showNotStarted=true&status=0,5,10,70,80,90,100,999&storeNbr=34&windowDate=9%2F26%2F2022",
+					"protocol": "https",
+					"host": [
+						"svcthevision",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"getstoreorderdashboard"
+					],
+					"query": [
+						{
+							"key": "cb",
+							"value": "1664209621829"
+						},
+						{
+							"key": "showNotStarted",
+							"value": "true"
+						},
+						{
+							"key": "status",
+							"value": "0,5,10,70,80,90,100,999"
+						},
+						{
+							"key": "storeNbr",
+							"value": "34"
+						},
+						{
+							"key": "windowDate",
+							"value": "9%2F26%2F2022"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC05_Validate the API using POST method instead of GET",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://thevision.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://thevision.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "85_H46hqErYY5NbVM8poJ8GnZfvajz6Wuqw0v36scE8nPUOSUqH_L_QDfm9XdoSp3YmQWWqyosOVuxL-EQ3PCsXArFg1:gwIF-9iI7ciwDfMSTwiE_5qUVwktktUiKU7ivSjUP5X9l_r2DXNz6QCFew1iVdVf_ROvNYZLxvntCqGLNvhdHhkqGGk_EECH_y-8076j9GWpBZMlUHGu2ebKQvb2tJJjEyTL0Q2"
+					},
+					{
+						"key": "api-token",
+						"value": "pfxa688e17b-5d81-2c9d-38a2-588541595f87"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"url": {
+					"raw": "https://svcthevision.groceryoutlet.com/api/rto/getstoreorderdashboard?cb=1664209621829&showNotStarted=true&status=0,5,10,70,80,90,100,999&storeNbr=34&windowDate=9%2F26%2F2022",
+					"protocol": "https",
+					"host": [
+						"svcthevision",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"getstoreorderdashboard"
+					],
+					"query": [
+						{
+							"key": "cb",
+							"value": "1664209621829"
+						},
+						{
+							"key": "showNotStarted",
+							"value": "true"
+						},
+						{
+							"key": "status",
+							"value": "0,5,10,70,80,90,100,999"
+						},
+						{
+							"key": "storeNbr",
+							"value": "34"
+						},
+						{
+							"key": "windowDate",
+							"value": "9%2F26%2F2022"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC06_Schema Validation for Input parameter \"Store Number\"",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://thevision.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://thevision.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "85_H46hqErYY5NbVM8poJ8GnZfvajz6Wuqw0v36scE8nPUOSUqH_L_QDfm9XdoSp3YmQWWqyosOVuxL-EQ3PCsXArFg1:gwIF-9iI7ciwDfMSTwiE_5qUVwktktUiKU7ivSjUP5X9l_r2DXNz6QCFew1iVdVf_ROvNYZLxvntCqGLNvhdHhkqGGk_EECH_y-8076j9GWpBZMlUHGu2ebKQvb2tJJjEyTL0Q2"
+					},
+					{
+						"key": "api-token",
+						"value": "pfxa688e17b-5d81-2c9d-38a2-588541595f87"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"url": {
+					"raw": "https://svcthevision.groceryoutlet.com/api/rto/getstoreorderdashboard?cb=1664209621829&showNotStarted=true&status=0,5,10,70,80,90,100,999&storeNbr=34&windowDate=9%2F26%2F2022",
+					"protocol": "https",
+					"host": [
+						"svcthevision",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"getstoreorderdashboard"
+					],
+					"query": [
+						{
+							"key": "cb",
+							"value": "1664209621829"
+						},
+						{
+							"key": "showNotStarted",
+							"value": "true"
+						},
+						{
+							"key": "status",
+							"value": "0,5,10,70,80,90,100,999"
+						},
+						{
+							"key": "storeNbr",
+							"value": "34"
+						},
+						{
+							"key": "windowDate",
+							"value": "9%2F26%2F2022"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC07_Mandatory value check for Input parameter \"Store Number\"",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://thevision.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://thevision.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "85_H46hqErYY5NbVM8poJ8GnZfvajz6Wuqw0v36scE8nPUOSUqH_L_QDfm9XdoSp3YmQWWqyosOVuxL-EQ3PCsXArFg1:gwIF-9iI7ciwDfMSTwiE_5qUVwktktUiKU7ivSjUP5X9l_r2DXNz6QCFew1iVdVf_ROvNYZLxvntCqGLNvhdHhkqGGk_EECH_y-8076j9GWpBZMlUHGu2ebKQvb2tJJjEyTL0Q2"
+					},
+					{
+						"key": "api-token",
+						"value": "pfxa688e17b-5d81-2c9d-38a2-588541595f87"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"url": {
+					"raw": "https://svcthevision.groceryoutlet.com/api/rto/getstoreorderdashboard?cb=1664209621829&showNotStarted=true&status=0,5,10,70,80,90,100,999&storeNbr=34&windowDate=9%2F26%2F2022",
+					"protocol": "https",
+					"host": [
+						"svcthevision",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"getstoreorderdashboard"
+					],
+					"query": [
+						{
+							"key": "cb",
+							"value": "1664209621829"
+						},
+						{
+							"key": "showNotStarted",
+							"value": "true"
+						},
+						{
+							"key": "status",
+							"value": "0,5,10,70,80,90,100,999"
+						},
+						{
+							"key": "storeNbr",
+							"value": "34"
+						},
+						{
+							"key": "windowDate",
+							"value": "9%2F26%2F2022"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC08_Schema Validation for Input parameter \"windowDate\"",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://thevision.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://thevision.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "85_H46hqErYY5NbVM8poJ8GnZfvajz6Wuqw0v36scE8nPUOSUqH_L_QDfm9XdoSp3YmQWWqyosOVuxL-EQ3PCsXArFg1:gwIF-9iI7ciwDfMSTwiE_5qUVwktktUiKU7ivSjUP5X9l_r2DXNz6QCFew1iVdVf_ROvNYZLxvntCqGLNvhdHhkqGGk_EECH_y-8076j9GWpBZMlUHGu2ebKQvb2tJJjEyTL0Q2"
+					},
+					{
+						"key": "api-token",
+						"value": "pfxa688e17b-5d81-2c9d-38a2-588541595f87"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"url": {
+					"raw": "https://svcthevision.groceryoutlet.com/api/rto/getstoreorderdashboard?cb=1664209621829&showNotStarted=true&status=0,5,10,70,80,90,100,999&storeNbr=34&windowDate=9%2F26%2F2022",
+					"protocol": "https",
+					"host": [
+						"svcthevision",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"getstoreorderdashboard"
+					],
+					"query": [
+						{
+							"key": "cb",
+							"value": "1664209621829"
+						},
+						{
+							"key": "showNotStarted",
+							"value": "true"
+						},
+						{
+							"key": "status",
+							"value": "0,5,10,70,80,90,100,999"
+						},
+						{
+							"key": "storeNbr",
+							"value": "34"
+						},
+						{
+							"key": "windowDate",
+							"value": "9%2F26%2F2022"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC09_Mandatory value check for Input parameter \"windowDate\"",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://thevision.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://thevision.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "85_H46hqErYY5NbVM8poJ8GnZfvajz6Wuqw0v36scE8nPUOSUqH_L_QDfm9XdoSp3YmQWWqyosOVuxL-EQ3PCsXArFg1:gwIF-9iI7ciwDfMSTwiE_5qUVwktktUiKU7ivSjUP5X9l_r2DXNz6QCFew1iVdVf_ROvNYZLxvntCqGLNvhdHhkqGGk_EECH_y-8076j9GWpBZMlUHGu2ebKQvb2tJJjEyTL0Q2"
+					},
+					{
+						"key": "api-token",
+						"value": "pfxa688e17b-5d81-2c9d-38a2-588541595f87"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"url": {
+					"raw": "https://svcthevision.groceryoutlet.com/api/rto/getstoreorderdashboard?cb=1664209621829&showNotStarted=true&status=0,5,10,70,80,90,100,999&storeNbr=34&windowDate=9%2F26%2F2022",
+					"protocol": "https",
+					"host": [
+						"svcthevision",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"getstoreorderdashboard"
+					],
+					"query": [
+						{
+							"key": "cb",
+							"value": "1664209621829"
+						},
+						{
+							"key": "showNotStarted",
+							"value": "true"
+						},
+						{
+							"key": "status",
+							"value": "0,5,10,70,80,90,100,999"
+						},
+						{
+							"key": "storeNbr",
+							"value": "34"
+						},
+						{
+							"key": "windowDate",
+							"value": "9%2F26%2F2022"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC10_Schema Validation for Input parameter \"status\"",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://thevision.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://thevision.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "85_H46hqErYY5NbVM8poJ8GnZfvajz6Wuqw0v36scE8nPUOSUqH_L_QDfm9XdoSp3YmQWWqyosOVuxL-EQ3PCsXArFg1:gwIF-9iI7ciwDfMSTwiE_5qUVwktktUiKU7ivSjUP5X9l_r2DXNz6QCFew1iVdVf_ROvNYZLxvntCqGLNvhdHhkqGGk_EECH_y-8076j9GWpBZMlUHGu2ebKQvb2tJJjEyTL0Q2"
+					},
+					{
+						"key": "api-token",
+						"value": "pfxa688e17b-5d81-2c9d-38a2-588541595f87"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"url": {
+					"raw": "https://svcthevision.groceryoutlet.com/api/rto/getstoreorderdashboard?cb=1664209621829&showNotStarted=true&status=0,5,10,70,80,90,100,999&storeNbr=34&windowDate=9%2F26%2F2022",
+					"protocol": "https",
+					"host": [
+						"svcthevision",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"getstoreorderdashboard"
+					],
+					"query": [
+						{
+							"key": "cb",
+							"value": "1664209621829"
+						},
+						{
+							"key": "showNotStarted",
+							"value": "true"
+						},
+						{
+							"key": "status",
+							"value": "0,5,10,70,80,90,100,999"
+						},
+						{
+							"key": "storeNbr",
+							"value": "34"
+						},
+						{
+							"key": "windowDate",
+							"value": "9%2F26%2F2022"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC11_Mandatory value check for Input parameter \"status\"",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://thevision.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://thevision.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "85_H46hqErYY5NbVM8poJ8GnZfvajz6Wuqw0v36scE8nPUOSUqH_L_QDfm9XdoSp3YmQWWqyosOVuxL-EQ3PCsXArFg1:gwIF-9iI7ciwDfMSTwiE_5qUVwktktUiKU7ivSjUP5X9l_r2DXNz6QCFew1iVdVf_ROvNYZLxvntCqGLNvhdHhkqGGk_EECH_y-8076j9GWpBZMlUHGu2ebKQvb2tJJjEyTL0Q2"
+					},
+					{
+						"key": "api-token",
+						"value": "pfxa688e17b-5d81-2c9d-38a2-588541595f87"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"url": {
+					"raw": "https://svcthevision.groceryoutlet.com/api/rto/getstoreorderdashboard?cb=1664209621829&showNotStarted=true&status=0,5,10,70,80,90,100,999&storeNbr=34&windowDate=9%2F26%2F2022",
+					"protocol": "https",
+					"host": [
+						"svcthevision",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"getstoreorderdashboard"
+					],
+					"query": [
+						{
+							"key": "cb",
+							"value": "1664209621829"
+						},
+						{
+							"key": "showNotStarted",
+							"value": "true"
+						},
+						{
+							"key": "status",
+							"value": "0,5,10,70,80,90,100,999"
+						},
+						{
+							"key": "storeNbr",
+							"value": "34"
+						},
+						{
+							"key": "windowDate",
+							"value": "9%2F26%2F2022"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC12_Validate response with \"showNotStarted\" as true value",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://thevision.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://thevision.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "85_H46hqErYY5NbVM8poJ8GnZfvajz6Wuqw0v36scE8nPUOSUqH_L_QDfm9XdoSp3YmQWWqyosOVuxL-EQ3PCsXArFg1:gwIF-9iI7ciwDfMSTwiE_5qUVwktktUiKU7ivSjUP5X9l_r2DXNz6QCFew1iVdVf_ROvNYZLxvntCqGLNvhdHhkqGGk_EECH_y-8076j9GWpBZMlUHGu2ebKQvb2tJJjEyTL0Q2"
+					},
+					{
+						"key": "api-token",
+						"value": "pfxa688e17b-5d81-2c9d-38a2-588541595f87"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"url": {
+					"raw": "https://svcthevision.groceryoutlet.com/api/rto/getstoreorderdashboard?cb=1664209621829&showNotStarted=true&status=0,5,10,70,80,90,100,999&storeNbr=34&windowDate=9%2F26%2F2022",
+					"protocol": "https",
+					"host": [
+						"svcthevision",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"getstoreorderdashboard"
+					],
+					"query": [
+						{
+							"key": "cb",
+							"value": "1664209621829"
+						},
+						{
+							"key": "showNotStarted",
+							"value": "true"
+						},
+						{
+							"key": "status",
+							"value": "0,5,10,70,80,90,100,999"
+						},
+						{
+							"key": "storeNbr",
+							"value": "34"
+						},
+						{
+							"key": "windowDate",
+							"value": "9%2F26%2F2022"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC13_Validate response with \"showNotStarted\" as false value",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://thevision.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://thevision.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "85_H46hqErYY5NbVM8poJ8GnZfvajz6Wuqw0v36scE8nPUOSUqH_L_QDfm9XdoSp3YmQWWqyosOVuxL-EQ3PCsXArFg1:gwIF-9iI7ciwDfMSTwiE_5qUVwktktUiKU7ivSjUP5X9l_r2DXNz6QCFew1iVdVf_ROvNYZLxvntCqGLNvhdHhkqGGk_EECH_y-8076j9GWpBZMlUHGu2ebKQvb2tJJjEyTL0Q2"
+					},
+					{
+						"key": "api-token",
+						"value": "pfxa688e17b-5d81-2c9d-38a2-588541595f87"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"url": {
+					"raw": "https://svcthevision.groceryoutlet.com/api/rto/getstoreorderdashboard?cb=1664209621829&showNotStarted=true&status=0,5,10,70,80,90,100,999&storeNbr=34&windowDate=9%2F26%2F2022",
+					"protocol": "https",
+					"host": [
+						"svcthevision",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"getstoreorderdashboard"
+					],
+					"query": [
+						{
+							"key": "cb",
+							"value": "1664209621829"
+						},
+						{
+							"key": "showNotStarted",
+							"value": "true"
+						},
+						{
+							"key": "status",
+							"value": "0,5,10,70,80,90,100,999"
+						},
+						{
+							"key": "storeNbr",
+							"value": "34"
+						},
+						{
+							"key": "windowDate",
+							"value": "9%2F26%2F2022"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC14_Schema Validation for Input parameter \"showNotStarted\"",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://thevision.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://thevision.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "85_H46hqErYY5NbVM8poJ8GnZfvajz6Wuqw0v36scE8nPUOSUqH_L_QDfm9XdoSp3YmQWWqyosOVuxL-EQ3PCsXArFg1:gwIF-9iI7ciwDfMSTwiE_5qUVwktktUiKU7ivSjUP5X9l_r2DXNz6QCFew1iVdVf_ROvNYZLxvntCqGLNvhdHhkqGGk_EECH_y-8076j9GWpBZMlUHGu2ebKQvb2tJJjEyTL0Q2"
+					},
+					{
+						"key": "api-token",
+						"value": "pfxa688e17b-5d81-2c9d-38a2-588541595f87"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"url": {
+					"raw": "https://svcthevision.groceryoutlet.com/api/rto/getstoreorderdashboard?cb=1664209621829&showNotStarted=true&status=0,5,10,70,80,90,100,999&storeNbr=34&windowDate=9%2F26%2F2022",
+					"protocol": "https",
+					"host": [
+						"svcthevision",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"getstoreorderdashboard"
+					],
+					"query": [
+						{
+							"key": "cb",
+							"value": "1664209621829"
+						},
+						{
+							"key": "showNotStarted",
+							"value": "true"
+						},
+						{
+							"key": "status",
+							"value": "0,5,10,70,80,90,100,999"
+						},
+						{
+							"key": "storeNbr",
+							"value": "34"
+						},
+						{
+							"key": "windowDate",
+							"value": "9%2F26%2F2022"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC15_Mandatory value check for Input parameter \"showNotStarted\"",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://thevision.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://thevision.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "85_H46hqErYY5NbVM8poJ8GnZfvajz6Wuqw0v36scE8nPUOSUqH_L_QDfm9XdoSp3YmQWWqyosOVuxL-EQ3PCsXArFg1:gwIF-9iI7ciwDfMSTwiE_5qUVwktktUiKU7ivSjUP5X9l_r2DXNz6QCFew1iVdVf_ROvNYZLxvntCqGLNvhdHhkqGGk_EECH_y-8076j9GWpBZMlUHGu2ebKQvb2tJJjEyTL0Q2"
+					},
+					{
+						"key": "api-token",
+						"value": "pfxa688e17b-5d81-2c9d-38a2-588541595f87"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"url": {
+					"raw": "https://svcthevision.groceryoutlet.com/api/rto/getstoreorderdashboard?cb=1664209621829&showNotStarted=true&status=0,5,10,70,80,90,100,999&storeNbr=34&windowDate=9%2F26%2F2022",
+					"protocol": "https",
+					"host": [
+						"svcthevision",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"getstoreorderdashboard"
+					],
+					"query": [
+						{
+							"key": "cb",
+							"value": "1664209621829"
+						},
+						{
+							"key": "showNotStarted",
+							"value": "true"
+						},
+						{
+							"key": "status",
+							"value": "0,5,10,70,80,90,100,999"
+						},
+						{
+							"key": "storeNbr",
+							"value": "34"
+						},
+						{
+							"key": "windowDate",
+							"value": "9%2F26%2F2022"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC16_Schema Validation for Input parameter \"cb\"",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://thevision.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://thevision.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "85_H46hqErYY5NbVM8poJ8GnZfvajz6Wuqw0v36scE8nPUOSUqH_L_QDfm9XdoSp3YmQWWqyosOVuxL-EQ3PCsXArFg1:gwIF-9iI7ciwDfMSTwiE_5qUVwktktUiKU7ivSjUP5X9l_r2DXNz6QCFew1iVdVf_ROvNYZLxvntCqGLNvhdHhkqGGk_EECH_y-8076j9GWpBZMlUHGu2ebKQvb2tJJjEyTL0Q2"
+					},
+					{
+						"key": "api-token",
+						"value": "pfxa688e17b-5d81-2c9d-38a2-588541595f87"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"url": {
+					"raw": "https://svcthevision.groceryoutlet.com/api/rto/getstoreorderdashboard?cb=1664209621829&showNotStarted=true&status=0,5,10,70,80,90,100,999&storeNbr=34&windowDate=9%2F26%2F2022",
+					"protocol": "https",
+					"host": [
+						"svcthevision",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"getstoreorderdashboard"
+					],
+					"query": [
+						{
+							"key": "cb",
+							"value": "1664209621829"
+						},
+						{
+							"key": "showNotStarted",
+							"value": "true"
+						},
+						{
+							"key": "status",
+							"value": "0,5,10,70,80,90,100,999"
+						},
+						{
+							"key": "storeNbr",
+							"value": "34"
+						},
+						{
+							"key": "windowDate",
+							"value": "9%2F26%2F2022"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC17_Mandatory value check for Input parameter \"cb\"",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://thevision.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://thevision.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "85_H46hqErYY5NbVM8poJ8GnZfvajz6Wuqw0v36scE8nPUOSUqH_L_QDfm9XdoSp3YmQWWqyosOVuxL-EQ3PCsXArFg1:gwIF-9iI7ciwDfMSTwiE_5qUVwktktUiKU7ivSjUP5X9l_r2DXNz6QCFew1iVdVf_ROvNYZLxvntCqGLNvhdHhkqGGk_EECH_y-8076j9GWpBZMlUHGu2ebKQvb2tJJjEyTL0Q2"
+					},
+					{
+						"key": "api-token",
+						"value": "pfxa688e17b-5d81-2c9d-38a2-588541595f87"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"url": {
+					"raw": "https://svcthevision.groceryoutlet.com/api/rto/getstoreorderdashboard?cb=1664209621829&showNotStarted=true&status=0,5,10,70,80,90,100,999&storeNbr=34&windowDate=9%2F26%2F2022",
+					"protocol": "https",
+					"host": [
+						"svcthevision",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"getstoreorderdashboard"
+					],
+					"query": [
+						{
+							"key": "cb",
+							"value": "1664209621829"
+						},
+						{
+							"key": "showNotStarted",
+							"value": "true"
+						},
+						{
+							"key": "status",
+							"value": "0,5,10,70,80,90,100,999"
+						},
+						{
+							"key": "storeNbr",
+							"value": "34"
+						},
+						{
+							"key": "windowDate",
+							"value": "9%2F26%2F2022"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

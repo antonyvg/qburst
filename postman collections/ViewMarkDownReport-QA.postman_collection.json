@@ -1,0 +1,1703 @@
+{
+	"info": {
+		"_postman_id": "cdc9528d-9b42-476e-a333-7b58bbdf0d06",
+		"name": "ViewMarkDownReport-QA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TC01_Validate the API response",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Access_token",
+						"value": "LwqIjL2LHwP-NloRz18AackrTdFbUD7wc03ib25qaSG5y0PsED1qLCqejZibIWbg-wzO34DrJcP_BbPCIUj8QWDrzr3u-D-sJWMXAyepoSzARwz9vmzPuThLhHit-sXcu3iMsj9n2eTpK_qL9Jr8162QdCumdYudSpd87dU4SK7oPOTTK23y01OV6KbJqlC4Djsqy0NFRA4_rqMXDetfqa921Gm_WZ-ndRGb82bcdpHoymOve__qlitWDnnoMP4z"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer LwqIjL2LHwP-NloRz18AackrTdFbUD7wc03ib25qaSG5y0PsED1qLCqejZibIWbg-wzO34DrJcP_BbPCIUj8QWDrzr3u-D-sJWMXAyepoSzARwz9vmzPuThLhHit-sXcu3iMsj9n2eTpK_qL9Jr8162QdCumdYudSpd87dU4SK7oPOTTK23y01OV6KbJqlC4Djsqy0NFRA4_rqMXDetfqa921Gm_WZ-ndRGb82bcdpHoymOve__qlitWDnnoMP4z"
+					},
+					{
+						"key": "ClientIpAddress",
+						"value": "null"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Length",
+						"value": "0"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970; currentUser.UserID=8888; StoreNbr=28; token=LwqIjL2LHwP-NloRz18AackrTdFbUD7wc03ib25qaSG5y0PsED1qLCqejZibIWbg-wzO34DrJcP_BbPCIUj8QWDrzr3u-D-sJWMXAyepoSzARwz9vmzPuThLhHit-sXcu3iMsj9n2eTpK_qL9Jr8162QdCumdYudSpd87dU4SK7oPOTTK23y01OV6KbJqlC4Djsqy0NFRA4_rqMXDetfqa921Gm_WZ-ndRGb82bcdpHoymOve__qlitWDnnoMP4z; currentUser.Role=0; Downloadtransfers=true; currentUser.UserKey=Handheld batch-28-8888-IT Support-12/15/2022 1:57:09 AM; ClientIpAddress="
+					},
+					{
+						"key": "Origin",
+						"value": "https://bbicqa.groceryoutlet.com"
+					},
+					{
+						"key": "Referer",
+						"value": "https://bbicqa.groceryoutlet.com/Receiving"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "StoreNbr",
+						"value": "28"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "UserID",
+						"value": "8888"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"url": {
+					"raw": "https://bbicqa.groceryoutlet.com/api/POS/ViewMarkDownReport?DocNum=0&StartNumber=0&Count=0&Sent=false&StoreNbr=28",
+					"protocol": "https",
+					"host": [
+						"bbicqa",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"POS",
+						"ViewMarkDownReport"
+					],
+					"query": [
+						{
+							"key": "DocNum",
+							"value": "0"
+						},
+						{
+							"key": "StartNumber",
+							"value": "0"
+						},
+						{
+							"key": "Count",
+							"value": "0"
+						},
+						{
+							"key": "Sent",
+							"value": "false"
+						},
+						{
+							"key": "StoreNbr",
+							"value": "28"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC02_Validate the API accepts input parameter",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Access_token",
+						"value": "LwqIjL2LHwP-NloRz18AackrTdFbUD7wc03ib25qaSG5y0PsED1qLCqejZibIWbg-wzO34DrJcP_BbPCIUj8QWDrzr3u-D-sJWMXAyepoSzARwz9vmzPuThLhHit-sXcu3iMsj9n2eTpK_qL9Jr8162QdCumdYudSpd87dU4SK7oPOTTK23y01OV6KbJqlC4Djsqy0NFRA4_rqMXDetfqa921Gm_WZ-ndRGb82bcdpHoymOve__qlitWDnnoMP4z"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer LwqIjL2LHwP-NloRz18AackrTdFbUD7wc03ib25qaSG5y0PsED1qLCqejZibIWbg-wzO34DrJcP_BbPCIUj8QWDrzr3u-D-sJWMXAyepoSzARwz9vmzPuThLhHit-sXcu3iMsj9n2eTpK_qL9Jr8162QdCumdYudSpd87dU4SK7oPOTTK23y01OV6KbJqlC4Djsqy0NFRA4_rqMXDetfqa921Gm_WZ-ndRGb82bcdpHoymOve__qlitWDnnoMP4z"
+					},
+					{
+						"key": "ClientIpAddress",
+						"value": "null"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Length",
+						"value": "0"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970; currentUser.UserID=8888; StoreNbr=28; token=LwqIjL2LHwP-NloRz18AackrTdFbUD7wc03ib25qaSG5y0PsED1qLCqejZibIWbg-wzO34DrJcP_BbPCIUj8QWDrzr3u-D-sJWMXAyepoSzARwz9vmzPuThLhHit-sXcu3iMsj9n2eTpK_qL9Jr8162QdCumdYudSpd87dU4SK7oPOTTK23y01OV6KbJqlC4Djsqy0NFRA4_rqMXDetfqa921Gm_WZ-ndRGb82bcdpHoymOve__qlitWDnnoMP4z; currentUser.Role=0; Downloadtransfers=true; currentUser.UserKey=Handheld batch-28-8888-IT Support-12/15/2022 1:57:09 AM; ClientIpAddress="
+					},
+					{
+						"key": "Origin",
+						"value": "https://bbicqa.groceryoutlet.com"
+					},
+					{
+						"key": "Referer",
+						"value": "https://bbicqa.groceryoutlet.com/Receiving"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "StoreNbr",
+						"value": "28"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "UserID",
+						"value": "8888"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"url": {
+					"raw": "https://bbicqa.groceryoutlet.com/api/POS/ViewMarkDownReport?DocNum=0&StartNumber=0&Count=0&Sent=false&StoreNbr=28",
+					"protocol": "https",
+					"host": [
+						"bbicqa",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"POS",
+						"ViewMarkDownReport"
+					],
+					"query": [
+						{
+							"key": "DocNum",
+							"value": "0"
+						},
+						{
+							"key": "StartNumber",
+							"value": "0"
+						},
+						{
+							"key": "Count",
+							"value": "0"
+						},
+						{
+							"key": "Sent",
+							"value": "false"
+						},
+						{
+							"key": "StoreNbr",
+							"value": "28"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC03_Validate the API using GET method instead of POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Access_token",
+						"value": "LwqIjL2LHwP-NloRz18AackrTdFbUD7wc03ib25qaSG5y0PsED1qLCqejZibIWbg-wzO34DrJcP_BbPCIUj8QWDrzr3u-D-sJWMXAyepoSzARwz9vmzPuThLhHit-sXcu3iMsj9n2eTpK_qL9Jr8162QdCumdYudSpd87dU4SK7oPOTTK23y01OV6KbJqlC4Djsqy0NFRA4_rqMXDetfqa921Gm_WZ-ndRGb82bcdpHoymOve__qlitWDnnoMP4z"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer LwqIjL2LHwP-NloRz18AackrTdFbUD7wc03ib25qaSG5y0PsED1qLCqejZibIWbg-wzO34DrJcP_BbPCIUj8QWDrzr3u-D-sJWMXAyepoSzARwz9vmzPuThLhHit-sXcu3iMsj9n2eTpK_qL9Jr8162QdCumdYudSpd87dU4SK7oPOTTK23y01OV6KbJqlC4Djsqy0NFRA4_rqMXDetfqa921Gm_WZ-ndRGb82bcdpHoymOve__qlitWDnnoMP4z"
+					},
+					{
+						"key": "ClientIpAddress",
+						"value": "null"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Length",
+						"value": "0"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970; currentUser.UserID=8888; StoreNbr=28; token=LwqIjL2LHwP-NloRz18AackrTdFbUD7wc03ib25qaSG5y0PsED1qLCqejZibIWbg-wzO34DrJcP_BbPCIUj8QWDrzr3u-D-sJWMXAyepoSzARwz9vmzPuThLhHit-sXcu3iMsj9n2eTpK_qL9Jr8162QdCumdYudSpd87dU4SK7oPOTTK23y01OV6KbJqlC4Djsqy0NFRA4_rqMXDetfqa921Gm_WZ-ndRGb82bcdpHoymOve__qlitWDnnoMP4z; currentUser.Role=0; Downloadtransfers=true; currentUser.UserKey=Handheld batch-28-8888-IT Support-12/15/2022 1:57:09 AM; ClientIpAddress="
+					},
+					{
+						"key": "Origin",
+						"value": "https://bbicqa.groceryoutlet.com"
+					},
+					{
+						"key": "Referer",
+						"value": "https://bbicqa.groceryoutlet.com/Receiving"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "StoreNbr",
+						"value": "28"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "UserID",
+						"value": "8888"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"url": {
+					"raw": "https://bbicqa.groceryoutlet.com/api/POS/ViewMarkDownReport?DocNum=0&StartNumber=0&Count=0&Sent=false&StoreNbr=28",
+					"protocol": "https",
+					"host": [
+						"bbicqa",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"POS",
+						"ViewMarkDownReport"
+					],
+					"query": [
+						{
+							"key": "DocNum",
+							"value": "0"
+						},
+						{
+							"key": "StartNumber",
+							"value": "0"
+						},
+						{
+							"key": "Count",
+							"value": "0"
+						},
+						{
+							"key": "Sent",
+							"value": "false"
+						},
+						{
+							"key": "StoreNbr",
+							"value": "28"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC04_Validate Response for invalid URL",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Access_token",
+						"value": "LwqIjL2LHwP-NloRz18AackrTdFbUD7wc03ib25qaSG5y0PsED1qLCqejZibIWbg-wzO34DrJcP_BbPCIUj8QWDrzr3u-D-sJWMXAyepoSzARwz9vmzPuThLhHit-sXcu3iMsj9n2eTpK_qL9Jr8162QdCumdYudSpd87dU4SK7oPOTTK23y01OV6KbJqlC4Djsqy0NFRA4_rqMXDetfqa921Gm_WZ-ndRGb82bcdpHoymOve__qlitWDnnoMP4z"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer LwqIjL2LHwP-NloRz18AackrTdFbUD7wc03ib25qaSG5y0PsED1qLCqejZibIWbg-wzO34DrJcP_BbPCIUj8QWDrzr3u-D-sJWMXAyepoSzARwz9vmzPuThLhHit-sXcu3iMsj9n2eTpK_qL9Jr8162QdCumdYudSpd87dU4SK7oPOTTK23y01OV6KbJqlC4Djsqy0NFRA4_rqMXDetfqa921Gm_WZ-ndRGb82bcdpHoymOve__qlitWDnnoMP4z"
+					},
+					{
+						"key": "ClientIpAddress",
+						"value": "null"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Length",
+						"value": "0"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970; currentUser.UserID=8888; StoreNbr=28; token=LwqIjL2LHwP-NloRz18AackrTdFbUD7wc03ib25qaSG5y0PsED1qLCqejZibIWbg-wzO34DrJcP_BbPCIUj8QWDrzr3u-D-sJWMXAyepoSzARwz9vmzPuThLhHit-sXcu3iMsj9n2eTpK_qL9Jr8162QdCumdYudSpd87dU4SK7oPOTTK23y01OV6KbJqlC4Djsqy0NFRA4_rqMXDetfqa921Gm_WZ-ndRGb82bcdpHoymOve__qlitWDnnoMP4z; currentUser.Role=0; Downloadtransfers=true; currentUser.UserKey=Handheld batch-28-8888-IT Support-12/15/2022 1:57:09 AM; ClientIpAddress="
+					},
+					{
+						"key": "Origin",
+						"value": "https://bbicqa.groceryoutlet.com"
+					},
+					{
+						"key": "Referer",
+						"value": "https://bbicqa.groceryoutlet.com/Receiving"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "StoreNbr",
+						"value": "28"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "UserID",
+						"value": "8888"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"url": {
+					"raw": "https://bbicqa.groceryoutlet.com/api/POS/ViewMarkDownReport?DocNum=0&StartNumber=0&Count=0&Sent=false&StoreNbr=28",
+					"protocol": "https",
+					"host": [
+						"bbicqa",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"POS",
+						"ViewMarkDownReport"
+					],
+					"query": [
+						{
+							"key": "DocNum",
+							"value": "0"
+						},
+						{
+							"key": "StartNumber",
+							"value": "0"
+						},
+						{
+							"key": "Count",
+							"value": "0"
+						},
+						{
+							"key": "Sent",
+							"value": "false"
+						},
+						{
+							"key": "StoreNbr",
+							"value": "28"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC06_Schema Validation for Input parameter \"DocNum\"",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Access_token",
+						"value": "LwqIjL2LHwP-NloRz18AackrTdFbUD7wc03ib25qaSG5y0PsED1qLCqejZibIWbg-wzO34DrJcP_BbPCIUj8QWDrzr3u-D-sJWMXAyepoSzARwz9vmzPuThLhHit-sXcu3iMsj9n2eTpK_qL9Jr8162QdCumdYudSpd87dU4SK7oPOTTK23y01OV6KbJqlC4Djsqy0NFRA4_rqMXDetfqa921Gm_WZ-ndRGb82bcdpHoymOve__qlitWDnnoMP4z"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer LwqIjL2LHwP-NloRz18AackrTdFbUD7wc03ib25qaSG5y0PsED1qLCqejZibIWbg-wzO34DrJcP_BbPCIUj8QWDrzr3u-D-sJWMXAyepoSzARwz9vmzPuThLhHit-sXcu3iMsj9n2eTpK_qL9Jr8162QdCumdYudSpd87dU4SK7oPOTTK23y01OV6KbJqlC4Djsqy0NFRA4_rqMXDetfqa921Gm_WZ-ndRGb82bcdpHoymOve__qlitWDnnoMP4z"
+					},
+					{
+						"key": "ClientIpAddress",
+						"value": "null"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Length",
+						"value": "0"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970; currentUser.UserID=8888; StoreNbr=28; token=LwqIjL2LHwP-NloRz18AackrTdFbUD7wc03ib25qaSG5y0PsED1qLCqejZibIWbg-wzO34DrJcP_BbPCIUj8QWDrzr3u-D-sJWMXAyepoSzARwz9vmzPuThLhHit-sXcu3iMsj9n2eTpK_qL9Jr8162QdCumdYudSpd87dU4SK7oPOTTK23y01OV6KbJqlC4Djsqy0NFRA4_rqMXDetfqa921Gm_WZ-ndRGb82bcdpHoymOve__qlitWDnnoMP4z; currentUser.Role=0; Downloadtransfers=true; currentUser.UserKey=Handheld batch-28-8888-IT Support-12/15/2022 1:57:09 AM; ClientIpAddress="
+					},
+					{
+						"key": "Origin",
+						"value": "https://bbicqa.groceryoutlet.com"
+					},
+					{
+						"key": "Referer",
+						"value": "https://bbicqa.groceryoutlet.com/Receiving"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "StoreNbr",
+						"value": "28"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "UserID",
+						"value": "8888"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"url": {
+					"raw": "https://bbicqa.groceryoutlet.com/api/POS/ViewMarkDownReport?DocNum=0&StartNumber=0&Count=0&Sent=false&StoreNbr=28",
+					"protocol": "https",
+					"host": [
+						"bbicqa",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"POS",
+						"ViewMarkDownReport"
+					],
+					"query": [
+						{
+							"key": "DocNum",
+							"value": "0"
+						},
+						{
+							"key": "StartNumber",
+							"value": "0"
+						},
+						{
+							"key": "Count",
+							"value": "0"
+						},
+						{
+							"key": "Sent",
+							"value": "false"
+						},
+						{
+							"key": "StoreNbr",
+							"value": "28"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC07_Check for Input parameter \"DocNum\" as blank",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Access_token",
+						"value": "LwqIjL2LHwP-NloRz18AackrTdFbUD7wc03ib25qaSG5y0PsED1qLCqejZibIWbg-wzO34DrJcP_BbPCIUj8QWDrzr3u-D-sJWMXAyepoSzARwz9vmzPuThLhHit-sXcu3iMsj9n2eTpK_qL9Jr8162QdCumdYudSpd87dU4SK7oPOTTK23y01OV6KbJqlC4Djsqy0NFRA4_rqMXDetfqa921Gm_WZ-ndRGb82bcdpHoymOve__qlitWDnnoMP4z"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer LwqIjL2LHwP-NloRz18AackrTdFbUD7wc03ib25qaSG5y0PsED1qLCqejZibIWbg-wzO34DrJcP_BbPCIUj8QWDrzr3u-D-sJWMXAyepoSzARwz9vmzPuThLhHit-sXcu3iMsj9n2eTpK_qL9Jr8162QdCumdYudSpd87dU4SK7oPOTTK23y01OV6KbJqlC4Djsqy0NFRA4_rqMXDetfqa921Gm_WZ-ndRGb82bcdpHoymOve__qlitWDnnoMP4z"
+					},
+					{
+						"key": "ClientIpAddress",
+						"value": "null"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Length",
+						"value": "0"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970; currentUser.UserID=8888; StoreNbr=28; token=LwqIjL2LHwP-NloRz18AackrTdFbUD7wc03ib25qaSG5y0PsED1qLCqejZibIWbg-wzO34DrJcP_BbPCIUj8QWDrzr3u-D-sJWMXAyepoSzARwz9vmzPuThLhHit-sXcu3iMsj9n2eTpK_qL9Jr8162QdCumdYudSpd87dU4SK7oPOTTK23y01OV6KbJqlC4Djsqy0NFRA4_rqMXDetfqa921Gm_WZ-ndRGb82bcdpHoymOve__qlitWDnnoMP4z; currentUser.Role=0; Downloadtransfers=true; currentUser.UserKey=Handheld batch-28-8888-IT Support-12/15/2022 1:57:09 AM; ClientIpAddress="
+					},
+					{
+						"key": "Origin",
+						"value": "https://bbicqa.groceryoutlet.com"
+					},
+					{
+						"key": "Referer",
+						"value": "https://bbicqa.groceryoutlet.com/Receiving"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "StoreNbr",
+						"value": "28"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "UserID",
+						"value": "8888"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"url": {
+					"raw": "https://bbicqa.groceryoutlet.com/api/POS/ViewMarkDownReport?DocNum=0&StartNumber=0&Count=0&Sent=false&StoreNbr=28",
+					"protocol": "https",
+					"host": [
+						"bbicqa",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"POS",
+						"ViewMarkDownReport"
+					],
+					"query": [
+						{
+							"key": "DocNum",
+							"value": "0"
+						},
+						{
+							"key": "StartNumber",
+							"value": "0"
+						},
+						{
+							"key": "Count",
+							"value": "0"
+						},
+						{
+							"key": "Sent",
+							"value": "false"
+						},
+						{
+							"key": "StoreNbr",
+							"value": "28"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC08_Schema Validation for Input parameter \"StartNumber\"",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Access_token",
+						"value": "LwqIjL2LHwP-NloRz18AackrTdFbUD7wc03ib25qaSG5y0PsED1qLCqejZibIWbg-wzO34DrJcP_BbPCIUj8QWDrzr3u-D-sJWMXAyepoSzARwz9vmzPuThLhHit-sXcu3iMsj9n2eTpK_qL9Jr8162QdCumdYudSpd87dU4SK7oPOTTK23y01OV6KbJqlC4Djsqy0NFRA4_rqMXDetfqa921Gm_WZ-ndRGb82bcdpHoymOve__qlitWDnnoMP4z"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer LwqIjL2LHwP-NloRz18AackrTdFbUD7wc03ib25qaSG5y0PsED1qLCqejZibIWbg-wzO34DrJcP_BbPCIUj8QWDrzr3u-D-sJWMXAyepoSzARwz9vmzPuThLhHit-sXcu3iMsj9n2eTpK_qL9Jr8162QdCumdYudSpd87dU4SK7oPOTTK23y01OV6KbJqlC4Djsqy0NFRA4_rqMXDetfqa921Gm_WZ-ndRGb82bcdpHoymOve__qlitWDnnoMP4z"
+					},
+					{
+						"key": "ClientIpAddress",
+						"value": "null"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Length",
+						"value": "0"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970; currentUser.UserID=8888; StoreNbr=28; token=LwqIjL2LHwP-NloRz18AackrTdFbUD7wc03ib25qaSG5y0PsED1qLCqejZibIWbg-wzO34DrJcP_BbPCIUj8QWDrzr3u-D-sJWMXAyepoSzARwz9vmzPuThLhHit-sXcu3iMsj9n2eTpK_qL9Jr8162QdCumdYudSpd87dU4SK7oPOTTK23y01OV6KbJqlC4Djsqy0NFRA4_rqMXDetfqa921Gm_WZ-ndRGb82bcdpHoymOve__qlitWDnnoMP4z; currentUser.Role=0; Downloadtransfers=true; currentUser.UserKey=Handheld batch-28-8888-IT Support-12/15/2022 1:57:09 AM; ClientIpAddress="
+					},
+					{
+						"key": "Origin",
+						"value": "https://bbicqa.groceryoutlet.com"
+					},
+					{
+						"key": "Referer",
+						"value": "https://bbicqa.groceryoutlet.com/Receiving"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "StoreNbr",
+						"value": "28"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "UserID",
+						"value": "8888"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"url": {
+					"raw": "https://bbicqa.groceryoutlet.com/api/POS/ViewMarkDownReport?DocNum=0&StartNumber=0&Count=0&Sent=false&StoreNbr=28",
+					"protocol": "https",
+					"host": [
+						"bbicqa",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"POS",
+						"ViewMarkDownReport"
+					],
+					"query": [
+						{
+							"key": "DocNum",
+							"value": "0"
+						},
+						{
+							"key": "StartNumber",
+							"value": "0"
+						},
+						{
+							"key": "Count",
+							"value": "0"
+						},
+						{
+							"key": "Sent",
+							"value": "false"
+						},
+						{
+							"key": "StoreNbr",
+							"value": "28"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC09_Check for Input parameter \"StartNumber\" as blank",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Access_token",
+						"value": "LwqIjL2LHwP-NloRz18AackrTdFbUD7wc03ib25qaSG5y0PsED1qLCqejZibIWbg-wzO34DrJcP_BbPCIUj8QWDrzr3u-D-sJWMXAyepoSzARwz9vmzPuThLhHit-sXcu3iMsj9n2eTpK_qL9Jr8162QdCumdYudSpd87dU4SK7oPOTTK23y01OV6KbJqlC4Djsqy0NFRA4_rqMXDetfqa921Gm_WZ-ndRGb82bcdpHoymOve__qlitWDnnoMP4z"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer LwqIjL2LHwP-NloRz18AackrTdFbUD7wc03ib25qaSG5y0PsED1qLCqejZibIWbg-wzO34DrJcP_BbPCIUj8QWDrzr3u-D-sJWMXAyepoSzARwz9vmzPuThLhHit-sXcu3iMsj9n2eTpK_qL9Jr8162QdCumdYudSpd87dU4SK7oPOTTK23y01OV6KbJqlC4Djsqy0NFRA4_rqMXDetfqa921Gm_WZ-ndRGb82bcdpHoymOve__qlitWDnnoMP4z"
+					},
+					{
+						"key": "ClientIpAddress",
+						"value": "null"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Length",
+						"value": "0"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970; currentUser.UserID=8888; StoreNbr=28; token=LwqIjL2LHwP-NloRz18AackrTdFbUD7wc03ib25qaSG5y0PsED1qLCqejZibIWbg-wzO34DrJcP_BbPCIUj8QWDrzr3u-D-sJWMXAyepoSzARwz9vmzPuThLhHit-sXcu3iMsj9n2eTpK_qL9Jr8162QdCumdYudSpd87dU4SK7oPOTTK23y01OV6KbJqlC4Djsqy0NFRA4_rqMXDetfqa921Gm_WZ-ndRGb82bcdpHoymOve__qlitWDnnoMP4z; currentUser.Role=0; Downloadtransfers=true; currentUser.UserKey=Handheld batch-28-8888-IT Support-12/15/2022 1:57:09 AM; ClientIpAddress="
+					},
+					{
+						"key": "Origin",
+						"value": "https://bbicqa.groceryoutlet.com"
+					},
+					{
+						"key": "Referer",
+						"value": "https://bbicqa.groceryoutlet.com/Receiving"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "StoreNbr",
+						"value": "28"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "UserID",
+						"value": "8888"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"url": {
+					"raw": "https://bbicqa.groceryoutlet.com/api/POS/ViewMarkDownReport?DocNum=0&StartNumber=0&Count=0&Sent=false&StoreNbr=28",
+					"protocol": "https",
+					"host": [
+						"bbicqa",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"POS",
+						"ViewMarkDownReport"
+					],
+					"query": [
+						{
+							"key": "DocNum",
+							"value": "0"
+						},
+						{
+							"key": "StartNumber",
+							"value": "0"
+						},
+						{
+							"key": "Count",
+							"value": "0"
+						},
+						{
+							"key": "Sent",
+							"value": "false"
+						},
+						{
+							"key": "StoreNbr",
+							"value": "28"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC10_Schema Validation for Input parameter \"Count\"",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Access_token",
+						"value": "LwqIjL2LHwP-NloRz18AackrTdFbUD7wc03ib25qaSG5y0PsED1qLCqejZibIWbg-wzO34DrJcP_BbPCIUj8QWDrzr3u-D-sJWMXAyepoSzARwz9vmzPuThLhHit-sXcu3iMsj9n2eTpK_qL9Jr8162QdCumdYudSpd87dU4SK7oPOTTK23y01OV6KbJqlC4Djsqy0NFRA4_rqMXDetfqa921Gm_WZ-ndRGb82bcdpHoymOve__qlitWDnnoMP4z"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer LwqIjL2LHwP-NloRz18AackrTdFbUD7wc03ib25qaSG5y0PsED1qLCqejZibIWbg-wzO34DrJcP_BbPCIUj8QWDrzr3u-D-sJWMXAyepoSzARwz9vmzPuThLhHit-sXcu3iMsj9n2eTpK_qL9Jr8162QdCumdYudSpd87dU4SK7oPOTTK23y01OV6KbJqlC4Djsqy0NFRA4_rqMXDetfqa921Gm_WZ-ndRGb82bcdpHoymOve__qlitWDnnoMP4z"
+					},
+					{
+						"key": "ClientIpAddress",
+						"value": "null"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Length",
+						"value": "0"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970; currentUser.UserID=8888; StoreNbr=28; token=LwqIjL2LHwP-NloRz18AackrTdFbUD7wc03ib25qaSG5y0PsED1qLCqejZibIWbg-wzO34DrJcP_BbPCIUj8QWDrzr3u-D-sJWMXAyepoSzARwz9vmzPuThLhHit-sXcu3iMsj9n2eTpK_qL9Jr8162QdCumdYudSpd87dU4SK7oPOTTK23y01OV6KbJqlC4Djsqy0NFRA4_rqMXDetfqa921Gm_WZ-ndRGb82bcdpHoymOve__qlitWDnnoMP4z; currentUser.Role=0; Downloadtransfers=true; currentUser.UserKey=Handheld batch-28-8888-IT Support-12/15/2022 1:57:09 AM; ClientIpAddress="
+					},
+					{
+						"key": "Origin",
+						"value": "https://bbicqa.groceryoutlet.com"
+					},
+					{
+						"key": "Referer",
+						"value": "https://bbicqa.groceryoutlet.com/Receiving"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "StoreNbr",
+						"value": "28"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "UserID",
+						"value": "8888"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"url": {
+					"raw": "https://bbicqa.groceryoutlet.com/api/POS/ViewMarkDownReport?DocNum=0&StartNumber=0&Count=0&Sent=false&StoreNbr=28",
+					"protocol": "https",
+					"host": [
+						"bbicqa",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"POS",
+						"ViewMarkDownReport"
+					],
+					"query": [
+						{
+							"key": "DocNum",
+							"value": "0"
+						},
+						{
+							"key": "StartNumber",
+							"value": "0"
+						},
+						{
+							"key": "Count",
+							"value": "0"
+						},
+						{
+							"key": "Sent",
+							"value": "false"
+						},
+						{
+							"key": "StoreNbr",
+							"value": "28"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC11_Check for Input parameter \"Count\" as blank",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Access_token",
+						"value": "LwqIjL2LHwP-NloRz18AackrTdFbUD7wc03ib25qaSG5y0PsED1qLCqejZibIWbg-wzO34DrJcP_BbPCIUj8QWDrzr3u-D-sJWMXAyepoSzARwz9vmzPuThLhHit-sXcu3iMsj9n2eTpK_qL9Jr8162QdCumdYudSpd87dU4SK7oPOTTK23y01OV6KbJqlC4Djsqy0NFRA4_rqMXDetfqa921Gm_WZ-ndRGb82bcdpHoymOve__qlitWDnnoMP4z"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer LwqIjL2LHwP-NloRz18AackrTdFbUD7wc03ib25qaSG5y0PsED1qLCqejZibIWbg-wzO34DrJcP_BbPCIUj8QWDrzr3u-D-sJWMXAyepoSzARwz9vmzPuThLhHit-sXcu3iMsj9n2eTpK_qL9Jr8162QdCumdYudSpd87dU4SK7oPOTTK23y01OV6KbJqlC4Djsqy0NFRA4_rqMXDetfqa921Gm_WZ-ndRGb82bcdpHoymOve__qlitWDnnoMP4z"
+					},
+					{
+						"key": "ClientIpAddress",
+						"value": "null"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Length",
+						"value": "0"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970; currentUser.UserID=8888; StoreNbr=28; token=LwqIjL2LHwP-NloRz18AackrTdFbUD7wc03ib25qaSG5y0PsED1qLCqejZibIWbg-wzO34DrJcP_BbPCIUj8QWDrzr3u-D-sJWMXAyepoSzARwz9vmzPuThLhHit-sXcu3iMsj9n2eTpK_qL9Jr8162QdCumdYudSpd87dU4SK7oPOTTK23y01OV6KbJqlC4Djsqy0NFRA4_rqMXDetfqa921Gm_WZ-ndRGb82bcdpHoymOve__qlitWDnnoMP4z; currentUser.Role=0; Downloadtransfers=true; currentUser.UserKey=Handheld batch-28-8888-IT Support-12/15/2022 1:57:09 AM; ClientIpAddress="
+					},
+					{
+						"key": "Origin",
+						"value": "https://bbicqa.groceryoutlet.com"
+					},
+					{
+						"key": "Referer",
+						"value": "https://bbicqa.groceryoutlet.com/Receiving"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "StoreNbr",
+						"value": "28"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "UserID",
+						"value": "8888"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"url": {
+					"raw": "https://bbicqa.groceryoutlet.com/api/POS/ViewMarkDownReport?DocNum=0&StartNumber=0&Count=0&Sent=false&StoreNbr=28",
+					"protocol": "https",
+					"host": [
+						"bbicqa",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"POS",
+						"ViewMarkDownReport"
+					],
+					"query": [
+						{
+							"key": "DocNum",
+							"value": "0"
+						},
+						{
+							"key": "StartNumber",
+							"value": "0"
+						},
+						{
+							"key": "Count",
+							"value": "0"
+						},
+						{
+							"key": "Sent",
+							"value": "false"
+						},
+						{
+							"key": "StoreNbr",
+							"value": "28"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC12_Schema Validation for Input parameter \"Sent\"",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Access_token",
+						"value": "LwqIjL2LHwP-NloRz18AackrTdFbUD7wc03ib25qaSG5y0PsED1qLCqejZibIWbg-wzO34DrJcP_BbPCIUj8QWDrzr3u-D-sJWMXAyepoSzARwz9vmzPuThLhHit-sXcu3iMsj9n2eTpK_qL9Jr8162QdCumdYudSpd87dU4SK7oPOTTK23y01OV6KbJqlC4Djsqy0NFRA4_rqMXDetfqa921Gm_WZ-ndRGb82bcdpHoymOve__qlitWDnnoMP4z"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer LwqIjL2LHwP-NloRz18AackrTdFbUD7wc03ib25qaSG5y0PsED1qLCqejZibIWbg-wzO34DrJcP_BbPCIUj8QWDrzr3u-D-sJWMXAyepoSzARwz9vmzPuThLhHit-sXcu3iMsj9n2eTpK_qL9Jr8162QdCumdYudSpd87dU4SK7oPOTTK23y01OV6KbJqlC4Djsqy0NFRA4_rqMXDetfqa921Gm_WZ-ndRGb82bcdpHoymOve__qlitWDnnoMP4z"
+					},
+					{
+						"key": "ClientIpAddress",
+						"value": "null"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Length",
+						"value": "0"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970; currentUser.UserID=8888; StoreNbr=28; token=LwqIjL2LHwP-NloRz18AackrTdFbUD7wc03ib25qaSG5y0PsED1qLCqejZibIWbg-wzO34DrJcP_BbPCIUj8QWDrzr3u-D-sJWMXAyepoSzARwz9vmzPuThLhHit-sXcu3iMsj9n2eTpK_qL9Jr8162QdCumdYudSpd87dU4SK7oPOTTK23y01OV6KbJqlC4Djsqy0NFRA4_rqMXDetfqa921Gm_WZ-ndRGb82bcdpHoymOve__qlitWDnnoMP4z; currentUser.Role=0; Downloadtransfers=true; currentUser.UserKey=Handheld batch-28-8888-IT Support-12/15/2022 1:57:09 AM; ClientIpAddress="
+					},
+					{
+						"key": "Origin",
+						"value": "https://bbicqa.groceryoutlet.com"
+					},
+					{
+						"key": "Referer",
+						"value": "https://bbicqa.groceryoutlet.com/Receiving"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "StoreNbr",
+						"value": "28"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "UserID",
+						"value": "8888"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"url": {
+					"raw": "https://bbicqa.groceryoutlet.com/api/POS/ViewMarkDownReport?DocNum=0&StartNumber=0&Count=0&Sent=false&StoreNbr=28",
+					"protocol": "https",
+					"host": [
+						"bbicqa",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"POS",
+						"ViewMarkDownReport"
+					],
+					"query": [
+						{
+							"key": "DocNum",
+							"value": "0"
+						},
+						{
+							"key": "StartNumber",
+							"value": "0"
+						},
+						{
+							"key": "Count",
+							"value": "0"
+						},
+						{
+							"key": "Sent",
+							"value": "false"
+						},
+						{
+							"key": "StoreNbr",
+							"value": "28"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC13_Check for Input parameter \"Sent\" as blank",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Access_token",
+						"value": "LwqIjL2LHwP-NloRz18AackrTdFbUD7wc03ib25qaSG5y0PsED1qLCqejZibIWbg-wzO34DrJcP_BbPCIUj8QWDrzr3u-D-sJWMXAyepoSzARwz9vmzPuThLhHit-sXcu3iMsj9n2eTpK_qL9Jr8162QdCumdYudSpd87dU4SK7oPOTTK23y01OV6KbJqlC4Djsqy0NFRA4_rqMXDetfqa921Gm_WZ-ndRGb82bcdpHoymOve__qlitWDnnoMP4z"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer LwqIjL2LHwP-NloRz18AackrTdFbUD7wc03ib25qaSG5y0PsED1qLCqejZibIWbg-wzO34DrJcP_BbPCIUj8QWDrzr3u-D-sJWMXAyepoSzARwz9vmzPuThLhHit-sXcu3iMsj9n2eTpK_qL9Jr8162QdCumdYudSpd87dU4SK7oPOTTK23y01OV6KbJqlC4Djsqy0NFRA4_rqMXDetfqa921Gm_WZ-ndRGb82bcdpHoymOve__qlitWDnnoMP4z"
+					},
+					{
+						"key": "ClientIpAddress",
+						"value": "null"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Length",
+						"value": "0"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970; currentUser.UserID=8888; StoreNbr=28; token=LwqIjL2LHwP-NloRz18AackrTdFbUD7wc03ib25qaSG5y0PsED1qLCqejZibIWbg-wzO34DrJcP_BbPCIUj8QWDrzr3u-D-sJWMXAyepoSzARwz9vmzPuThLhHit-sXcu3iMsj9n2eTpK_qL9Jr8162QdCumdYudSpd87dU4SK7oPOTTK23y01OV6KbJqlC4Djsqy0NFRA4_rqMXDetfqa921Gm_WZ-ndRGb82bcdpHoymOve__qlitWDnnoMP4z; currentUser.Role=0; Downloadtransfers=true; currentUser.UserKey=Handheld batch-28-8888-IT Support-12/15/2022 1:57:09 AM; ClientIpAddress="
+					},
+					{
+						"key": "Origin",
+						"value": "https://bbicqa.groceryoutlet.com"
+					},
+					{
+						"key": "Referer",
+						"value": "https://bbicqa.groceryoutlet.com/Receiving"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "StoreNbr",
+						"value": "28"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "UserID",
+						"value": "8888"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"url": {
+					"raw": "https://bbicqa.groceryoutlet.com/api/POS/ViewMarkDownReport?DocNum=0&StartNumber=0&Count=0&Sent=false&StoreNbr=28",
+					"protocol": "https",
+					"host": [
+						"bbicqa",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"POS",
+						"ViewMarkDownReport"
+					],
+					"query": [
+						{
+							"key": "DocNum",
+							"value": "0"
+						},
+						{
+							"key": "StartNumber",
+							"value": "0"
+						},
+						{
+							"key": "Count",
+							"value": "0"
+						},
+						{
+							"key": "Sent",
+							"value": "false"
+						},
+						{
+							"key": "StoreNbr",
+							"value": "28"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC14_Schema Validation for Input parameter \"StoreNbr\"",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Access_token",
+						"value": "LwqIjL2LHwP-NloRz18AackrTdFbUD7wc03ib25qaSG5y0PsED1qLCqejZibIWbg-wzO34DrJcP_BbPCIUj8QWDrzr3u-D-sJWMXAyepoSzARwz9vmzPuThLhHit-sXcu3iMsj9n2eTpK_qL9Jr8162QdCumdYudSpd87dU4SK7oPOTTK23y01OV6KbJqlC4Djsqy0NFRA4_rqMXDetfqa921Gm_WZ-ndRGb82bcdpHoymOve__qlitWDnnoMP4z"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer LwqIjL2LHwP-NloRz18AackrTdFbUD7wc03ib25qaSG5y0PsED1qLCqejZibIWbg-wzO34DrJcP_BbPCIUj8QWDrzr3u-D-sJWMXAyepoSzARwz9vmzPuThLhHit-sXcu3iMsj9n2eTpK_qL9Jr8162QdCumdYudSpd87dU4SK7oPOTTK23y01OV6KbJqlC4Djsqy0NFRA4_rqMXDetfqa921Gm_WZ-ndRGb82bcdpHoymOve__qlitWDnnoMP4z"
+					},
+					{
+						"key": "ClientIpAddress",
+						"value": "null"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Length",
+						"value": "0"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970; currentUser.UserID=8888; StoreNbr=28; token=LwqIjL2LHwP-NloRz18AackrTdFbUD7wc03ib25qaSG5y0PsED1qLCqejZibIWbg-wzO34DrJcP_BbPCIUj8QWDrzr3u-D-sJWMXAyepoSzARwz9vmzPuThLhHit-sXcu3iMsj9n2eTpK_qL9Jr8162QdCumdYudSpd87dU4SK7oPOTTK23y01OV6KbJqlC4Djsqy0NFRA4_rqMXDetfqa921Gm_WZ-ndRGb82bcdpHoymOve__qlitWDnnoMP4z; currentUser.Role=0; Downloadtransfers=true; currentUser.UserKey=Handheld batch-28-8888-IT Support-12/15/2022 1:57:09 AM; ClientIpAddress="
+					},
+					{
+						"key": "Origin",
+						"value": "https://bbicqa.groceryoutlet.com"
+					},
+					{
+						"key": "Referer",
+						"value": "https://bbicqa.groceryoutlet.com/Receiving"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "StoreNbr",
+						"value": "28"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "UserID",
+						"value": "8888"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"url": {
+					"raw": "https://bbicqa.groceryoutlet.com/api/POS/ViewMarkDownReport?DocNum=0&StartNumber=0&Count=0&Sent=false&StoreNbr=28",
+					"protocol": "https",
+					"host": [
+						"bbicqa",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"POS",
+						"ViewMarkDownReport"
+					],
+					"query": [
+						{
+							"key": "DocNum",
+							"value": "0"
+						},
+						{
+							"key": "StartNumber",
+							"value": "0"
+						},
+						{
+							"key": "Count",
+							"value": "0"
+						},
+						{
+							"key": "Sent",
+							"value": "false"
+						},
+						{
+							"key": "StoreNbr",
+							"value": "28"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC15_Check for Input parameter \"StoreNbr\" as blank",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Access_token",
+						"value": "LwqIjL2LHwP-NloRz18AackrTdFbUD7wc03ib25qaSG5y0PsED1qLCqejZibIWbg-wzO34DrJcP_BbPCIUj8QWDrzr3u-D-sJWMXAyepoSzARwz9vmzPuThLhHit-sXcu3iMsj9n2eTpK_qL9Jr8162QdCumdYudSpd87dU4SK7oPOTTK23y01OV6KbJqlC4Djsqy0NFRA4_rqMXDetfqa921Gm_WZ-ndRGb82bcdpHoymOve__qlitWDnnoMP4z"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer LwqIjL2LHwP-NloRz18AackrTdFbUD7wc03ib25qaSG5y0PsED1qLCqejZibIWbg-wzO34DrJcP_BbPCIUj8QWDrzr3u-D-sJWMXAyepoSzARwz9vmzPuThLhHit-sXcu3iMsj9n2eTpK_qL9Jr8162QdCumdYudSpd87dU4SK7oPOTTK23y01OV6KbJqlC4Djsqy0NFRA4_rqMXDetfqa921Gm_WZ-ndRGb82bcdpHoymOve__qlitWDnnoMP4z"
+					},
+					{
+						"key": "ClientIpAddress",
+						"value": "null"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Length",
+						"value": "0"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970; currentUser.UserID=8888; StoreNbr=28; token=LwqIjL2LHwP-NloRz18AackrTdFbUD7wc03ib25qaSG5y0PsED1qLCqejZibIWbg-wzO34DrJcP_BbPCIUj8QWDrzr3u-D-sJWMXAyepoSzARwz9vmzPuThLhHit-sXcu3iMsj9n2eTpK_qL9Jr8162QdCumdYudSpd87dU4SK7oPOTTK23y01OV6KbJqlC4Djsqy0NFRA4_rqMXDetfqa921Gm_WZ-ndRGb82bcdpHoymOve__qlitWDnnoMP4z; currentUser.Role=0; Downloadtransfers=true; currentUser.UserKey=Handheld batch-28-8888-IT Support-12/15/2022 1:57:09 AM; ClientIpAddress="
+					},
+					{
+						"key": "Origin",
+						"value": "https://bbicqa.groceryoutlet.com"
+					},
+					{
+						"key": "Referer",
+						"value": "https://bbicqa.groceryoutlet.com/Receiving"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "StoreNbr",
+						"value": "28"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "UserID",
+						"value": "8888"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"url": {
+					"raw": "https://bbicqa.groceryoutlet.com/api/POS/ViewMarkDownReport?DocNum=0&StartNumber=0&Count=0&Sent=false&StoreNbr=28",
+					"protocol": "https",
+					"host": [
+						"bbicqa",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"POS",
+						"ViewMarkDownReport"
+					],
+					"query": [
+						{
+							"key": "DocNum",
+							"value": "0"
+						},
+						{
+							"key": "StartNumber",
+							"value": "0"
+						},
+						{
+							"key": "Count",
+							"value": "0"
+						},
+						{
+							"key": "Sent",
+							"value": "false"
+						},
+						{
+							"key": "StoreNbr",
+							"value": "28"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

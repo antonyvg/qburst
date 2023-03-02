@@ -1,0 +1,3919 @@
+{
+	"info": {
+		"_postman_id": "16e54dd1-7e50-46b8-8c2e-8be65d75f4e8",
+		"name": "CreateDistroFromUpload-QA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TC01_Validate the API response",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "3Ja99XDUzighCX59SIMO_-rcbga8KrfzbzpQwQ0ezeS8f0Wa3QTdIw98zBjc5r3A-xKXqA2u1UbmgzQDpLP_Sff7N8k1:GcIFlIIS32nTsfKQBW7_bFP1I4-szDZNp-ZFwu9-9xLyceSgb80YswzqchdsQXYtojnCJ879gxpruvCnbJmBo0xrvGZBlBgkOHt2Ze5e_r_wUiZ-58nqCVuIEdxa1GB6wv1K5Q2"
+					},
+					{
+						"key": "api-token",
+						"value": "A451321b0bd5cc361f17ef950c2ca23d9fae2733a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "UploadFile",
+							"value": ",547176\r\n28,4\r\n",
+							"type": "text"
+						},
+						{
+							"key": "DistroUploadCriteria",
+							"value": "{\"ReasonID\":4,\"DelayDistributionStartDate\":\"2022-10-21\",\"DueDate\":\"2022-10-28\",\"AllowOnOrderGuide\":false,\"DivideAcrossDeliveriesDueDate\":\"1/1/0001\",\"WarehouseNbr\":95,\"AllowStoreDecrease\":true,\"MinQty\":0,\"DecreaseToQtyDistCode\":\"C\",\"AllowStoreIncrease\":true}",
+							"type": "text"
+						},
+						{
+							"key": "CurrentUser",
+							"value": "qb-ageorge",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/distribution/uploadDistroFile",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"distribution",
+						"uploadDistroFile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC02_Validate the API accepts input parameter",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "3Ja99XDUzighCX59SIMO_-rcbga8KrfzbzpQwQ0ezeS8f0Wa3QTdIw98zBjc5r3A-xKXqA2u1UbmgzQDpLP_Sff7N8k1:GcIFlIIS32nTsfKQBW7_bFP1I4-szDZNp-ZFwu9-9xLyceSgb80YswzqchdsQXYtojnCJ879gxpruvCnbJmBo0xrvGZBlBgkOHt2Ze5e_r_wUiZ-58nqCVuIEdxa1GB6wv1K5Q2"
+					},
+					{
+						"key": "api-token",
+						"value": "A451321b0bd5cc361f17ef950c2ca23d9fae2733a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "UploadFile",
+							"value": ",547176\r\n28,4\r\n",
+							"type": "text"
+						},
+						{
+							"key": "DistroUploadCriteria",
+							"value": "{\"ReasonID\":4,\"DelayDistributionStartDate\":\"2022-10-21\",\"DueDate\":\"2022-10-28\",\"AllowOnOrderGuide\":false,\"DivideAcrossDeliveriesDueDate\":\"1/1/0001\",\"WarehouseNbr\":95,\"AllowStoreDecrease\":true,\"MinQty\":0,\"DecreaseToQtyDistCode\":\"C\",\"AllowStoreIncrease\":true}",
+							"type": "text"
+						},
+						{
+							"key": "CurrentUser",
+							"value": "qb-ageorge",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/distribution/uploadDistroFile",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"distribution",
+						"uploadDistroFile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC03_Schema Validation for Input parameter \"Store Number\"",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "3Ja99XDUzighCX59SIMO_-rcbga8KrfzbzpQwQ0ezeS8f0Wa3QTdIw98zBjc5r3A-xKXqA2u1UbmgzQDpLP_Sff7N8k1:GcIFlIIS32nTsfKQBW7_bFP1I4-szDZNp-ZFwu9-9xLyceSgb80YswzqchdsQXYtojnCJ879gxpruvCnbJmBo0xrvGZBlBgkOHt2Ze5e_r_wUiZ-58nqCVuIEdxa1GB6wv1K5Q2"
+					},
+					{
+						"key": "api-token",
+						"value": "A451321b0bd5cc361f17ef950c2ca23d9fae2733a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "UploadFile",
+							"value": ",547176\r\n28,4\r\n",
+							"type": "text"
+						},
+						{
+							"key": "DistroUploadCriteria",
+							"value": "{\"ReasonID\":4,\"DelayDistributionStartDate\":\"2022-10-21\",\"DueDate\":\"2022-10-28\",\"AllowOnOrderGuide\":false,\"DivideAcrossDeliveriesDueDate\":\"1/1/0001\",\"WarehouseNbr\":95,\"AllowStoreDecrease\":true,\"MinQty\":0,\"DecreaseToQtyDistCode\":\"C\",\"AllowStoreIncrease\":true}",
+							"type": "text"
+						},
+						{
+							"key": "CurrentUser",
+							"value": "qb-ageorge",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/distribution/uploadDistroFile",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"distribution",
+						"uploadDistroFile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC04_Check for Input parameter \"Store Number\" as blank",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "3Ja99XDUzighCX59SIMO_-rcbga8KrfzbzpQwQ0ezeS8f0Wa3QTdIw98zBjc5r3A-xKXqA2u1UbmgzQDpLP_Sff7N8k1:GcIFlIIS32nTsfKQBW7_bFP1I4-szDZNp-ZFwu9-9xLyceSgb80YswzqchdsQXYtojnCJ879gxpruvCnbJmBo0xrvGZBlBgkOHt2Ze5e_r_wUiZ-58nqCVuIEdxa1GB6wv1K5Q2"
+					},
+					{
+						"key": "api-token",
+						"value": "A451321b0bd5cc361f17ef950c2ca23d9fae2733a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "UploadFile",
+							"value": ",547176\r\n28,4\r\n",
+							"type": "text"
+						},
+						{
+							"key": "DistroUploadCriteria",
+							"value": "{\"ReasonID\":4,\"DelayDistributionStartDate\":\"2022-10-21\",\"DueDate\":\"2022-10-28\",\"AllowOnOrderGuide\":false,\"DivideAcrossDeliveriesDueDate\":\"1/1/0001\",\"WarehouseNbr\":95,\"AllowStoreDecrease\":true,\"MinQty\":0,\"DecreaseToQtyDistCode\":\"C\",\"AllowStoreIncrease\":true}",
+							"type": "text"
+						},
+						{
+							"key": "CurrentUser",
+							"value": "qb-ageorge",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/distribution/uploadDistroFile",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"distribution",
+						"uploadDistroFile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC05_Schema Validation for Input parameter \"Item Number\"",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "3Ja99XDUzighCX59SIMO_-rcbga8KrfzbzpQwQ0ezeS8f0Wa3QTdIw98zBjc5r3A-xKXqA2u1UbmgzQDpLP_Sff7N8k1:GcIFlIIS32nTsfKQBW7_bFP1I4-szDZNp-ZFwu9-9xLyceSgb80YswzqchdsQXYtojnCJ879gxpruvCnbJmBo0xrvGZBlBgkOHt2Ze5e_r_wUiZ-58nqCVuIEdxa1GB6wv1K5Q2"
+					},
+					{
+						"key": "api-token",
+						"value": "A451321b0bd5cc361f17ef950c2ca23d9fae2733a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "UploadFile",
+							"value": ",547176\r\n28,4\r\n",
+							"type": "text"
+						},
+						{
+							"key": "DistroUploadCriteria",
+							"value": "{\"ReasonID\":4,\"DelayDistributionStartDate\":\"2022-10-21\",\"DueDate\":\"2022-10-28\",\"AllowOnOrderGuide\":false,\"DivideAcrossDeliveriesDueDate\":\"1/1/0001\",\"WarehouseNbr\":95,\"AllowStoreDecrease\":true,\"MinQty\":0,\"DecreaseToQtyDistCode\":\"C\",\"AllowStoreIncrease\":true}",
+							"type": "text"
+						},
+						{
+							"key": "CurrentUser",
+							"value": "qb-ageorge",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/distribution/uploadDistroFile",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"distribution",
+						"uploadDistroFile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC06_Check for Input parameter \"Item Number\" as blank",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "3Ja99XDUzighCX59SIMO_-rcbga8KrfzbzpQwQ0ezeS8f0Wa3QTdIw98zBjc5r3A-xKXqA2u1UbmgzQDpLP_Sff7N8k1:GcIFlIIS32nTsfKQBW7_bFP1I4-szDZNp-ZFwu9-9xLyceSgb80YswzqchdsQXYtojnCJ879gxpruvCnbJmBo0xrvGZBlBgkOHt2Ze5e_r_wUiZ-58nqCVuIEdxa1GB6wv1K5Q2"
+					},
+					{
+						"key": "api-token",
+						"value": "A451321b0bd5cc361f17ef950c2ca23d9fae2733a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "UploadFile",
+							"value": ",547176\r\n28,4\r\n",
+							"type": "text"
+						},
+						{
+							"key": "DistroUploadCriteria",
+							"value": "{\"ReasonID\":4,\"DelayDistributionStartDate\":\"2022-10-21\",\"DueDate\":\"2022-10-28\",\"AllowOnOrderGuide\":false,\"DivideAcrossDeliveriesDueDate\":\"1/1/0001\",\"WarehouseNbr\":95,\"AllowStoreDecrease\":true,\"MinQty\":0,\"DecreaseToQtyDistCode\":\"C\",\"AllowStoreIncrease\":true}",
+							"type": "text"
+						},
+						{
+							"key": "CurrentUser",
+							"value": "qb-ageorge",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/distribution/uploadDistroFile",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"distribution",
+						"uploadDistroFile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC07_Schema Validation for Input parameter \"Quantity\"",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "3Ja99XDUzighCX59SIMO_-rcbga8KrfzbzpQwQ0ezeS8f0Wa3QTdIw98zBjc5r3A-xKXqA2u1UbmgzQDpLP_Sff7N8k1:GcIFlIIS32nTsfKQBW7_bFP1I4-szDZNp-ZFwu9-9xLyceSgb80YswzqchdsQXYtojnCJ879gxpruvCnbJmBo0xrvGZBlBgkOHt2Ze5e_r_wUiZ-58nqCVuIEdxa1GB6wv1K5Q2"
+					},
+					{
+						"key": "api-token",
+						"value": "A451321b0bd5cc361f17ef950c2ca23d9fae2733a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "UploadFile",
+							"value": ",547176\r\n28,4\r\n",
+							"type": "text"
+						},
+						{
+							"key": "DistroUploadCriteria",
+							"value": "{\"ReasonID\":4,\"DelayDistributionStartDate\":\"2022-10-21\",\"DueDate\":\"2022-10-28\",\"AllowOnOrderGuide\":false,\"DivideAcrossDeliveriesDueDate\":\"1/1/0001\",\"WarehouseNbr\":95,\"AllowStoreDecrease\":true,\"MinQty\":0,\"DecreaseToQtyDistCode\":\"C\",\"AllowStoreIncrease\":true}",
+							"type": "text"
+						},
+						{
+							"key": "CurrentUser",
+							"value": "qb-ageorge",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/distribution/uploadDistroFile",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"distribution",
+						"uploadDistroFile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC08_Check for Input parameter \"Quantity\" as blank",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "3Ja99XDUzighCX59SIMO_-rcbga8KrfzbzpQwQ0ezeS8f0Wa3QTdIw98zBjc5r3A-xKXqA2u1UbmgzQDpLP_Sff7N8k1:GcIFlIIS32nTsfKQBW7_bFP1I4-szDZNp-ZFwu9-9xLyceSgb80YswzqchdsQXYtojnCJ879gxpruvCnbJmBo0xrvGZBlBgkOHt2Ze5e_r_wUiZ-58nqCVuIEdxa1GB6wv1K5Q2"
+					},
+					{
+						"key": "api-token",
+						"value": "A451321b0bd5cc361f17ef950c2ca23d9fae2733a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "UploadFile",
+							"value": ",547176\r\n28,4\r\n",
+							"type": "text"
+						},
+						{
+							"key": "DistroUploadCriteria",
+							"value": "{\"ReasonID\":4,\"DelayDistributionStartDate\":\"2022-10-21\",\"DueDate\":\"2022-10-28\",\"AllowOnOrderGuide\":false,\"DivideAcrossDeliveriesDueDate\":\"1/1/0001\",\"WarehouseNbr\":95,\"AllowStoreDecrease\":true,\"MinQty\":0,\"DecreaseToQtyDistCode\":\"C\",\"AllowStoreIncrease\":true}",
+							"type": "text"
+						},
+						{
+							"key": "CurrentUser",
+							"value": "qb-ageorge",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/distribution/uploadDistroFile",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"distribution",
+						"uploadDistroFile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC10_Validate the API using GET method instead of POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "3Ja99XDUzighCX59SIMO_-rcbga8KrfzbzpQwQ0ezeS8f0Wa3QTdIw98zBjc5r3A-xKXqA2u1UbmgzQDpLP_Sff7N8k1:GcIFlIIS32nTsfKQBW7_bFP1I4-szDZNp-ZFwu9-9xLyceSgb80YswzqchdsQXYtojnCJ879gxpruvCnbJmBo0xrvGZBlBgkOHt2Ze5e_r_wUiZ-58nqCVuIEdxa1GB6wv1K5Q2"
+					},
+					{
+						"key": "api-token",
+						"value": "A451321b0bd5cc361f17ef950c2ca23d9fae2733a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "UploadFile",
+							"value": ",547176\r\n28,4\r\n",
+							"type": "text"
+						},
+						{
+							"key": "DistroUploadCriteria",
+							"value": "{\"ReasonID\":4,\"DelayDistributionStartDate\":\"2022-10-21\",\"DueDate\":\"2022-10-28\",\"AllowOnOrderGuide\":false,\"DivideAcrossDeliveriesDueDate\":\"1/1/0001\",\"WarehouseNbr\":95,\"AllowStoreDecrease\":true,\"MinQty\":0,\"DecreaseToQtyDistCode\":\"C\",\"AllowStoreIncrease\":true}",
+							"type": "text"
+						},
+						{
+							"key": "CurrentUser",
+							"value": "qb-ageorge",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/distribution/uploadDistroFile",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"distribution",
+						"uploadDistroFile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC10_Validate the API using GET method instead of POST CopyTC11_Validate Response for invalid URL",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "3Ja99XDUzighCX59SIMO_-rcbga8KrfzbzpQwQ0ezeS8f0Wa3QTdIw98zBjc5r3A-xKXqA2u1UbmgzQDpLP_Sff7N8k1:GcIFlIIS32nTsfKQBW7_bFP1I4-szDZNp-ZFwu9-9xLyceSgb80YswzqchdsQXYtojnCJ879gxpruvCnbJmBo0xrvGZBlBgkOHt2Ze5e_r_wUiZ-58nqCVuIEdxa1GB6wv1K5Q2"
+					},
+					{
+						"key": "api-token",
+						"value": "A451321b0bd5cc361f17ef950c2ca23d9fae2733a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "UploadFile",
+							"value": ",547176\r\n28,4\r\n",
+							"type": "text"
+						},
+						{
+							"key": "DistroUploadCriteria",
+							"value": "{\"ReasonID\":4,\"DelayDistributionStartDate\":\"2022-10-21\",\"DueDate\":\"2022-10-28\",\"AllowOnOrderGuide\":false,\"DivideAcrossDeliveriesDueDate\":\"1/1/0001\",\"WarehouseNbr\":95,\"AllowStoreDecrease\":true,\"MinQty\":0,\"DecreaseToQtyDistCode\":\"C\",\"AllowStoreIncrease\":true}",
+							"type": "text"
+						},
+						{
+							"key": "CurrentUser",
+							"value": "qb-ageorge",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/distribution/uploadDistroFile",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"distribution",
+						"uploadDistroFile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC12_Schema Validation for Input parameter \"ReasonID\"",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "3Ja99XDUzighCX59SIMO_-rcbga8KrfzbzpQwQ0ezeS8f0Wa3QTdIw98zBjc5r3A-xKXqA2u1UbmgzQDpLP_Sff7N8k1:GcIFlIIS32nTsfKQBW7_bFP1I4-szDZNp-ZFwu9-9xLyceSgb80YswzqchdsQXYtojnCJ879gxpruvCnbJmBo0xrvGZBlBgkOHt2Ze5e_r_wUiZ-58nqCVuIEdxa1GB6wv1K5Q2"
+					},
+					{
+						"key": "api-token",
+						"value": "A451321b0bd5cc361f17ef950c2ca23d9fae2733a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "UploadFile",
+							"value": ",547176\r\n28,4\r\n",
+							"type": "text"
+						},
+						{
+							"key": "DistroUploadCriteria",
+							"value": "{\"ReasonID\":4,\"DelayDistributionStartDate\":\"2022-10-21\",\"DueDate\":\"2022-10-28\",\"AllowOnOrderGuide\":false,\"DivideAcrossDeliveriesDueDate\":\"1/1/0001\",\"WarehouseNbr\":95,\"AllowStoreDecrease\":true,\"MinQty\":0,\"DecreaseToQtyDistCode\":\"C\",\"AllowStoreIncrease\":true}",
+							"type": "text"
+						},
+						{
+							"key": "CurrentUser",
+							"value": "qb-ageorge",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/distribution/uploadDistroFile",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"distribution",
+						"uploadDistroFile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC13_Check for Input parameter \"ReasonID\" as blank",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "3Ja99XDUzighCX59SIMO_-rcbga8KrfzbzpQwQ0ezeS8f0Wa3QTdIw98zBjc5r3A-xKXqA2u1UbmgzQDpLP_Sff7N8k1:GcIFlIIS32nTsfKQBW7_bFP1I4-szDZNp-ZFwu9-9xLyceSgb80YswzqchdsQXYtojnCJ879gxpruvCnbJmBo0xrvGZBlBgkOHt2Ze5e_r_wUiZ-58nqCVuIEdxa1GB6wv1K5Q2"
+					},
+					{
+						"key": "api-token",
+						"value": "A451321b0bd5cc361f17ef950c2ca23d9fae2733a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "UploadFile",
+							"value": ",547176\r\n28,4\r\n",
+							"type": "text"
+						},
+						{
+							"key": "DistroUploadCriteria",
+							"value": "{\"ReasonID\":4,\"DelayDistributionStartDate\":\"2022-10-21\",\"DueDate\":\"2022-10-28\",\"AllowOnOrderGuide\":false,\"DivideAcrossDeliveriesDueDate\":\"1/1/0001\",\"WarehouseNbr\":95,\"AllowStoreDecrease\":true,\"MinQty\":0,\"DecreaseToQtyDistCode\":\"C\",\"AllowStoreIncrease\":true}",
+							"type": "text"
+						},
+						{
+							"key": "CurrentUser",
+							"value": "qb-ageorge",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/distribution/uploadDistroFile",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"distribution",
+						"uploadDistroFile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC14_Schema Validation for Input parameter \"DelayDistributionStartDate\"",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "3Ja99XDUzighCX59SIMO_-rcbga8KrfzbzpQwQ0ezeS8f0Wa3QTdIw98zBjc5r3A-xKXqA2u1UbmgzQDpLP_Sff7N8k1:GcIFlIIS32nTsfKQBW7_bFP1I4-szDZNp-ZFwu9-9xLyceSgb80YswzqchdsQXYtojnCJ879gxpruvCnbJmBo0xrvGZBlBgkOHt2Ze5e_r_wUiZ-58nqCVuIEdxa1GB6wv1K5Q2"
+					},
+					{
+						"key": "api-token",
+						"value": "A451321b0bd5cc361f17ef950c2ca23d9fae2733a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "UploadFile",
+							"value": ",547176\r\n28,4\r\n",
+							"type": "text"
+						},
+						{
+							"key": "DistroUploadCriteria",
+							"value": "{\"ReasonID\":4,\"DelayDistributionStartDate\":\"2022-10-21\",\"DueDate\":\"2022-10-28\",\"AllowOnOrderGuide\":false,\"DivideAcrossDeliveriesDueDate\":\"1/1/0001\",\"WarehouseNbr\":95,\"AllowStoreDecrease\":true,\"MinQty\":0,\"DecreaseToQtyDistCode\":\"C\",\"AllowStoreIncrease\":true}",
+							"type": "text"
+						},
+						{
+							"key": "CurrentUser",
+							"value": "qb-ageorge",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/distribution/uploadDistroFile",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"distribution",
+						"uploadDistroFile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC15_Check for Input parameter \"DelayDistributionStartDate\" as blank",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "3Ja99XDUzighCX59SIMO_-rcbga8KrfzbzpQwQ0ezeS8f0Wa3QTdIw98zBjc5r3A-xKXqA2u1UbmgzQDpLP_Sff7N8k1:GcIFlIIS32nTsfKQBW7_bFP1I4-szDZNp-ZFwu9-9xLyceSgb80YswzqchdsQXYtojnCJ879gxpruvCnbJmBo0xrvGZBlBgkOHt2Ze5e_r_wUiZ-58nqCVuIEdxa1GB6wv1K5Q2"
+					},
+					{
+						"key": "api-token",
+						"value": "A451321b0bd5cc361f17ef950c2ca23d9fae2733a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "UploadFile",
+							"value": ",547176\r\n28,4\r\n",
+							"type": "text"
+						},
+						{
+							"key": "DistroUploadCriteria",
+							"value": "{\"ReasonID\":4,\"DelayDistributionStartDate\":\"2022-10-21\",\"DueDate\":\"2022-10-28\",\"AllowOnOrderGuide\":false,\"DivideAcrossDeliveriesDueDate\":\"1/1/0001\",\"WarehouseNbr\":95,\"AllowStoreDecrease\":true,\"MinQty\":0,\"DecreaseToQtyDistCode\":\"C\",\"AllowStoreIncrease\":true}",
+							"type": "text"
+						},
+						{
+							"key": "CurrentUser",
+							"value": "qb-ageorge",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/distribution/uploadDistroFile",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"distribution",
+						"uploadDistroFile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC16_Schema Validation for Input parameter \"DueDate\"",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "3Ja99XDUzighCX59SIMO_-rcbga8KrfzbzpQwQ0ezeS8f0Wa3QTdIw98zBjc5r3A-xKXqA2u1UbmgzQDpLP_Sff7N8k1:GcIFlIIS32nTsfKQBW7_bFP1I4-szDZNp-ZFwu9-9xLyceSgb80YswzqchdsQXYtojnCJ879gxpruvCnbJmBo0xrvGZBlBgkOHt2Ze5e_r_wUiZ-58nqCVuIEdxa1GB6wv1K5Q2"
+					},
+					{
+						"key": "api-token",
+						"value": "A451321b0bd5cc361f17ef950c2ca23d9fae2733a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "UploadFile",
+							"value": ",547176\r\n28,4\r\n",
+							"type": "text"
+						},
+						{
+							"key": "DistroUploadCriteria",
+							"value": "{\"ReasonID\":4,\"DelayDistributionStartDate\":\"2022-10-21\",\"DueDate\":\"2022-10-28\",\"AllowOnOrderGuide\":false,\"DivideAcrossDeliveriesDueDate\":\"1/1/0001\",\"WarehouseNbr\":95,\"AllowStoreDecrease\":true,\"MinQty\":0,\"DecreaseToQtyDistCode\":\"C\",\"AllowStoreIncrease\":true}",
+							"type": "text"
+						},
+						{
+							"key": "CurrentUser",
+							"value": "qb-ageorge",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/distribution/uploadDistroFile",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"distribution",
+						"uploadDistroFile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC17_Check for Input parameter \"DueDate\" as blank",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "3Ja99XDUzighCX59SIMO_-rcbga8KrfzbzpQwQ0ezeS8f0Wa3QTdIw98zBjc5r3A-xKXqA2u1UbmgzQDpLP_Sff7N8k1:GcIFlIIS32nTsfKQBW7_bFP1I4-szDZNp-ZFwu9-9xLyceSgb80YswzqchdsQXYtojnCJ879gxpruvCnbJmBo0xrvGZBlBgkOHt2Ze5e_r_wUiZ-58nqCVuIEdxa1GB6wv1K5Q2"
+					},
+					{
+						"key": "api-token",
+						"value": "A451321b0bd5cc361f17ef950c2ca23d9fae2733a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "UploadFile",
+							"value": ",547176\r\n28,4\r\n",
+							"type": "text"
+						},
+						{
+							"key": "DistroUploadCriteria",
+							"value": "{\"ReasonID\":4,\"DelayDistributionStartDate\":\"2022-10-21\",\"DueDate\":\"2022-10-28\",\"AllowOnOrderGuide\":false,\"DivideAcrossDeliveriesDueDate\":\"1/1/0001\",\"WarehouseNbr\":95,\"AllowStoreDecrease\":true,\"MinQty\":0,\"DecreaseToQtyDistCode\":\"C\",\"AllowStoreIncrease\":true}",
+							"type": "text"
+						},
+						{
+							"key": "CurrentUser",
+							"value": "qb-ageorge",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/distribution/uploadDistroFile",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"distribution",
+						"uploadDistroFile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC18_Schema Validation for Input parameter \"AllowOnOrderGuide\"",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "3Ja99XDUzighCX59SIMO_-rcbga8KrfzbzpQwQ0ezeS8f0Wa3QTdIw98zBjc5r3A-xKXqA2u1UbmgzQDpLP_Sff7N8k1:GcIFlIIS32nTsfKQBW7_bFP1I4-szDZNp-ZFwu9-9xLyceSgb80YswzqchdsQXYtojnCJ879gxpruvCnbJmBo0xrvGZBlBgkOHt2Ze5e_r_wUiZ-58nqCVuIEdxa1GB6wv1K5Q2"
+					},
+					{
+						"key": "api-token",
+						"value": "A451321b0bd5cc361f17ef950c2ca23d9fae2733a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "UploadFile",
+							"value": ",547176\r\n28,4\r\n",
+							"type": "text"
+						},
+						{
+							"key": "DistroUploadCriteria",
+							"value": "{\"ReasonID\":4,\"DelayDistributionStartDate\":\"2022-10-21\",\"DueDate\":\"2022-10-28\",\"AllowOnOrderGuide\":false,\"DivideAcrossDeliveriesDueDate\":\"1/1/0001\",\"WarehouseNbr\":95,\"AllowStoreDecrease\":true,\"MinQty\":0,\"DecreaseToQtyDistCode\":\"C\",\"AllowStoreIncrease\":true}",
+							"type": "text"
+						},
+						{
+							"key": "CurrentUser",
+							"value": "qb-ageorge",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/distribution/uploadDistroFile",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"distribution",
+						"uploadDistroFile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC19_Check for Input parameter \"AllowOnOrderGuide\" as blank",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "3Ja99XDUzighCX59SIMO_-rcbga8KrfzbzpQwQ0ezeS8f0Wa3QTdIw98zBjc5r3A-xKXqA2u1UbmgzQDpLP_Sff7N8k1:GcIFlIIS32nTsfKQBW7_bFP1I4-szDZNp-ZFwu9-9xLyceSgb80YswzqchdsQXYtojnCJ879gxpruvCnbJmBo0xrvGZBlBgkOHt2Ze5e_r_wUiZ-58nqCVuIEdxa1GB6wv1K5Q2"
+					},
+					{
+						"key": "api-token",
+						"value": "A451321b0bd5cc361f17ef950c2ca23d9fae2733a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "UploadFile",
+							"value": ",547176\r\n28,4\r\n",
+							"type": "text"
+						},
+						{
+							"key": "DistroUploadCriteria",
+							"value": "{\"ReasonID\":4,\"DelayDistributionStartDate\":\"2022-10-21\",\"DueDate\":\"2022-10-28\",\"AllowOnOrderGuide\":false,\"DivideAcrossDeliveriesDueDate\":\"1/1/0001\",\"WarehouseNbr\":95,\"AllowStoreDecrease\":true,\"MinQty\":0,\"DecreaseToQtyDistCode\":\"C\",\"AllowStoreIncrease\":true}",
+							"type": "text"
+						},
+						{
+							"key": "CurrentUser",
+							"value": "qb-ageorge",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/distribution/uploadDistroFile",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"distribution",
+						"uploadDistroFile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC20_Schema Validation for Input parameter \"DivideAcrossDeliveriesDueDate\"",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "3Ja99XDUzighCX59SIMO_-rcbga8KrfzbzpQwQ0ezeS8f0Wa3QTdIw98zBjc5r3A-xKXqA2u1UbmgzQDpLP_Sff7N8k1:GcIFlIIS32nTsfKQBW7_bFP1I4-szDZNp-ZFwu9-9xLyceSgb80YswzqchdsQXYtojnCJ879gxpruvCnbJmBo0xrvGZBlBgkOHt2Ze5e_r_wUiZ-58nqCVuIEdxa1GB6wv1K5Q2"
+					},
+					{
+						"key": "api-token",
+						"value": "A451321b0bd5cc361f17ef950c2ca23d9fae2733a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "UploadFile",
+							"value": ",547176\r\n28,4\r\n",
+							"type": "text"
+						},
+						{
+							"key": "DistroUploadCriteria",
+							"value": "{\"ReasonID\":4,\"DelayDistributionStartDate\":\"2022-10-21\",\"DueDate\":\"2022-10-28\",\"AllowOnOrderGuide\":false,\"DivideAcrossDeliveriesDueDate\":\"1/1/0001\",\"WarehouseNbr\":95,\"AllowStoreDecrease\":true,\"MinQty\":0,\"DecreaseToQtyDistCode\":\"C\",\"AllowStoreIncrease\":true}",
+							"type": "text"
+						},
+						{
+							"key": "CurrentUser",
+							"value": "qb-ageorge",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/distribution/uploadDistroFile",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"distribution",
+						"uploadDistroFile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC21_Check for Input parameter \"DivideAcrossDeliveriesDueDate\" as blank",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "3Ja99XDUzighCX59SIMO_-rcbga8KrfzbzpQwQ0ezeS8f0Wa3QTdIw98zBjc5r3A-xKXqA2u1UbmgzQDpLP_Sff7N8k1:GcIFlIIS32nTsfKQBW7_bFP1I4-szDZNp-ZFwu9-9xLyceSgb80YswzqchdsQXYtojnCJ879gxpruvCnbJmBo0xrvGZBlBgkOHt2Ze5e_r_wUiZ-58nqCVuIEdxa1GB6wv1K5Q2"
+					},
+					{
+						"key": "api-token",
+						"value": "A451321b0bd5cc361f17ef950c2ca23d9fae2733a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "UploadFile",
+							"value": ",547176\r\n28,4\r\n",
+							"type": "text"
+						},
+						{
+							"key": "DistroUploadCriteria",
+							"value": "{\"ReasonID\":4,\"DelayDistributionStartDate\":\"2022-10-21\",\"DueDate\":\"2022-10-28\",\"AllowOnOrderGuide\":false,\"DivideAcrossDeliveriesDueDate\":\"1/1/0001\",\"WarehouseNbr\":95,\"AllowStoreDecrease\":true,\"MinQty\":0,\"DecreaseToQtyDistCode\":\"C\",\"AllowStoreIncrease\":true}",
+							"type": "text"
+						},
+						{
+							"key": "CurrentUser",
+							"value": "qb-ageorge",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/distribution/uploadDistroFile",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"distribution",
+						"uploadDistroFile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC22_Schema Validation for Input parameter \"WarehouseNbr\"",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "3Ja99XDUzighCX59SIMO_-rcbga8KrfzbzpQwQ0ezeS8f0Wa3QTdIw98zBjc5r3A-xKXqA2u1UbmgzQDpLP_Sff7N8k1:GcIFlIIS32nTsfKQBW7_bFP1I4-szDZNp-ZFwu9-9xLyceSgb80YswzqchdsQXYtojnCJ879gxpruvCnbJmBo0xrvGZBlBgkOHt2Ze5e_r_wUiZ-58nqCVuIEdxa1GB6wv1K5Q2"
+					},
+					{
+						"key": "api-token",
+						"value": "A451321b0bd5cc361f17ef950c2ca23d9fae2733a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "UploadFile",
+							"value": ",547176\r\n28,4\r\n",
+							"type": "text"
+						},
+						{
+							"key": "DistroUploadCriteria",
+							"value": "{\"ReasonID\":4,\"DelayDistributionStartDate\":\"2022-10-21\",\"DueDate\":\"2022-10-28\",\"AllowOnOrderGuide\":false,\"DivideAcrossDeliveriesDueDate\":\"1/1/0001\",\"WarehouseNbr\":95,\"AllowStoreDecrease\":true,\"MinQty\":0,\"DecreaseToQtyDistCode\":\"C\",\"AllowStoreIncrease\":true}",
+							"type": "text"
+						},
+						{
+							"key": "CurrentUser",
+							"value": "qb-ageorge",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/distribution/uploadDistroFile",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"distribution",
+						"uploadDistroFile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC23_Check for Input parameter \"WarehouseNbr\" as blank",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "3Ja99XDUzighCX59SIMO_-rcbga8KrfzbzpQwQ0ezeS8f0Wa3QTdIw98zBjc5r3A-xKXqA2u1UbmgzQDpLP_Sff7N8k1:GcIFlIIS32nTsfKQBW7_bFP1I4-szDZNp-ZFwu9-9xLyceSgb80YswzqchdsQXYtojnCJ879gxpruvCnbJmBo0xrvGZBlBgkOHt2Ze5e_r_wUiZ-58nqCVuIEdxa1GB6wv1K5Q2"
+					},
+					{
+						"key": "api-token",
+						"value": "A451321b0bd5cc361f17ef950c2ca23d9fae2733a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "UploadFile",
+							"value": ",547176\r\n28,4\r\n",
+							"type": "text"
+						},
+						{
+							"key": "DistroUploadCriteria",
+							"value": "{\"ReasonID\":4,\"DelayDistributionStartDate\":\"2022-10-21\",\"DueDate\":\"2022-10-28\",\"AllowOnOrderGuide\":false,\"DivideAcrossDeliveriesDueDate\":\"1/1/0001\",\"WarehouseNbr\":95,\"AllowStoreDecrease\":true,\"MinQty\":0,\"DecreaseToQtyDistCode\":\"C\",\"AllowStoreIncrease\":true}",
+							"type": "text"
+						},
+						{
+							"key": "CurrentUser",
+							"value": "qb-ageorge",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/distribution/uploadDistroFile",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"distribution",
+						"uploadDistroFile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC24_Schema Validation for Input parameter \"AllowStoreDecrease\"",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "3Ja99XDUzighCX59SIMO_-rcbga8KrfzbzpQwQ0ezeS8f0Wa3QTdIw98zBjc5r3A-xKXqA2u1UbmgzQDpLP_Sff7N8k1:GcIFlIIS32nTsfKQBW7_bFP1I4-szDZNp-ZFwu9-9xLyceSgb80YswzqchdsQXYtojnCJ879gxpruvCnbJmBo0xrvGZBlBgkOHt2Ze5e_r_wUiZ-58nqCVuIEdxa1GB6wv1K5Q2"
+					},
+					{
+						"key": "api-token",
+						"value": "A451321b0bd5cc361f17ef950c2ca23d9fae2733a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "UploadFile",
+							"value": ",547176\r\n28,4\r\n",
+							"type": "text"
+						},
+						{
+							"key": "DistroUploadCriteria",
+							"value": "{\"ReasonID\":4,\"DelayDistributionStartDate\":\"2022-10-21\",\"DueDate\":\"2022-10-28\",\"AllowOnOrderGuide\":false,\"DivideAcrossDeliveriesDueDate\":\"1/1/0001\",\"WarehouseNbr\":95,\"AllowStoreDecrease\":true,\"MinQty\":0,\"DecreaseToQtyDistCode\":\"C\",\"AllowStoreIncrease\":true}",
+							"type": "text"
+						},
+						{
+							"key": "CurrentUser",
+							"value": "qb-ageorge",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/distribution/uploadDistroFile",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"distribution",
+						"uploadDistroFile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC25_Check for Input parameter \"AllowStoreDecrease\" as blank",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "3Ja99XDUzighCX59SIMO_-rcbga8KrfzbzpQwQ0ezeS8f0Wa3QTdIw98zBjc5r3A-xKXqA2u1UbmgzQDpLP_Sff7N8k1:GcIFlIIS32nTsfKQBW7_bFP1I4-szDZNp-ZFwu9-9xLyceSgb80YswzqchdsQXYtojnCJ879gxpruvCnbJmBo0xrvGZBlBgkOHt2Ze5e_r_wUiZ-58nqCVuIEdxa1GB6wv1K5Q2"
+					},
+					{
+						"key": "api-token",
+						"value": "A451321b0bd5cc361f17ef950c2ca23d9fae2733a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "UploadFile",
+							"value": ",547176\r\n28,4\r\n",
+							"type": "text"
+						},
+						{
+							"key": "DistroUploadCriteria",
+							"value": "{\"ReasonID\":4,\"DelayDistributionStartDate\":\"2022-10-21\",\"DueDate\":\"2022-10-28\",\"AllowOnOrderGuide\":false,\"DivideAcrossDeliveriesDueDate\":\"1/1/0001\",\"WarehouseNbr\":95,\"AllowStoreDecrease\":true,\"MinQty\":0,\"DecreaseToQtyDistCode\":\"C\",\"AllowStoreIncrease\":true}",
+							"type": "text"
+						},
+						{
+							"key": "CurrentUser",
+							"value": "qb-ageorge",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/distribution/uploadDistroFile",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"distribution",
+						"uploadDistroFile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC26_Schema Validation for Input parameter \"MinQty\"",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "3Ja99XDUzighCX59SIMO_-rcbga8KrfzbzpQwQ0ezeS8f0Wa3QTdIw98zBjc5r3A-xKXqA2u1UbmgzQDpLP_Sff7N8k1:GcIFlIIS32nTsfKQBW7_bFP1I4-szDZNp-ZFwu9-9xLyceSgb80YswzqchdsQXYtojnCJ879gxpruvCnbJmBo0xrvGZBlBgkOHt2Ze5e_r_wUiZ-58nqCVuIEdxa1GB6wv1K5Q2"
+					},
+					{
+						"key": "api-token",
+						"value": "A451321b0bd5cc361f17ef950c2ca23d9fae2733a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "UploadFile",
+							"value": ",547176\r\n28,4\r\n",
+							"type": "text"
+						},
+						{
+							"key": "DistroUploadCriteria",
+							"value": "{\"ReasonID\":4,\"DelayDistributionStartDate\":\"2022-10-21\",\"DueDate\":\"2022-10-28\",\"AllowOnOrderGuide\":false,\"DivideAcrossDeliveriesDueDate\":\"1/1/0001\",\"WarehouseNbr\":95,\"AllowStoreDecrease\":true,\"MinQty\":0,\"DecreaseToQtyDistCode\":\"C\",\"AllowStoreIncrease\":true}",
+							"type": "text"
+						},
+						{
+							"key": "CurrentUser",
+							"value": "qb-ageorge",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/distribution/uploadDistroFile",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"distribution",
+						"uploadDistroFile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC27_Check for Input parameter \"MinQty\" as blank",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "3Ja99XDUzighCX59SIMO_-rcbga8KrfzbzpQwQ0ezeS8f0Wa3QTdIw98zBjc5r3A-xKXqA2u1UbmgzQDpLP_Sff7N8k1:GcIFlIIS32nTsfKQBW7_bFP1I4-szDZNp-ZFwu9-9xLyceSgb80YswzqchdsQXYtojnCJ879gxpruvCnbJmBo0xrvGZBlBgkOHt2Ze5e_r_wUiZ-58nqCVuIEdxa1GB6wv1K5Q2"
+					},
+					{
+						"key": "api-token",
+						"value": "A451321b0bd5cc361f17ef950c2ca23d9fae2733a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "UploadFile",
+							"value": ",547176\r\n28,4\r\n",
+							"type": "text"
+						},
+						{
+							"key": "DistroUploadCriteria",
+							"value": "{\"ReasonID\":4,\"DelayDistributionStartDate\":\"2022-10-21\",\"DueDate\":\"2022-10-28\",\"AllowOnOrderGuide\":false,\"DivideAcrossDeliveriesDueDate\":\"1/1/0001\",\"WarehouseNbr\":95,\"AllowStoreDecrease\":true,\"MinQty\":0,\"DecreaseToQtyDistCode\":\"C\",\"AllowStoreIncrease\":true}",
+							"type": "text"
+						},
+						{
+							"key": "CurrentUser",
+							"value": "qb-ageorge",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/distribution/uploadDistroFile",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"distribution",
+						"uploadDistroFile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC28_Schema Validation for Input parameter \"DecreaseToQtyDistCode\"",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "3Ja99XDUzighCX59SIMO_-rcbga8KrfzbzpQwQ0ezeS8f0Wa3QTdIw98zBjc5r3A-xKXqA2u1UbmgzQDpLP_Sff7N8k1:GcIFlIIS32nTsfKQBW7_bFP1I4-szDZNp-ZFwu9-9xLyceSgb80YswzqchdsQXYtojnCJ879gxpruvCnbJmBo0xrvGZBlBgkOHt2Ze5e_r_wUiZ-58nqCVuIEdxa1GB6wv1K5Q2"
+					},
+					{
+						"key": "api-token",
+						"value": "A451321b0bd5cc361f17ef950c2ca23d9fae2733a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "UploadFile",
+							"value": ",547176\r\n28,4\r\n",
+							"type": "text"
+						},
+						{
+							"key": "DistroUploadCriteria",
+							"value": "{\"ReasonID\":4,\"DelayDistributionStartDate\":\"2022-10-21\",\"DueDate\":\"2022-10-28\",\"AllowOnOrderGuide\":false,\"DivideAcrossDeliveriesDueDate\":\"1/1/0001\",\"WarehouseNbr\":95,\"AllowStoreDecrease\":true,\"MinQty\":0,\"DecreaseToQtyDistCode\":\"C\",\"AllowStoreIncrease\":true}",
+							"type": "text"
+						},
+						{
+							"key": "CurrentUser",
+							"value": "qb-ageorge",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/distribution/uploadDistroFile",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"distribution",
+						"uploadDistroFile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC29_Check for Input parameter \"DecreaseToQtyDistCode\" as blank",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "3Ja99XDUzighCX59SIMO_-rcbga8KrfzbzpQwQ0ezeS8f0Wa3QTdIw98zBjc5r3A-xKXqA2u1UbmgzQDpLP_Sff7N8k1:GcIFlIIS32nTsfKQBW7_bFP1I4-szDZNp-ZFwu9-9xLyceSgb80YswzqchdsQXYtojnCJ879gxpruvCnbJmBo0xrvGZBlBgkOHt2Ze5e_r_wUiZ-58nqCVuIEdxa1GB6wv1K5Q2"
+					},
+					{
+						"key": "api-token",
+						"value": "A451321b0bd5cc361f17ef950c2ca23d9fae2733a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "UploadFile",
+							"value": ",547176\r\n28,4\r\n",
+							"type": "text"
+						},
+						{
+							"key": "DistroUploadCriteria",
+							"value": "{\"ReasonID\":4,\"DelayDistributionStartDate\":\"2022-10-21\",\"DueDate\":\"2022-10-28\",\"AllowOnOrderGuide\":false,\"DivideAcrossDeliveriesDueDate\":\"1/1/0001\",\"WarehouseNbr\":95,\"AllowStoreDecrease\":true,\"MinQty\":0,\"DecreaseToQtyDistCode\":\"C\",\"AllowStoreIncrease\":true}",
+							"type": "text"
+						},
+						{
+							"key": "CurrentUser",
+							"value": "qb-ageorge",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/distribution/uploadDistroFile",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"distribution",
+						"uploadDistroFile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC30_Schema Validation for Input parameter \"AllowStoreIncrease\"",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "3Ja99XDUzighCX59SIMO_-rcbga8KrfzbzpQwQ0ezeS8f0Wa3QTdIw98zBjc5r3A-xKXqA2u1UbmgzQDpLP_Sff7N8k1:GcIFlIIS32nTsfKQBW7_bFP1I4-szDZNp-ZFwu9-9xLyceSgb80YswzqchdsQXYtojnCJ879gxpruvCnbJmBo0xrvGZBlBgkOHt2Ze5e_r_wUiZ-58nqCVuIEdxa1GB6wv1K5Q2"
+					},
+					{
+						"key": "api-token",
+						"value": "A451321b0bd5cc361f17ef950c2ca23d9fae2733a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "UploadFile",
+							"value": ",547176\r\n28,4\r\n",
+							"type": "text"
+						},
+						{
+							"key": "DistroUploadCriteria",
+							"value": "{\"ReasonID\":4,\"DelayDistributionStartDate\":\"2022-10-21\",\"DueDate\":\"2022-10-28\",\"AllowOnOrderGuide\":false,\"DivideAcrossDeliveriesDueDate\":\"1/1/0001\",\"WarehouseNbr\":95,\"AllowStoreDecrease\":true,\"MinQty\":0,\"DecreaseToQtyDistCode\":\"C\",\"AllowStoreIncrease\":true}",
+							"type": "text"
+						},
+						{
+							"key": "CurrentUser",
+							"value": "qb-ageorge",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/distribution/uploadDistroFile",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"distribution",
+						"uploadDistroFile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC31_Check for Input parameter \"AllowStoreIncrease\" as blank",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "3Ja99XDUzighCX59SIMO_-rcbga8KrfzbzpQwQ0ezeS8f0Wa3QTdIw98zBjc5r3A-xKXqA2u1UbmgzQDpLP_Sff7N8k1:GcIFlIIS32nTsfKQBW7_bFP1I4-szDZNp-ZFwu9-9xLyceSgb80YswzqchdsQXYtojnCJ879gxpruvCnbJmBo0xrvGZBlBgkOHt2Ze5e_r_wUiZ-58nqCVuIEdxa1GB6wv1K5Q2"
+					},
+					{
+						"key": "api-token",
+						"value": "A451321b0bd5cc361f17ef950c2ca23d9fae2733a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "UploadFile",
+							"value": ",547176\r\n28,4\r\n",
+							"type": "text"
+						},
+						{
+							"key": "DistroUploadCriteria",
+							"value": "{\"ReasonID\":4,\"DelayDistributionStartDate\":\"2022-10-21\",\"DueDate\":\"2022-10-28\",\"AllowOnOrderGuide\":false,\"DivideAcrossDeliveriesDueDate\":\"1/1/0001\",\"WarehouseNbr\":95,\"AllowStoreDecrease\":true,\"MinQty\":0,\"DecreaseToQtyDistCode\":\"C\",\"AllowStoreIncrease\":true}",
+							"type": "text"
+						},
+						{
+							"key": "CurrentUser",
+							"value": "qb-ageorge",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/distribution/uploadDistroFile",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"distribution",
+						"uploadDistroFile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC32_Schema Validation for Input parameter \"OverrideCoefficient\"",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "uGalfcPqyS9d42O7E6KmCGHvuU6ANyPHEb1ruKG46AircFskqYLz2JiAr7qWVQlFeskC7MeyFjxp7kM-X7cTzGCrUdg1:MxPvutGglKGd6vgtNPqkmSTUAagls_inRyAqgDDKIee1SZEtpmrb7_MEMstoteYcoTEyRzCMHN4xbjZ60Ce-UfK7u_k58gMHwAWQiKbfY0apzLQHcJBShyp7HAaOnRxhGafcyw2"
+					},
+					{
+						"key": "api-token",
+						"value": "A7623c9186a25858b51d962dad6e0a75a32cec59c"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "UploadFile",
+							"value": ",547176\r\n28,4\r\n",
+							"type": "text"
+						},
+						{
+							"key": "DistroUploadCriteria",
+							"value": "{\"ReasonID\":11,\"DelayDistributionStartDate\":\"2022-10-21\",\"DueDate\":\"2022-10-28\",\"AllowOnOrderGuide\":true,\"DivideAcrossDeliveriesDueDate\":\"2022-10-28\",\"WarehouseNbr\":95,\"AllowStoreDecrease\":true,\"MinQty\":0,\"DecreaseToQtyDistCode\":\"C\",\"AllowStoreIncrease\":true,\"OverrideCoefficient\":true,\"SubstractORQty\":true}",
+							"type": "text"
+						},
+						{
+							"key": "CurrentUser",
+							"value": "qb-ageorge",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/distribution/uploadDistroFile",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"distribution",
+						"uploadDistroFile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC33_Check for Input parameter \"OverrideCoefficient\" as blank",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "uGalfcPqyS9d42O7E6KmCGHvuU6ANyPHEb1ruKG46AircFskqYLz2JiAr7qWVQlFeskC7MeyFjxp7kM-X7cTzGCrUdg1:MxPvutGglKGd6vgtNPqkmSTUAagls_inRyAqgDDKIee1SZEtpmrb7_MEMstoteYcoTEyRzCMHN4xbjZ60Ce-UfK7u_k58gMHwAWQiKbfY0apzLQHcJBShyp7HAaOnRxhGafcyw2"
+					},
+					{
+						"key": "api-token",
+						"value": "A7623c9186a25858b51d962dad6e0a75a32cec59c"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "UploadFile",
+							"value": ",547176\r\n28,4\r\n",
+							"type": "text"
+						},
+						{
+							"key": "DistroUploadCriteria",
+							"value": "{\"ReasonID\":11,\"DelayDistributionStartDate\":\"2022-10-21\",\"DueDate\":\"2022-10-28\",\"AllowOnOrderGuide\":true,\"DivideAcrossDeliveriesDueDate\":\"2022-10-28\",\"WarehouseNbr\":95,\"AllowStoreDecrease\":true,\"MinQty\":0,\"DecreaseToQtyDistCode\":\"C\",\"AllowStoreIncrease\":true,\"OverrideCoefficient\":true,\"SubstractORQty\":true}",
+							"type": "text"
+						},
+						{
+							"key": "CurrentUser",
+							"value": "qb-ageorge",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/distribution/uploadDistroFile",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"distribution",
+						"uploadDistroFile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC34_Schema Validation for Input parameter \"SubstractORQty\"",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "uGalfcPqyS9d42O7E6KmCGHvuU6ANyPHEb1ruKG46AircFskqYLz2JiAr7qWVQlFeskC7MeyFjxp7kM-X7cTzGCrUdg1:MxPvutGglKGd6vgtNPqkmSTUAagls_inRyAqgDDKIee1SZEtpmrb7_MEMstoteYcoTEyRzCMHN4xbjZ60Ce-UfK7u_k58gMHwAWQiKbfY0apzLQHcJBShyp7HAaOnRxhGafcyw2"
+					},
+					{
+						"key": "api-token",
+						"value": "A7623c9186a25858b51d962dad6e0a75a32cec59c"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "UploadFile",
+							"value": ",547176\r\n28,4\r\n",
+							"type": "text"
+						},
+						{
+							"key": "DistroUploadCriteria",
+							"value": "{\"ReasonID\":11,\"DelayDistributionStartDate\":\"2022-10-21\",\"DueDate\":\"2022-10-28\",\"AllowOnOrderGuide\":true,\"DivideAcrossDeliveriesDueDate\":\"2022-10-28\",\"WarehouseNbr\":95,\"AllowStoreDecrease\":true,\"MinQty\":0,\"DecreaseToQtyDistCode\":\"C\",\"AllowStoreIncrease\":true,\"OverrideCoefficient\":true,\"SubstractORQty\":true}",
+							"type": "text"
+						},
+						{
+							"key": "CurrentUser",
+							"value": "qb-ageorge",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/distribution/uploadDistroFile",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"distribution",
+						"uploadDistroFile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC35_Check for Input parameter \"SubstractORQty\" as blank",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "uGalfcPqyS9d42O7E6KmCGHvuU6ANyPHEb1ruKG46AircFskqYLz2JiAr7qWVQlFeskC7MeyFjxp7kM-X7cTzGCrUdg1:MxPvutGglKGd6vgtNPqkmSTUAagls_inRyAqgDDKIee1SZEtpmrb7_MEMstoteYcoTEyRzCMHN4xbjZ60Ce-UfK7u_k58gMHwAWQiKbfY0apzLQHcJBShyp7HAaOnRxhGafcyw2"
+					},
+					{
+						"key": "api-token",
+						"value": "A7623c9186a25858b51d962dad6e0a75a32cec59c"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "UploadFile",
+							"value": ",547176\r\n28,4\r\n",
+							"type": "text"
+						},
+						{
+							"key": "DistroUploadCriteria",
+							"value": "{\"ReasonID\":11,\"DelayDistributionStartDate\":\"2022-10-21\",\"DueDate\":\"2022-10-28\",\"AllowOnOrderGuide\":true,\"DivideAcrossDeliveriesDueDate\":\"2022-10-28\",\"WarehouseNbr\":95,\"AllowStoreDecrease\":true,\"MinQty\":0,\"DecreaseToQtyDistCode\":\"C\",\"AllowStoreIncrease\":true,\"OverrideCoefficient\":true,\"SubstractORQty\":true}",
+							"type": "text"
+						},
+						{
+							"key": "CurrentUser",
+							"value": "qb-ageorge",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/distribution/uploadDistroFile",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"distribution",
+						"uploadDistroFile"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

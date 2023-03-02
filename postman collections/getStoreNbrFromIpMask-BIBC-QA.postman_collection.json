@@ -1,0 +1,397 @@
+{
+	"info": {
+		"_postman_id": "fbac35c4-a739-4c62-993f-43dedac8d13a",
+		"name": "getStoreNbrFromIpMask-BIBC-QA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TC01_Validate the API response",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Access_token",
+						"value": "WBa4fumIKGwmHaJpnV56S8mQPtz19QDBU_mD5YpmRFg1hKRJhgzf2VosZUWYdO2VLNeYRNnqdH3CWHcMS5C1nZZNdAu3XmlPjutaIaZLhzNHmulA9HzODHJDhm9T01-rdaGW3LptTKQG85RkF2fltZ_-5xMpCPDwxs0H81Wu4nffLwIr3NGr1K1sJROGFLpmgmdjJcQeenn2pNkAssZZdWROM4J65Py4uQfmxRL4eYwFKnEnihAT_MbUN3GjRdld"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer WBa4fumIKGwmHaJpnV56S8mQPtz19QDBU_mD5YpmRFg1hKRJhgzf2VosZUWYdO2VLNeYRNnqdH3CWHcMS5C1nZZNdAu3XmlPjutaIaZLhzNHmulA9HzODHJDhm9T01-rdaGW3LptTKQG85RkF2fltZ_-5xMpCPDwxs0H81Wu4nffLwIr3NGr1K1sJROGFLpmgmdjJcQeenn2pNkAssZZdWROM4J65Py4uQfmxRL4eYwFKnEnihAT_MbUN3GjRdld"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-type",
+						"value": "application/json; charset=utf-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; __qca=P0-83208946-1665497888970; currentUser.UserID=8888; StoreNbr=28; token=WBa4fumIKGwmHaJpnV56S8mQPtz19QDBU_mD5YpmRFg1hKRJhgzf2VosZUWYdO2VLNeYRNnqdH3CWHcMS5C1nZZNdAu3XmlPjutaIaZLhzNHmulA9HzODHJDhm9T01-rdaGW3LptTKQG85RkF2fltZ_-5xMpCPDwxs0H81Wu4nffLwIr3NGr1K1sJROGFLpmgmdjJcQeenn2pNkAssZZdWROM4J65Py4uQfmxRL4eYwFKnEnihAT_MbUN3GjRdld; currentUser.Role=0; currentUser.UserKey=Handheld batch-28-8888-IT Support-1/24/2023 4:34:13 AM; ClientIpAddress="
+					},
+					{
+						"key": "Referer",
+						"value": "https://bbicqa.groceryoutlet.com/Device"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "StoreNbr",
+						"value": "28"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "UserID",
+						"value": "8888"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"url": {
+					"raw": "https://bbicqa.groceryoutlet.com/api/bbicRollout/getStoreNbrFromIpMask?maskIp=192.168.28.X",
+					"protocol": "https",
+					"host": [
+						"bbicqa",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"bbicRollout",
+						"getStoreNbrFromIpMask"
+					],
+					"query": [
+						{
+							"key": "maskIp",
+							"value": "192.168.28.X"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC02_Validate the API accepts input parameter",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Access_token",
+						"value": "WBa4fumIKGwmHaJpnV56S8mQPtz19QDBU_mD5YpmRFg1hKRJhgzf2VosZUWYdO2VLNeYRNnqdH3CWHcMS5C1nZZNdAu3XmlPjutaIaZLhzNHmulA9HzODHJDhm9T01-rdaGW3LptTKQG85RkF2fltZ_-5xMpCPDwxs0H81Wu4nffLwIr3NGr1K1sJROGFLpmgmdjJcQeenn2pNkAssZZdWROM4J65Py4uQfmxRL4eYwFKnEnihAT_MbUN3GjRdld"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer WBa4fumIKGwmHaJpnV56S8mQPtz19QDBU_mD5YpmRFg1hKRJhgzf2VosZUWYdO2VLNeYRNnqdH3CWHcMS5C1nZZNdAu3XmlPjutaIaZLhzNHmulA9HzODHJDhm9T01-rdaGW3LptTKQG85RkF2fltZ_-5xMpCPDwxs0H81Wu4nffLwIr3NGr1K1sJROGFLpmgmdjJcQeenn2pNkAssZZdWROM4J65Py4uQfmxRL4eYwFKnEnihAT_MbUN3GjRdld"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-type",
+						"value": "application/json; charset=utf-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; __qca=P0-83208946-1665497888970; currentUser.UserID=8888; StoreNbr=28; token=WBa4fumIKGwmHaJpnV56S8mQPtz19QDBU_mD5YpmRFg1hKRJhgzf2VosZUWYdO2VLNeYRNnqdH3CWHcMS5C1nZZNdAu3XmlPjutaIaZLhzNHmulA9HzODHJDhm9T01-rdaGW3LptTKQG85RkF2fltZ_-5xMpCPDwxs0H81Wu4nffLwIr3NGr1K1sJROGFLpmgmdjJcQeenn2pNkAssZZdWROM4J65Py4uQfmxRL4eYwFKnEnihAT_MbUN3GjRdld; currentUser.Role=0; currentUser.UserKey=Handheld batch-28-8888-IT Support-1/24/2023 4:34:13 AM; ClientIpAddress="
+					},
+					{
+						"key": "Referer",
+						"value": "https://bbicqa.groceryoutlet.com/Device"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "StoreNbr",
+						"value": "28"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "UserID",
+						"value": "8888"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"url": {
+					"raw": "https://bbicqa.groceryoutlet.com/api/bbicRollout/getStoreNbrFromIpMask?maskIp=192.168.28.X",
+					"protocol": "https",
+					"host": [
+						"bbicqa",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"bbicRollout",
+						"getStoreNbrFromIpMask"
+					],
+					"query": [
+						{
+							"key": "maskIp",
+							"value": "192.168.28.X"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC05_Schema Validation for Input parameter \"maskIp\"",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Access_token",
+						"value": "WBa4fumIKGwmHaJpnV56S8mQPtz19QDBU_mD5YpmRFg1hKRJhgzf2VosZUWYdO2VLNeYRNnqdH3CWHcMS5C1nZZNdAu3XmlPjutaIaZLhzNHmulA9HzODHJDhm9T01-rdaGW3LptTKQG85RkF2fltZ_-5xMpCPDwxs0H81Wu4nffLwIr3NGr1K1sJROGFLpmgmdjJcQeenn2pNkAssZZdWROM4J65Py4uQfmxRL4eYwFKnEnihAT_MbUN3GjRdld"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer WBa4fumIKGwmHaJpnV56S8mQPtz19QDBU_mD5YpmRFg1hKRJhgzf2VosZUWYdO2VLNeYRNnqdH3CWHcMS5C1nZZNdAu3XmlPjutaIaZLhzNHmulA9HzODHJDhm9T01-rdaGW3LptTKQG85RkF2fltZ_-5xMpCPDwxs0H81Wu4nffLwIr3NGr1K1sJROGFLpmgmdjJcQeenn2pNkAssZZdWROM4J65Py4uQfmxRL4eYwFKnEnihAT_MbUN3GjRdld"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-type",
+						"value": "application/json; charset=utf-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; __qca=P0-83208946-1665497888970; currentUser.UserID=8888; StoreNbr=28; token=WBa4fumIKGwmHaJpnV56S8mQPtz19QDBU_mD5YpmRFg1hKRJhgzf2VosZUWYdO2VLNeYRNnqdH3CWHcMS5C1nZZNdAu3XmlPjutaIaZLhzNHmulA9HzODHJDhm9T01-rdaGW3LptTKQG85RkF2fltZ_-5xMpCPDwxs0H81Wu4nffLwIr3NGr1K1sJROGFLpmgmdjJcQeenn2pNkAssZZdWROM4J65Py4uQfmxRL4eYwFKnEnihAT_MbUN3GjRdld; currentUser.Role=0; currentUser.UserKey=Handheld batch-28-8888-IT Support-1/24/2023 4:34:13 AM; ClientIpAddress="
+					},
+					{
+						"key": "Referer",
+						"value": "https://bbicqa.groceryoutlet.com/Device"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "StoreNbr",
+						"value": "28"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "UserID",
+						"value": "8888"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"url": {
+					"raw": "https://bbicqa.groceryoutlet.com/api/bbicRollout/getStoreNbrFromIpMask?maskIp=192.168.28.X",
+					"protocol": "https",
+					"host": [
+						"bbicqa",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"bbicRollout",
+						"getStoreNbrFromIpMask"
+					],
+					"query": [
+						{
+							"key": "maskIp",
+							"value": "192.168.28.X"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC06_Check for Input parameter \"maskIp\" as blank",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Access_token",
+						"value": "WBa4fumIKGwmHaJpnV56S8mQPtz19QDBU_mD5YpmRFg1hKRJhgzf2VosZUWYdO2VLNeYRNnqdH3CWHcMS5C1nZZNdAu3XmlPjutaIaZLhzNHmulA9HzODHJDhm9T01-rdaGW3LptTKQG85RkF2fltZ_-5xMpCPDwxs0H81Wu4nffLwIr3NGr1K1sJROGFLpmgmdjJcQeenn2pNkAssZZdWROM4J65Py4uQfmxRL4eYwFKnEnihAT_MbUN3GjRdld"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer WBa4fumIKGwmHaJpnV56S8mQPtz19QDBU_mD5YpmRFg1hKRJhgzf2VosZUWYdO2VLNeYRNnqdH3CWHcMS5C1nZZNdAu3XmlPjutaIaZLhzNHmulA9HzODHJDhm9T01-rdaGW3LptTKQG85RkF2fltZ_-5xMpCPDwxs0H81Wu4nffLwIr3NGr1K1sJROGFLpmgmdjJcQeenn2pNkAssZZdWROM4J65Py4uQfmxRL4eYwFKnEnihAT_MbUN3GjRdld"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-type",
+						"value": "application/json; charset=utf-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; __qca=P0-83208946-1665497888970; currentUser.UserID=8888; StoreNbr=28; token=WBa4fumIKGwmHaJpnV56S8mQPtz19QDBU_mD5YpmRFg1hKRJhgzf2VosZUWYdO2VLNeYRNnqdH3CWHcMS5C1nZZNdAu3XmlPjutaIaZLhzNHmulA9HzODHJDhm9T01-rdaGW3LptTKQG85RkF2fltZ_-5xMpCPDwxs0H81Wu4nffLwIr3NGr1K1sJROGFLpmgmdjJcQeenn2pNkAssZZdWROM4J65Py4uQfmxRL4eYwFKnEnihAT_MbUN3GjRdld; currentUser.Role=0; currentUser.UserKey=Handheld batch-28-8888-IT Support-1/24/2023 4:34:13 AM; ClientIpAddress="
+					},
+					{
+						"key": "Referer",
+						"value": "https://bbicqa.groceryoutlet.com/Device"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "StoreNbr",
+						"value": "28"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "UserID",
+						"value": "8888"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"url": {
+					"raw": "https://bbicqa.groceryoutlet.com/api/bbicRollout/getStoreNbrFromIpMask?maskIp=192.168.28.X",
+					"protocol": "https",
+					"host": [
+						"bbicqa",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"bbicRollout",
+						"getStoreNbrFromIpMask"
+					],
+					"query": [
+						{
+							"key": "maskIp",
+							"value": "192.168.28.X"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

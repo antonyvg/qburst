@@ -1,0 +1,1065 @@
+{
+	"info": {
+		"_postman_id": "5371ccfa-05a9-4d07-b208-8111bbff8ddb",
+		"name": "RF29, RF30, RF31- ShipmentsByUPC-Talend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TC01_Validate the API response",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "76hYkaOtGh3QxCy7pAZJ9oI3KiyV",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"itemNumber\": [4],\n    \"storeNbr\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/product/itemPriceHistory",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"product",
+						"itemPriceHistory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC02_Validate the API accepts input parameter",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "76hYkaOtGh3QxCy7pAZJ9oI3KiyV",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"itemNumber\": [4],\n    \"storeNbr\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/product/itemPriceHistory",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"product",
+						"itemPriceHistory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC03_Schema Validation for Input parameter \"storeNbr\"",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "76hYkaOtGh3QxCy7pAZJ9oI3KiyV",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"itemNumber\": [4],\n    \"storeNbr\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/product/itemPriceHistory",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"product",
+						"itemPriceHistory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC04_Check for Input parameter \"storeNbr\" as blank",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "76hYkaOtGh3QxCy7pAZJ9oI3KiyV",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"itemNumber\": [4],\n    \"storeNbr\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/product/itemPriceHistory",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"product",
+						"itemPriceHistory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC05_Schema Validation for Input parameter \"upc\"",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "76hYkaOtGh3QxCy7pAZJ9oI3KiyV",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"itemNumber\": [4],\n    \"storeNbr\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/product/itemPriceHistory",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"product",
+						"itemPriceHistory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC06_Check for Input parameter \"upc\" as blank",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "76hYkaOtGh3QxCy7pAZJ9oI3KiyV",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"itemNumber\": [4],\n    \"storeNbr\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/product/itemPriceHistory",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"product",
+						"itemPriceHistory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC07_Validate the API response",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "76hYkaOtGh3QxCy7pAZJ9oI3KiyV",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"itemNumber\": [4],\n    \"storeNbr\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/product/itemPriceHistory",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"product",
+						"itemPriceHistory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC08_Validate the API accepts input parameter",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "76hYkaOtGh3QxCy7pAZJ9oI3KiyV",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"itemNumber\": [4],\n    \"storeNbr\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/product/itemPriceHistory",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"product",
+						"itemPriceHistory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC09_Schema Validation for Input parameter \"itemNumber\"",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "76hYkaOtGh3QxCy7pAZJ9oI3KiyV",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"itemNumber\": [4],\n    \"storeNbr\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/product/itemPriceHistory",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"product",
+						"itemPriceHistory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC10_Check for Input parameter \"itemNumber\" as blank",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "76hYkaOtGh3QxCy7pAZJ9oI3KiyV",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"itemNumber\": [4],\n    \"storeNbr\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/product/itemPriceHistory",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"product",
+						"itemPriceHistory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC11_Schema Validation for Input parameter \"storeNbr\"",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "76hYkaOtGh3QxCy7pAZJ9oI3KiyV",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"itemNumber\": [4],\n    \"storeNbr\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/product/itemPriceHistory",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"product",
+						"itemPriceHistory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC12_Check for Input parameter \"storeNbr\" as blank",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "76hYkaOtGh3QxCy7pAZJ9oI3KiyV",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"itemNumber\": [4],\n    \"storeNbr\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/product/itemPriceHistory",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"product",
+						"itemPriceHistory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC13_Validate the API response",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "76hYkaOtGh3QxCy7pAZJ9oI3KiyV",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"itemNumber\": [4],\n    \"storeNbr\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/product/itemPriceHistory",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"product",
+						"itemPriceHistory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC14_Validate the API accepts input parameter",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "76hYkaOtGh3QxCy7pAZJ9oI3KiyV",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"itemNumber\": [4],\n    \"storeNbr\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/product/itemPriceHistory",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"product",
+						"itemPriceHistory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC15_Schema Validation for Input parameter \"itemNumber\"",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "76hYkaOtGh3QxCy7pAZJ9oI3KiyV",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"itemNumber\": [4],\n    \"storeNbr\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/product/itemPriceHistory",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"product",
+						"itemPriceHistory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC16_Check for Input parameter \"itemNumber\" as blank",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "76hYkaOtGh3QxCy7pAZJ9oI3KiyV",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"itemNumber\": [4],\n    \"storeNbr\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/product/itemPriceHistory",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"product",
+						"itemPriceHistory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC17_Schema Validation for Input parameter \"storeNbr\"",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "76hYkaOtGh3QxCy7pAZJ9oI3KiyV",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"itemNumber\": [4],\n    \"storeNbr\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/product/itemPriceHistory",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"product",
+						"itemPriceHistory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC18_Check for Input parameter \"storeNbr\" as blank",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "76hYkaOtGh3QxCy7pAZJ9oI3KiyV",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"itemNumber\": [4],\n    \"storeNbr\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/product/itemPriceHistory",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"product",
+						"itemPriceHistory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC19_Validate the API accepts input parameter",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "76hYkaOtGh3QxCy7pAZJ9oI3KiyV",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"itemNumber\": [4],\n    \"storeNbr\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/product/itemPriceHistory",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"product",
+						"itemPriceHistory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC20_Validate the API accepts input parameter",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "76hYkaOtGh3QxCy7pAZJ9oI3KiyV",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"itemNumber\": [4],\n    \"storeNbr\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/product/itemPriceHistory",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"product",
+						"itemPriceHistory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC21_Schema Validation for Input parameter \"itemNumber\"",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "76hYkaOtGh3QxCy7pAZJ9oI3KiyV",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"itemNumber\": [4],\n    \"storeNbr\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/product/itemPriceHistory",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"product",
+						"itemPriceHistory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC22_Check for Input parameter \"itemNumber\" as blank",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "76hYkaOtGh3QxCy7pAZJ9oI3KiyV",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"itemNumber\": [4],\n    \"storeNbr\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/product/itemPriceHistory",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"product",
+						"itemPriceHistory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC23_Schema Validation for Input parameter \"storeNbr\"",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "76hYkaOtGh3QxCy7pAZJ9oI3KiyV",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"itemNumber\": [4],\n    \"storeNbr\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/product/itemPriceHistory",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"product",
+						"itemPriceHistory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC24_Check for Input parameter \"storeNbr\" as blank",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "76hYkaOtGh3QxCy7pAZJ9oI3KiyV",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"itemNumber\": [4],\n    \"storeNbr\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/product/itemPriceHistory",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"product",
+						"itemPriceHistory"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

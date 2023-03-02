@@ -1,0 +1,317 @@
+{
+	"info": {
+		"_postman_id": "9386bef3-47d0-4e55-a144-5084960d1abd",
+		"name": "1008-getcalculateddistribution2 SqlCalcDistro_talend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TC01_Validate the Talend API response",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "ygthPiv7xaG6wTMsJhjE90hiEVuA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"linkedItemNbrs\": [\n    122189\n  ],\n  \"distroItemNbr\": 122189,\n  \"distroStartDate\": \"12-22-2020\",\n  \"distroEndDate\": \"12-22-2022\",\n  \"classNbr\": 0,\n  \"subClassNbr\": \"0\",\n  \"isItemReferenceType\": true,\n  \"isItemListRefernceType\": false,\n  \"isClassReferenceType\": false,\n  \"isIncludeAurandGM\": false,\n  \"whseNbrs\": [\n    993,\n    94,\n    95\n  ]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/distribution/getcalculateddistribution2sql",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"distribution",
+						"getcalculateddistribution2sql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC02_Validate the Talend API accepts input parameter",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "ygthPiv7xaG6wTMsJhjE90hiEVuA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"linkedItemNbrs\": [\n    122189\n  ],\n  \"distroItemNbr\": 122189,\n  \"distroStartDate\": \"12-22-2020\",\n  \"distroEndDate\": \"12-22-2022\",\n  \"classNbr\": 0,\n  \"subClassNbr\": \"0\",\n  \"isItemReferenceType\": true,\n  \"isItemListRefernceType\": false,\n  \"isClassReferenceType\": false,\n  \"isIncludeAurandGM\": false,\n  \"whseNbrs\": [\n    993,\n    94,\n    95\n  ]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/distribution/getcalculateddistribution2sql",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"distribution",
+						"getcalculateddistribution2sql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC03_Validate the Talend API using GET method instead of POST",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "ygthPiv7xaG6wTMsJhjE90hiEVuA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"linkedItemNbrs\": [\n    122189\n  ],\n  \"distroItemNbr\": 122189,\n  \"distroStartDate\": \"12-22-2020\",\n  \"distroEndDate\": \"12-22-2022\",\n  \"classNbr\": 0,\n  \"subClassNbr\": \"0\",\n  \"isItemReferenceType\": true,\n  \"isItemListRefernceType\": false,\n  \"isClassReferenceType\": false,\n  \"isIncludeAurandGM\": false,\n  \"whseNbrs\": [\n    993,\n    94,\n    95\n  ]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/distribution/getcalculateddistribution2sql",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"distribution",
+						"getcalculateddistribution2sql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC04_Schema Validation for Input parameter \"itemNbr\"",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "ygthPiv7xaG6wTMsJhjE90hiEVuA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"linkedItemNbrs\": [\n    122189\n  ],\n  \"distroItemNbr\": 122189,\n  \"distroStartDate\": \"12-22-2020\",\n  \"distroEndDate\": \"12-22-2022\",\n  \"classNbr\": 0,\n  \"subClassNbr\": \"0\",\n  \"isItemReferenceType\": true,\n  \"isItemListRefernceType\": false,\n  \"isClassReferenceType\": false,\n  \"isIncludeAurandGM\": false,\n  \"whseNbrs\": [\n    993,\n    94,\n    95\n  ]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/distribution/getcalculateddistribution2sql",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"distribution",
+						"getcalculateddistribution2sql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC05_Check for Input parameter \"itemNbr\" as blank",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "ygthPiv7xaG6wTMsJhjE90hiEVuA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"linkedItemNbrs\": [\n    122189\n  ],\n  \"distroItemNbr\": 122189,\n  \"distroStartDate\": \"12-22-2020\",\n  \"distroEndDate\": \"12-22-2022\",\n  \"classNbr\": 0,\n  \"subClassNbr\": \"0\",\n  \"isItemReferenceType\": true,\n  \"isItemListRefernceType\": false,\n  \"isClassReferenceType\": false,\n  \"isIncludeAurandGM\": false,\n  \"whseNbrs\": [\n    993,\n    94,\n    95\n  ]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/distribution/getcalculateddistribution2sql",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"distribution",
+						"getcalculateddistribution2sql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC06_Schema Validation for Input parameter \"whseNbrs\"",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "ygthPiv7xaG6wTMsJhjE90hiEVuA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"linkedItemNbrs\": [\n    122189\n  ],\n  \"distroItemNbr\": 122189,\n  \"distroStartDate\": \"12-22-2020\",\n  \"distroEndDate\": \"12-22-2022\",\n  \"classNbr\": 0,\n  \"subClassNbr\": \"0\",\n  \"isItemReferenceType\": true,\n  \"isItemListRefernceType\": false,\n  \"isClassReferenceType\": false,\n  \"isIncludeAurandGM\": false,\n  \"whseNbrs\": [\n    993,\n    94,\n    95\n  ]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/distribution/getcalculateddistribution2sql",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"distribution",
+						"getcalculateddistribution2sql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC07_Check for Input parameter \"whseNbrs\" as blank",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "ygthPiv7xaG6wTMsJhjE90hiEVuA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"linkedItemNbrs\": [\n    122189\n  ],\n  \"distroItemNbr\": 122189,\n  \"distroStartDate\": \"12-22-2020\",\n  \"distroEndDate\": \"12-22-2022\",\n  \"classNbr\": 0,\n  \"subClassNbr\": \"0\",\n  \"isItemReferenceType\": true,\n  \"isItemListRefernceType\": false,\n  \"isClassReferenceType\": false,\n  \"isIncludeAurandGM\": false,\n  \"whseNbrs\": [\n    993,\n    94,\n    95\n  ]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/distribution/getcalculateddistribution2sql",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"distribution",
+						"getcalculateddistribution2sql"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,615 @@
+{
+	"info": {
+		"_postman_id": "28cde447-7a60-424c-8c68-accbb8e90103",
+		"name": "RF51- UpdateIssueOther-QA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TC01_Validate the API response",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Access_token",
+						"value": "LgTySZbe-dB81ehpKg5YdLU4EKzp-qCIzp_9kgQaiIbhdTrtVOzCT4TX1EQ-SmmwRFtRQ62rJ4eHO5zJlCSXOfqXOt0PeqjQ9ZsAj3tZcCiaZHs3z60fuJLIEgo_91f9HV251voPD7VeoUblFhVv0IniSZoNX6UoB6HDj7TALqUShCvkG644kSMdeczpGWoaYucnAcxVMEMNjGjG_HNqnH2tmcmR2aK2URP3Nv2kQtGMEVNdl4nHircG7__g60Ms"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer LgTySZbe-dB81ehpKg5YdLU4EKzp-qCIzp_9kgQaiIbhdTrtVOzCT4TX1EQ-SmmwRFtRQ62rJ4eHO5zJlCSXOfqXOt0PeqjQ9ZsAj3tZcCiaZHs3z60fuJLIEgo_91f9HV251voPD7VeoUblFhVv0IniSZoNX6UoB6HDj7TALqUShCvkG644kSMdeczpGWoaYucnAcxVMEMNjGjG_HNqnH2tmcmR2aK2URP3Nv2kQtGMEVNdl4nHircG7__g60Ms"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-type",
+						"value": "application/json; charset=utf-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; __qca=P0-83208946-1665497888970; currentUser.UserID=8888; StoreNbr=28; token=LgTySZbe-dB81ehpKg5YdLU4EKzp-qCIzp_9kgQaiIbhdTrtVOzCT4TX1EQ-SmmwRFtRQ62rJ4eHO5zJlCSXOfqXOt0PeqjQ9ZsAj3tZcCiaZHs3z60fuJLIEgo_91f9HV251voPD7VeoUblFhVv0IniSZoNX6UoB6HDj7TALqUShCvkG644kSMdeczpGWoaYucnAcxVMEMNjGjG_HNqnH2tmcmR2aK2URP3Nv2kQtGMEVNdl4nHircG7__g60Ms; currentUser.Role=0; currentUser.UserKey=Handheld batch-28-8888-IT Support-2/7/2023 2:14:48 AM; ClientIpAddress="
+					},
+					{
+						"key": "Referer",
+						"value": "https://bbicqa.groceryoutlet.com/Device"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "StoreNbr",
+						"value": "28"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "UserID",
+						"value": "8888"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \n        \"PalletId\": \"\",\n        \"ItemNum\": 602443,\n        \"DocNum\":6018113,\n        \"UserName\": \"8888\",\n        \"PosDesc\":\"onion\",\n        \"Link\":0,\n        \"Model\":400,\n        \"Units\":1,\n        \"Retail\":\"2.9\",\n       \"Value\":1.9,\n       \"PrintSigns\":true,\n        \"UPC\":4669,\n        \"PrintQty\":2,\n        \"PrintSize\":\"GG\",\n        \n        \"PrintIp\":\"STR\"\n\n}"
+				},
+				"url": {
+					"raw": "https://bbicqa.groceryoutlet.com/api/POS/UpdateIssueOther?storeNumber=28",
+					"protocol": "https",
+					"host": [
+						"bbicqa",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"POS",
+						"UpdateIssueOther"
+					],
+					"query": [
+						{
+							"key": "storeNumber",
+							"value": "28"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC02_Validate the API accepts input parameter",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Access_token",
+						"value": "LgTySZbe-dB81ehpKg5YdLU4EKzp-qCIzp_9kgQaiIbhdTrtVOzCT4TX1EQ-SmmwRFtRQ62rJ4eHO5zJlCSXOfqXOt0PeqjQ9ZsAj3tZcCiaZHs3z60fuJLIEgo_91f9HV251voPD7VeoUblFhVv0IniSZoNX6UoB6HDj7TALqUShCvkG644kSMdeczpGWoaYucnAcxVMEMNjGjG_HNqnH2tmcmR2aK2URP3Nv2kQtGMEVNdl4nHircG7__g60Ms"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer LgTySZbe-dB81ehpKg5YdLU4EKzp-qCIzp_9kgQaiIbhdTrtVOzCT4TX1EQ-SmmwRFtRQ62rJ4eHO5zJlCSXOfqXOt0PeqjQ9ZsAj3tZcCiaZHs3z60fuJLIEgo_91f9HV251voPD7VeoUblFhVv0IniSZoNX6UoB6HDj7TALqUShCvkG644kSMdeczpGWoaYucnAcxVMEMNjGjG_HNqnH2tmcmR2aK2URP3Nv2kQtGMEVNdl4nHircG7__g60Ms"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-type",
+						"value": "application/json; charset=utf-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; __qca=P0-83208946-1665497888970; currentUser.UserID=8888; StoreNbr=28; token=LgTySZbe-dB81ehpKg5YdLU4EKzp-qCIzp_9kgQaiIbhdTrtVOzCT4TX1EQ-SmmwRFtRQ62rJ4eHO5zJlCSXOfqXOt0PeqjQ9ZsAj3tZcCiaZHs3z60fuJLIEgo_91f9HV251voPD7VeoUblFhVv0IniSZoNX6UoB6HDj7TALqUShCvkG644kSMdeczpGWoaYucnAcxVMEMNjGjG_HNqnH2tmcmR2aK2URP3Nv2kQtGMEVNdl4nHircG7__g60Ms; currentUser.Role=0; currentUser.UserKey=Handheld batch-28-8888-IT Support-2/7/2023 2:14:48 AM; ClientIpAddress="
+					},
+					{
+						"key": "Referer",
+						"value": "https://bbicqa.groceryoutlet.com/Device"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "StoreNbr",
+						"value": "28"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "UserID",
+						"value": "8888"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \n        \"PalletId\": \"\",\n        \"ItemNum\": 602443,\n        \"DocNum\":6018113,\n        \"UserName\": \"8888\",\n        \"PosDesc\":\"onion\",\n        \"Link\":0,\n        \"Model\":400,\n        \"Units\":1,\n        \"Retail\":\"2.9\",\n       \"Value\":1.9,\n       \"PrintSigns\":true,\n        \"UPC\":4669,\n        \"PrintQty\":2,\n        \"PrintSize\":\"GG\",\n        \n        \"PrintIp\":\"STR\"\n\n}"
+				},
+				"url": {
+					"raw": "https://bbicqa.groceryoutlet.com/api/POS/UpdateIssueOther?storeNumber=28",
+					"protocol": "https",
+					"host": [
+						"bbicqa",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"POS",
+						"UpdateIssueOther"
+					],
+					"query": [
+						{
+							"key": "storeNumber",
+							"value": "28"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC03_Validate the API using GET method instead of POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Access_token",
+						"value": "LgTySZbe-dB81ehpKg5YdLU4EKzp-qCIzp_9kgQaiIbhdTrtVOzCT4TX1EQ-SmmwRFtRQ62rJ4eHO5zJlCSXOfqXOt0PeqjQ9ZsAj3tZcCiaZHs3z60fuJLIEgo_91f9HV251voPD7VeoUblFhVv0IniSZoNX6UoB6HDj7TALqUShCvkG644kSMdeczpGWoaYucnAcxVMEMNjGjG_HNqnH2tmcmR2aK2URP3Nv2kQtGMEVNdl4nHircG7__g60Ms"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer LgTySZbe-dB81ehpKg5YdLU4EKzp-qCIzp_9kgQaiIbhdTrtVOzCT4TX1EQ-SmmwRFtRQ62rJ4eHO5zJlCSXOfqXOt0PeqjQ9ZsAj3tZcCiaZHs3z60fuJLIEgo_91f9HV251voPD7VeoUblFhVv0IniSZoNX6UoB6HDj7TALqUShCvkG644kSMdeczpGWoaYucnAcxVMEMNjGjG_HNqnH2tmcmR2aK2URP3Nv2kQtGMEVNdl4nHircG7__g60Ms"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-type",
+						"value": "application/json; charset=utf-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; __qca=P0-83208946-1665497888970; currentUser.UserID=8888; StoreNbr=28; token=LgTySZbe-dB81ehpKg5YdLU4EKzp-qCIzp_9kgQaiIbhdTrtVOzCT4TX1EQ-SmmwRFtRQ62rJ4eHO5zJlCSXOfqXOt0PeqjQ9ZsAj3tZcCiaZHs3z60fuJLIEgo_91f9HV251voPD7VeoUblFhVv0IniSZoNX6UoB6HDj7TALqUShCvkG644kSMdeczpGWoaYucnAcxVMEMNjGjG_HNqnH2tmcmR2aK2URP3Nv2kQtGMEVNdl4nHircG7__g60Ms; currentUser.Role=0; currentUser.UserKey=Handheld batch-28-8888-IT Support-2/7/2023 2:14:48 AM; ClientIpAddress="
+					},
+					{
+						"key": "Referer",
+						"value": "https://bbicqa.groceryoutlet.com/Device"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "StoreNbr",
+						"value": "28"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "UserID",
+						"value": "8888"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \n        \"PalletId\": \"\",\n        \"ItemNum\": 602443,\n        \"DocNum\":6018113,\n        \"UserName\": \"8888\",\n        \"PosDesc\":\"onion\",\n        \"Link\":0,\n        \"Model\":400,\n        \"Units\":1,\n        \"Retail\":\"2.9\",\n       \"Value\":1.9,\n       \"PrintSigns\":true,\n        \"UPC\":4669,\n        \"PrintQty\":2,\n        \"PrintSize\":\"GG\",\n        \n        \"PrintIp\":\"STR\"\n\n}"
+				},
+				"url": {
+					"raw": "https://bbicqa.groceryoutlet.com/api/POS/UpdateIssueOther?storeNumber=28",
+					"protocol": "https",
+					"host": [
+						"bbicqa",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"POS",
+						"UpdateIssueOther"
+					],
+					"query": [
+						{
+							"key": "storeNumber",
+							"value": "28"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC04_DB Validation after hitting in Postman",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Access_token",
+						"value": "LgTySZbe-dB81ehpKg5YdLU4EKzp-qCIzp_9kgQaiIbhdTrtVOzCT4TX1EQ-SmmwRFtRQ62rJ4eHO5zJlCSXOfqXOt0PeqjQ9ZsAj3tZcCiaZHs3z60fuJLIEgo_91f9HV251voPD7VeoUblFhVv0IniSZoNX6UoB6HDj7TALqUShCvkG644kSMdeczpGWoaYucnAcxVMEMNjGjG_HNqnH2tmcmR2aK2URP3Nv2kQtGMEVNdl4nHircG7__g60Ms"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer LgTySZbe-dB81ehpKg5YdLU4EKzp-qCIzp_9kgQaiIbhdTrtVOzCT4TX1EQ-SmmwRFtRQ62rJ4eHO5zJlCSXOfqXOt0PeqjQ9ZsAj3tZcCiaZHs3z60fuJLIEgo_91f9HV251voPD7VeoUblFhVv0IniSZoNX6UoB6HDj7TALqUShCvkG644kSMdeczpGWoaYucnAcxVMEMNjGjG_HNqnH2tmcmR2aK2URP3Nv2kQtGMEVNdl4nHircG7__g60Ms"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-type",
+						"value": "application/json; charset=utf-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; __qca=P0-83208946-1665497888970; currentUser.UserID=8888; StoreNbr=28; token=LgTySZbe-dB81ehpKg5YdLU4EKzp-qCIzp_9kgQaiIbhdTrtVOzCT4TX1EQ-SmmwRFtRQ62rJ4eHO5zJlCSXOfqXOt0PeqjQ9ZsAj3tZcCiaZHs3z60fuJLIEgo_91f9HV251voPD7VeoUblFhVv0IniSZoNX6UoB6HDj7TALqUShCvkG644kSMdeczpGWoaYucnAcxVMEMNjGjG_HNqnH2tmcmR2aK2URP3Nv2kQtGMEVNdl4nHircG7__g60Ms; currentUser.Role=0; currentUser.UserKey=Handheld batch-28-8888-IT Support-2/7/2023 2:14:48 AM; ClientIpAddress="
+					},
+					{
+						"key": "Referer",
+						"value": "https://bbicqa.groceryoutlet.com/Device"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "StoreNbr",
+						"value": "28"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "UserID",
+						"value": "8888"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \n        \"PalletId\": \"\",\n        \"ItemNum\": 602443,\n        \"DocNum\":6018113,\n        \"UserName\": \"8888\",\n        \"PosDesc\":\"onion\",\n        \"Link\":0,\n        \"Model\":400,\n        \"Units\":1,\n        \"Retail\":\"2.9\",\n       \"Value\":1.9,\n       \"PrintSigns\":true,\n        \"UPC\":4669,\n        \"PrintQty\":2,\n        \"PrintSize\":\"GG\",\n        \n        \"PrintIp\":\"STR\"\n\n}"
+				},
+				"url": {
+					"raw": "https://bbicqa.groceryoutlet.com/api/POS/UpdateIssueOther?storeNumber=28",
+					"protocol": "https",
+					"host": [
+						"bbicqa",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"POS",
+						"UpdateIssueOther"
+					],
+					"query": [
+						{
+							"key": "storeNumber",
+							"value": "28"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC05_Schema Validation for Input parameter \"storeNumber\"",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Access_token",
+						"value": "LgTySZbe-dB81ehpKg5YdLU4EKzp-qCIzp_9kgQaiIbhdTrtVOzCT4TX1EQ-SmmwRFtRQ62rJ4eHO5zJlCSXOfqXOt0PeqjQ9ZsAj3tZcCiaZHs3z60fuJLIEgo_91f9HV251voPD7VeoUblFhVv0IniSZoNX6UoB6HDj7TALqUShCvkG644kSMdeczpGWoaYucnAcxVMEMNjGjG_HNqnH2tmcmR2aK2URP3Nv2kQtGMEVNdl4nHircG7__g60Ms"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer LgTySZbe-dB81ehpKg5YdLU4EKzp-qCIzp_9kgQaiIbhdTrtVOzCT4TX1EQ-SmmwRFtRQ62rJ4eHO5zJlCSXOfqXOt0PeqjQ9ZsAj3tZcCiaZHs3z60fuJLIEgo_91f9HV251voPD7VeoUblFhVv0IniSZoNX6UoB6HDj7TALqUShCvkG644kSMdeczpGWoaYucnAcxVMEMNjGjG_HNqnH2tmcmR2aK2URP3Nv2kQtGMEVNdl4nHircG7__g60Ms"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-type",
+						"value": "application/json; charset=utf-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; __qca=P0-83208946-1665497888970; currentUser.UserID=8888; StoreNbr=28; token=LgTySZbe-dB81ehpKg5YdLU4EKzp-qCIzp_9kgQaiIbhdTrtVOzCT4TX1EQ-SmmwRFtRQ62rJ4eHO5zJlCSXOfqXOt0PeqjQ9ZsAj3tZcCiaZHs3z60fuJLIEgo_91f9HV251voPD7VeoUblFhVv0IniSZoNX6UoB6HDj7TALqUShCvkG644kSMdeczpGWoaYucnAcxVMEMNjGjG_HNqnH2tmcmR2aK2URP3Nv2kQtGMEVNdl4nHircG7__g60Ms; currentUser.Role=0; currentUser.UserKey=Handheld batch-28-8888-IT Support-2/7/2023 2:14:48 AM; ClientIpAddress="
+					},
+					{
+						"key": "Referer",
+						"value": "https://bbicqa.groceryoutlet.com/Device"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "StoreNbr",
+						"value": "28"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "UserID",
+						"value": "8888"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \n        \"PalletId\": \"\",\n        \"ItemNum\": 602443,\n        \"DocNum\":6018113,\n        \"UserName\": \"8888\",\n        \"PosDesc\":\"onion\",\n        \"Link\":0,\n        \"Model\":400,\n        \"Units\":1,\n        \"Retail\":\"2.9\",\n       \"Value\":1.9,\n       \"PrintSigns\":true,\n        \"UPC\":4669,\n        \"PrintQty\":2,\n        \"PrintSize\":\"GG\",\n        \n        \"PrintIp\":\"STR\"\n\n}"
+				},
+				"url": {
+					"raw": "https://bbicqa.groceryoutlet.com/api/POS/UpdateIssueOther?storeNumber=28",
+					"protocol": "https",
+					"host": [
+						"bbicqa",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"POS",
+						"UpdateIssueOther"
+					],
+					"query": [
+						{
+							"key": "storeNumber",
+							"value": "28"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC06_Check for Input parameter \"storeNumber\" as blank",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Access_token",
+						"value": "LgTySZbe-dB81ehpKg5YdLU4EKzp-qCIzp_9kgQaiIbhdTrtVOzCT4TX1EQ-SmmwRFtRQ62rJ4eHO5zJlCSXOfqXOt0PeqjQ9ZsAj3tZcCiaZHs3z60fuJLIEgo_91f9HV251voPD7VeoUblFhVv0IniSZoNX6UoB6HDj7TALqUShCvkG644kSMdeczpGWoaYucnAcxVMEMNjGjG_HNqnH2tmcmR2aK2URP3Nv2kQtGMEVNdl4nHircG7__g60Ms"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer LgTySZbe-dB81ehpKg5YdLU4EKzp-qCIzp_9kgQaiIbhdTrtVOzCT4TX1EQ-SmmwRFtRQ62rJ4eHO5zJlCSXOfqXOt0PeqjQ9ZsAj3tZcCiaZHs3z60fuJLIEgo_91f9HV251voPD7VeoUblFhVv0IniSZoNX6UoB6HDj7TALqUShCvkG644kSMdeczpGWoaYucnAcxVMEMNjGjG_HNqnH2tmcmR2aK2URP3Nv2kQtGMEVNdl4nHircG7__g60Ms"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-type",
+						"value": "application/json; charset=utf-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; __qca=P0-83208946-1665497888970; currentUser.UserID=8888; StoreNbr=28; token=LgTySZbe-dB81ehpKg5YdLU4EKzp-qCIzp_9kgQaiIbhdTrtVOzCT4TX1EQ-SmmwRFtRQ62rJ4eHO5zJlCSXOfqXOt0PeqjQ9ZsAj3tZcCiaZHs3z60fuJLIEgo_91f9HV251voPD7VeoUblFhVv0IniSZoNX6UoB6HDj7TALqUShCvkG644kSMdeczpGWoaYucnAcxVMEMNjGjG_HNqnH2tmcmR2aK2URP3Nv2kQtGMEVNdl4nHircG7__g60Ms; currentUser.Role=0; currentUser.UserKey=Handheld batch-28-8888-IT Support-2/7/2023 2:14:48 AM; ClientIpAddress="
+					},
+					{
+						"key": "Referer",
+						"value": "https://bbicqa.groceryoutlet.com/Device"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "StoreNbr",
+						"value": "28"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "UserID",
+						"value": "8888"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \n        \"PalletId\": \"\",\n        \"ItemNum\": 602443,\n        \"DocNum\":6018113,\n        \"UserName\": \"8888\",\n        \"PosDesc\":\"onion\",\n        \"Link\":0,\n        \"Model\":400,\n        \"Units\":1,\n        \"Retail\":\"2.9\",\n       \"Value\":1.9,\n       \"PrintSigns\":true,\n        \"UPC\":4669,\n        \"PrintQty\":2,\n        \"PrintSize\":\"GG\",\n        \n        \"PrintIp\":\"STR\"\n\n}"
+				},
+				"url": {
+					"raw": "https://bbicqa.groceryoutlet.com/api/POS/UpdateIssueOther?storeNumber=28",
+					"protocol": "https",
+					"host": [
+						"bbicqa",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"POS",
+						"UpdateIssueOther"
+					],
+					"query": [
+						{
+							"key": "storeNumber",
+							"value": "28"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

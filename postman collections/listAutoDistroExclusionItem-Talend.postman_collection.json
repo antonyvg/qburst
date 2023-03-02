@@ -1,0 +1,594 @@
+{
+	"info": {
+		"_postman_id": "fea13721-0e47-413c-845a-9fc85fbc45dc",
+		"name": "listAutoDistroExclusionItem-Talend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TC01_Validate the API response",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Xw2lSsO3fOJtnQPISwlAyyxLuY3Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"itemNbrs\":[105314],\n    \"isUpcSearch\":false,\n    \"searchText\":\"\",\n    \"limit\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw//product/mergedItemDetails",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"",
+						"product",
+						"mergedItemDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC02_Validate the API accepts input parameter",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Xw2lSsO3fOJtnQPISwlAyyxLuY3Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"itemNbrs\":[105314],\n    \"isUpcSearch\":false,\n    \"searchText\":\"\",\n    \"limit\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw//product/mergedItemDetails",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"",
+						"product",
+						"mergedItemDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC03_Validate the API using GET method instead of POST",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Xw2lSsO3fOJtnQPISwlAyyxLuY3Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"itemNbrs\":[105314],\n    \"isUpcSearch\":false,\n    \"searchText\":\"\",\n    \"limit\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw//product/mergedItemDetails",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"",
+						"product",
+						"mergedItemDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC04_Validate Response for invalid URL",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Xw2lSsO3fOJtnQPISwlAyyxLuY3Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"itemNbrs\":[105314],\n    \"isUpcSearch\":false,\n    \"searchText\":\"\",\n    \"limit\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw//product/mergedItemDetails",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"",
+						"product",
+						"mergedItemDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC05_Schema Validation for Input parameter \"itemNbrs\"",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Xw2lSsO3fOJtnQPISwlAyyxLuY3Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"itemNbrs\":[105314],\n    \"isUpcSearch\":false,\n    \"searchText\":\"\",\n    \"limit\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw//product/mergedItemDetails",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"",
+						"product",
+						"mergedItemDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC06_Check for Input parameter \"itemNbrs\" as blank",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Xw2lSsO3fOJtnQPISwlAyyxLuY3Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"itemNbrs\":[105314],\n    \"isUpcSearch\":false,\n    \"searchText\":\"\",\n    \"limit\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw//product/mergedItemDetails",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"",
+						"product",
+						"mergedItemDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC07_Check for Input parameter  \"searchText\"\" as blank when \"itemNbrs\" as blank",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Xw2lSsO3fOJtnQPISwlAyyxLuY3Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"itemNbrs\":[105314],\n    \"isUpcSearch\":false,\n    \"searchText\":\"\",\n    \"limit\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw//product/mergedItemDetails",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"",
+						"product",
+						"mergedItemDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC08_Check for Input parameter  \"searchText\"\" as blank when \"itemNbrs\" have proper input",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Xw2lSsO3fOJtnQPISwlAyyxLuY3Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"itemNbrs\":[105314],\n    \"isUpcSearch\":false,\n    \"searchText\":\"\",\n    \"limit\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw//product/mergedItemDetails",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"",
+						"product",
+						"mergedItemDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC09_Check for Input parameter  \"searchText\"\" with invalid input when \"itemNbrs\" as blank",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Xw2lSsO3fOJtnQPISwlAyyxLuY3Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"itemNbrs\":[105314],\n    \"isUpcSearch\":false,\n    \"searchText\":\"\",\n    \"limit\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw//product/mergedItemDetails",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"",
+						"product",
+						"mergedItemDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC10_Check for Input parameter  \"searchText\"\" and \"itemNbrs\" with invalid inputs",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Xw2lSsO3fOJtnQPISwlAyyxLuY3Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"itemNbrs\":[105314],\n    \"isUpcSearch\":false,\n    \"searchText\":\"\",\n    \"limit\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw//product/mergedItemDetails",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"",
+						"product",
+						"mergedItemDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC11_Schema Validation for Input parameter \"isUpcSearch\" as blank and invalid inputs",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Xw2lSsO3fOJtnQPISwlAyyxLuY3Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"itemNbrs\":[105314],\n    \"isUpcSearch\":false,\n    \"searchText\":\"\",\n    \"limit\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw//product/mergedItemDetails",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"",
+						"product",
+						"mergedItemDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC12_Schema Validation for Input parameter \"limit\"",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Xw2lSsO3fOJtnQPISwlAyyxLuY3Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"itemNbrs\":[105314],\n    \"isUpcSearch\":false,\n    \"searchText\":\"\",\n    \"limit\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw//product/mergedItemDetails",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"",
+						"product",
+						"mergedItemDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC13_Check for Input parameter \"limit\" as blank",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Xw2lSsO3fOJtnQPISwlAyyxLuY3Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"itemNbrs\":[105314],\n    \"isUpcSearch\":false,\n    \"searchText\":\"\",\n    \"limit\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw//product/mergedItemDetails",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"",
+						"product",
+						"mergedItemDetails"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

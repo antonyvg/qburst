@@ -1,0 +1,317 @@
+{
+	"info": {
+		"_postman_id": "f8de1894-9351-4ad4-bb1f-493f23cb9262",
+		"name": "GetDeptIDbyPOSDept-BIBC Talend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TC01_Validate the API response",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{     \"deptDesc\":\"\", \n    \"PEHDSP\":\"\",    \n     \"deptID\":[100]\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/stores/departments",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"stores",
+						"departments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC02_Validate the API accepts input parameter",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{     \"deptDesc\":\"\", \n    \"PEHDSP\":\"\",    \n     \"deptID\":[100]\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/stores/departments",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"stores",
+						"departments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC03_Validate the API using GET method instead of POST",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{     \"deptDesc\":\"\", \n    \"PEHDSP\":\"\",    \n     \"deptID\":[100]\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/stores/departments",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"stores",
+						"departments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC04_Schema Validation for Input parameter \"deptID\"",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{     \"deptDesc\":\"\", \n    \"PEHDSP\":\"\",    \n     \"deptID\":[100]\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/stores/departments",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"stores",
+						"departments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC05_Check for Input parameter \"deptID\" as blank",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{     \"deptDesc\":\"\", \n    \"PEHDSP\":\"\",    \n     \"deptID\":[100]\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/stores/departments",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"stores",
+						"departments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC06_Schema Validation for Invaild and blank values for input parameter \"deptDesc\"",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{     \"deptDesc\":\"\", \n    \"PEHDSP\":\"\",    \n     \"deptID\":[100]\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/stores/departments",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"stores",
+						"departments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC07_Schema Validation for Invaild and blank values for input parameter \"PEHDSP\"",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{     \"deptDesc\":\"\", \n    \"PEHDSP\":\"\",    \n     \"deptID\":[100]\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/stores/departments",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"stores",
+						"departments"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

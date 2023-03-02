@@ -1,0 +1,95 @@
+{
+	"info": {
+		"_postman_id": "25554d79-5f00-49b8-b489-c8bab35758de",
+		"name": "GetQtyonHand-SAP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TC10_Validate the SAP API response",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"record\": [\n        {\n            \"storeNbr\": \"0028\",\n            \"details\": [\n                {\n                    \"itemNumber\": \"122189\"\n                }\n            ]\n        }\n    ]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/go/v1/inventory/ERP/onHandInventory",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"go",
+						"v1",
+						"inventory",
+						"ERP",
+						"onHandInventory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC11_Validate quantity of an items in SAP and BIBC",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"record\": [\n        {\n            \"storeNbr\": \"0028\",\n            \"details\": [\n                {\n                    \"itemNumber\": \"122189\"\n                }\n            ]\n        }\n    ]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/go/v1/inventory/ERP/onHandInventory",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"go",
+						"v1",
+						"inventory",
+						"ERP",
+						"onHandInventory"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

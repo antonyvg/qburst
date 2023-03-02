@@ -1,0 +1,2713 @@
+{
+	"info": {
+		"_postman_id": "2d74c057-eff7-42fe-a890-024bc01006ba",
+		"name": "DelSWOT-QA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TC01_Validate the API response for input parameter",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "Le4szVj-oJ0kYRw_IRsk4K6lTOTJiSOJ3K7a4OZ3fdeekvoxeQKBEc28_UzGHdUeqR4yttj1vVa-DdwT1qEv4x3fo-41:REkuqQAnXpbMFWgrszXoGcjsWlw8boa8Q7KoQOGyl-kYSmxMEOjPC54gOyobHWyghkFiBjhvr8Ih_Rd9-kVQq4eLSGzkRm4nVpdxqQcOisroA2_eWnYR4cltakakpUK2yLAIDg2"
+					},
+					{
+						"key": "api-token",
+						"value": "A61d7f827b9b4994837e7dc835f87b5bd24b6597a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":34,\"STORE_LABEL\":\"Redding\",\"STORE_STATE\":\"CA\",\"STORE_ORDER_TYPE_NBR\":2383,\"STORE_TYPE_DESCRIPTION\":\"Whse 94 - Candy\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[94],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":2383,\"WAREHOUSE_NBR\":94,\"ORDER_TYPE_NBR\":10,\"RANK\":0}],\"storeTypeDesc\":\"Whse 94 - Candy\",\"whse\":[94],\"editMode\":false,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/delete",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC02_Validate the API response for input parameter",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "Le4szVj-oJ0kYRw_IRsk4K6lTOTJiSOJ3K7a4OZ3fdeekvoxeQKBEc28_UzGHdUeqR4yttj1vVa-DdwT1qEv4x3fo-41:REkuqQAnXpbMFWgrszXoGcjsWlw8boa8Q7KoQOGyl-kYSmxMEOjPC54gOyobHWyghkFiBjhvr8Ih_Rd9-kVQq4eLSGzkRm4nVpdxqQcOisroA2_eWnYR4cltakakpUK2yLAIDg2"
+					},
+					{
+						"key": "api-token",
+						"value": "A61d7f827b9b4994837e7dc835f87b5bd24b6597a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":34,\"STORE_LABEL\":\"Redding\",\"STORE_STATE\":\"CA\",\"STORE_ORDER_TYPE_NBR\":2383,\"STORE_TYPE_DESCRIPTION\":\"Whse 94 - Candy\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[94],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":2383,\"WAREHOUSE_NBR\":94,\"ORDER_TYPE_NBR\":10,\"RANK\":0}],\"storeTypeDesc\":\"Whse 94 - Candy\",\"whse\":[94],\"editMode\":false,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/delete",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC03_Validate the API using GET method instead of POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "Le4szVj-oJ0kYRw_IRsk4K6lTOTJiSOJ3K7a4OZ3fdeekvoxeQKBEc28_UzGHdUeqR4yttj1vVa-DdwT1qEv4x3fo-41:REkuqQAnXpbMFWgrszXoGcjsWlw8boa8Q7KoQOGyl-kYSmxMEOjPC54gOyobHWyghkFiBjhvr8Ih_Rd9-kVQq4eLSGzkRm4nVpdxqQcOisroA2_eWnYR4cltakakpUK2yLAIDg2"
+					},
+					{
+						"key": "api-token",
+						"value": "A61d7f827b9b4994837e7dc835f87b5bd24b6597a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":34,\"STORE_LABEL\":\"Redding\",\"STORE_STATE\":\"CA\",\"STORE_ORDER_TYPE_NBR\":2383,\"STORE_TYPE_DESCRIPTION\":\"Whse 94 - Candy\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[94],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":2383,\"WAREHOUSE_NBR\":94,\"ORDER_TYPE_NBR\":10,\"RANK\":0}],\"storeTypeDesc\":\"Whse 94 - Candy\",\"whse\":[94],\"editMode\":false,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/delete",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC04_Validate Response for invalid URL",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "Le4szVj-oJ0kYRw_IRsk4K6lTOTJiSOJ3K7a4OZ3fdeekvoxeQKBEc28_UzGHdUeqR4yttj1vVa-DdwT1qEv4x3fo-41:REkuqQAnXpbMFWgrszXoGcjsWlw8boa8Q7KoQOGyl-kYSmxMEOjPC54gOyobHWyghkFiBjhvr8Ih_Rd9-kVQq4eLSGzkRm4nVpdxqQcOisroA2_eWnYR4cltakakpUK2yLAIDg2"
+					},
+					{
+						"key": "api-token",
+						"value": "A61d7f827b9b4994837e7dc835f87b5bd24b6597a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":34,\"STORE_LABEL\":\"Redding\",\"STORE_STATE\":\"CA\",\"STORE_ORDER_TYPE_NBR\":2383,\"STORE_TYPE_DESCRIPTION\":\"Whse 94 - Candy\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[94],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":2383,\"WAREHOUSE_NBR\":94,\"ORDER_TYPE_NBR\":10,\"RANK\":0}],\"storeTypeDesc\":\"Whse 94 - Candy\",\"whse\":[94],\"editMode\":false,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/delete",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC06_Schema Validation for Input parameter \"STORE_NBR\"",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "Le4szVj-oJ0kYRw_IRsk4K6lTOTJiSOJ3K7a4OZ3fdeekvoxeQKBEc28_UzGHdUeqR4yttj1vVa-DdwT1qEv4x3fo-41:REkuqQAnXpbMFWgrszXoGcjsWlw8boa8Q7KoQOGyl-kYSmxMEOjPC54gOyobHWyghkFiBjhvr8Ih_Rd9-kVQq4eLSGzkRm4nVpdxqQcOisroA2_eWnYR4cltakakpUK2yLAIDg2"
+					},
+					{
+						"key": "api-token",
+						"value": "A61d7f827b9b4994837e7dc835f87b5bd24b6597a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":34,\"STORE_LABEL\":\"Redding\",\"STORE_STATE\":\"CA\",\"STORE_ORDER_TYPE_NBR\":2383,\"STORE_TYPE_DESCRIPTION\":\"Whse 94 - Candy\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[94],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":2383,\"WAREHOUSE_NBR\":94,\"ORDER_TYPE_NBR\":10,\"RANK\":0}],\"storeTypeDesc\":\"Whse 94 - Candy\",\"whse\":[94],\"editMode\":false,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/delete",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC07_Check for Input parameter \"STORE_NBR\" as blank",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "Le4szVj-oJ0kYRw_IRsk4K6lTOTJiSOJ3K7a4OZ3fdeekvoxeQKBEc28_UzGHdUeqR4yttj1vVa-DdwT1qEv4x3fo-41:REkuqQAnXpbMFWgrszXoGcjsWlw8boa8Q7KoQOGyl-kYSmxMEOjPC54gOyobHWyghkFiBjhvr8Ih_Rd9-kVQq4eLSGzkRm4nVpdxqQcOisroA2_eWnYR4cltakakpUK2yLAIDg2"
+					},
+					{
+						"key": "api-token",
+						"value": "A61d7f827b9b4994837e7dc835f87b5bd24b6597a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":34,\"STORE_LABEL\":\"Redding\",\"STORE_STATE\":\"CA\",\"STORE_ORDER_TYPE_NBR\":2383,\"STORE_TYPE_DESCRIPTION\":\"Whse 94 - Candy\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[94],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":2383,\"WAREHOUSE_NBR\":94,\"ORDER_TYPE_NBR\":10,\"RANK\":0}],\"storeTypeDesc\":\"Whse 94 - Candy\",\"whse\":[94],\"editMode\":false,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/delete",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC08_Check for Input parameter \"STORE_LABEL\" as blank and invalid inputs",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "Le4szVj-oJ0kYRw_IRsk4K6lTOTJiSOJ3K7a4OZ3fdeekvoxeQKBEc28_UzGHdUeqR4yttj1vVa-DdwT1qEv4x3fo-41:REkuqQAnXpbMFWgrszXoGcjsWlw8boa8Q7KoQOGyl-kYSmxMEOjPC54gOyobHWyghkFiBjhvr8Ih_Rd9-kVQq4eLSGzkRm4nVpdxqQcOisroA2_eWnYR4cltakakpUK2yLAIDg2"
+					},
+					{
+						"key": "api-token",
+						"value": "A61d7f827b9b4994837e7dc835f87b5bd24b6597a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":34,\"STORE_LABEL\":\"Redding\",\"STORE_STATE\":\"CA\",\"STORE_ORDER_TYPE_NBR\":2383,\"STORE_TYPE_DESCRIPTION\":\"Whse 94 - Candy\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[94],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":2383,\"WAREHOUSE_NBR\":94,\"ORDER_TYPE_NBR\":10,\"RANK\":0}],\"storeTypeDesc\":\"Whse 94 - Candy\",\"whse\":[94],\"editMode\":false,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/delete",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC09_Check for Input parameter \"STORE_STATE\" as blank and invalid inputs",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "Le4szVj-oJ0kYRw_IRsk4K6lTOTJiSOJ3K7a4OZ3fdeekvoxeQKBEc28_UzGHdUeqR4yttj1vVa-DdwT1qEv4x3fo-41:REkuqQAnXpbMFWgrszXoGcjsWlw8boa8Q7KoQOGyl-kYSmxMEOjPC54gOyobHWyghkFiBjhvr8Ih_Rd9-kVQq4eLSGzkRm4nVpdxqQcOisroA2_eWnYR4cltakakpUK2yLAIDg2"
+					},
+					{
+						"key": "api-token",
+						"value": "A61d7f827b9b4994837e7dc835f87b5bd24b6597a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":34,\"STORE_LABEL\":\"Redding\",\"STORE_STATE\":\"CA\",\"STORE_ORDER_TYPE_NBR\":2383,\"STORE_TYPE_DESCRIPTION\":\"Whse 94 - Candy\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[94],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":2383,\"WAREHOUSE_NBR\":94,\"ORDER_TYPE_NBR\":10,\"RANK\":0}],\"storeTypeDesc\":\"Whse 94 - Candy\",\"whse\":[94],\"editMode\":false,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/delete",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC10_Schema Validation for Input parameter \"STORE_ORDER_TYPE_NBR\"",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "Le4szVj-oJ0kYRw_IRsk4K6lTOTJiSOJ3K7a4OZ3fdeekvoxeQKBEc28_UzGHdUeqR4yttj1vVa-DdwT1qEv4x3fo-41:REkuqQAnXpbMFWgrszXoGcjsWlw8boa8Q7KoQOGyl-kYSmxMEOjPC54gOyobHWyghkFiBjhvr8Ih_Rd9-kVQq4eLSGzkRm4nVpdxqQcOisroA2_eWnYR4cltakakpUK2yLAIDg2"
+					},
+					{
+						"key": "api-token",
+						"value": "A61d7f827b9b4994837e7dc835f87b5bd24b6597a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":34,\"STORE_LABEL\":\"Redding\",\"STORE_STATE\":\"CA\",\"STORE_ORDER_TYPE_NBR\":2383,\"STORE_TYPE_DESCRIPTION\":\"Whse 94 - Candy\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[94],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":2383,\"WAREHOUSE_NBR\":94,\"ORDER_TYPE_NBR\":10,\"RANK\":0}],\"storeTypeDesc\":\"Whse 94 - Candy\",\"whse\":[94],\"editMode\":false,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/delete",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC11_Check for Input parameter \"STORE_ORDER_TYPE_NBR\" as blank",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "Le4szVj-oJ0kYRw_IRsk4K6lTOTJiSOJ3K7a4OZ3fdeekvoxeQKBEc28_UzGHdUeqR4yttj1vVa-DdwT1qEv4x3fo-41:REkuqQAnXpbMFWgrszXoGcjsWlw8boa8Q7KoQOGyl-kYSmxMEOjPC54gOyobHWyghkFiBjhvr8Ih_Rd9-kVQq4eLSGzkRm4nVpdxqQcOisroA2_eWnYR4cltakakpUK2yLAIDg2"
+					},
+					{
+						"key": "api-token",
+						"value": "A61d7f827b9b4994837e7dc835f87b5bd24b6597a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":34,\"STORE_LABEL\":\"Redding\",\"STORE_STATE\":\"CA\",\"STORE_ORDER_TYPE_NBR\":2383,\"STORE_TYPE_DESCRIPTION\":\"Whse 94 - Candy\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[94],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":2383,\"WAREHOUSE_NBR\":94,\"ORDER_TYPE_NBR\":10,\"RANK\":0}],\"storeTypeDesc\":\"Whse 94 - Candy\",\"whse\":[94],\"editMode\":false,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/delete",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC12_Check for Input parameter \"STORE_TYPE_DESCRIPTION\" as blank and invalid inputs",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "Le4szVj-oJ0kYRw_IRsk4K6lTOTJiSOJ3K7a4OZ3fdeekvoxeQKBEc28_UzGHdUeqR4yttj1vVa-DdwT1qEv4x3fo-41:REkuqQAnXpbMFWgrszXoGcjsWlw8boa8Q7KoQOGyl-kYSmxMEOjPC54gOyobHWyghkFiBjhvr8Ih_Rd9-kVQq4eLSGzkRm4nVpdxqQcOisroA2_eWnYR4cltakakpUK2yLAIDg2"
+					},
+					{
+						"key": "api-token",
+						"value": "A61d7f827b9b4994837e7dc835f87b5bd24b6597a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":34,\"STORE_LABEL\":\"Redding\",\"STORE_STATE\":\"CA\",\"STORE_ORDER_TYPE_NBR\":2383,\"STORE_TYPE_DESCRIPTION\":\"Whse 94 - Candy\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[94],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":2383,\"WAREHOUSE_NBR\":94,\"ORDER_TYPE_NBR\":10,\"RANK\":0}],\"storeTypeDesc\":\"Whse 94 - Candy\",\"whse\":[94],\"editMode\":false,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/delete",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC13_Schema Validation for Input parameter \"ORDER_NOW\"",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "Le4szVj-oJ0kYRw_IRsk4K6lTOTJiSOJ3K7a4OZ3fdeekvoxeQKBEc28_UzGHdUeqR4yttj1vVa-DdwT1qEv4x3fo-41:REkuqQAnXpbMFWgrszXoGcjsWlw8boa8Q7KoQOGyl-kYSmxMEOjPC54gOyobHWyghkFiBjhvr8Ih_Rd9-kVQq4eLSGzkRm4nVpdxqQcOisroA2_eWnYR4cltakakpUK2yLAIDg2"
+					},
+					{
+						"key": "api-token",
+						"value": "A61d7f827b9b4994837e7dc835f87b5bd24b6597a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":34,\"STORE_LABEL\":\"Redding\",\"STORE_STATE\":\"CA\",\"STORE_ORDER_TYPE_NBR\":2383,\"STORE_TYPE_DESCRIPTION\":\"Whse 94 - Candy\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[94],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":2383,\"WAREHOUSE_NBR\":94,\"ORDER_TYPE_NBR\":10,\"RANK\":0}],\"storeTypeDesc\":\"Whse 94 - Candy\",\"whse\":[94],\"editMode\":false,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/delete",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC14_Check for Input parameter \"ORDER_NOW\" as blank",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "Le4szVj-oJ0kYRw_IRsk4K6lTOTJiSOJ3K7a4OZ3fdeekvoxeQKBEc28_UzGHdUeqR4yttj1vVa-DdwT1qEv4x3fo-41:REkuqQAnXpbMFWgrszXoGcjsWlw8boa8Q7KoQOGyl-kYSmxMEOjPC54gOyobHWyghkFiBjhvr8Ih_Rd9-kVQq4eLSGzkRm4nVpdxqQcOisroA2_eWnYR4cltakakpUK2yLAIDg2"
+					},
+					{
+						"key": "api-token",
+						"value": "A61d7f827b9b4994837e7dc835f87b5bd24b6597a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":34,\"STORE_LABEL\":\"Redding\",\"STORE_STATE\":\"CA\",\"STORE_ORDER_TYPE_NBR\":2383,\"STORE_TYPE_DESCRIPTION\":\"Whse 94 - Candy\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[94],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":2383,\"WAREHOUSE_NBR\":94,\"ORDER_TYPE_NBR\":10,\"RANK\":0}],\"storeTypeDesc\":\"Whse 94 - Candy\",\"whse\":[94],\"editMode\":false,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/delete",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC15_Schema Validation for Input parameter \"ALLOW_NEW_ARRIVAL_OG\"",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "Le4szVj-oJ0kYRw_IRsk4K6lTOTJiSOJ3K7a4OZ3fdeekvoxeQKBEc28_UzGHdUeqR4yttj1vVa-DdwT1qEv4x3fo-41:REkuqQAnXpbMFWgrszXoGcjsWlw8boa8Q7KoQOGyl-kYSmxMEOjPC54gOyobHWyghkFiBjhvr8Ih_Rd9-kVQq4eLSGzkRm4nVpdxqQcOisroA2_eWnYR4cltakakpUK2yLAIDg2"
+					},
+					{
+						"key": "api-token",
+						"value": "A61d7f827b9b4994837e7dc835f87b5bd24b6597a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":34,\"STORE_LABEL\":\"Redding\",\"STORE_STATE\":\"CA\",\"STORE_ORDER_TYPE_NBR\":2383,\"STORE_TYPE_DESCRIPTION\":\"Whse 94 - Candy\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[94],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":2383,\"WAREHOUSE_NBR\":94,\"ORDER_TYPE_NBR\":10,\"RANK\":0}],\"storeTypeDesc\":\"Whse 94 - Candy\",\"whse\":[94],\"editMode\":false,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/delete",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC16_Check for Input parameter \"ALLOW_NEW_ARRIVAL_OG\" as blank",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "Le4szVj-oJ0kYRw_IRsk4K6lTOTJiSOJ3K7a4OZ3fdeekvoxeQKBEc28_UzGHdUeqR4yttj1vVa-DdwT1qEv4x3fo-41:REkuqQAnXpbMFWgrszXoGcjsWlw8boa8Q7KoQOGyl-kYSmxMEOjPC54gOyobHWyghkFiBjhvr8Ih_Rd9-kVQq4eLSGzkRm4nVpdxqQcOisroA2_eWnYR4cltakakpUK2yLAIDg2"
+					},
+					{
+						"key": "api-token",
+						"value": "A61d7f827b9b4994837e7dc835f87b5bd24b6597a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":34,\"STORE_LABEL\":\"Redding\",\"STORE_STATE\":\"CA\",\"STORE_ORDER_TYPE_NBR\":2383,\"STORE_TYPE_DESCRIPTION\":\"Whse 94 - Candy\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[94],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":2383,\"WAREHOUSE_NBR\":94,\"ORDER_TYPE_NBR\":10,\"RANK\":0}],\"storeTypeDesc\":\"Whse 94 - Candy\",\"whse\":[94],\"editMode\":false,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/delete",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC17_Schema Validation for Input parameter \"WAREHOUSE_NBR\"",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "Le4szVj-oJ0kYRw_IRsk4K6lTOTJiSOJ3K7a4OZ3fdeekvoxeQKBEc28_UzGHdUeqR4yttj1vVa-DdwT1qEv4x3fo-41:REkuqQAnXpbMFWgrszXoGcjsWlw8boa8Q7KoQOGyl-kYSmxMEOjPC54gOyobHWyghkFiBjhvr8Ih_Rd9-kVQq4eLSGzkRm4nVpdxqQcOisroA2_eWnYR4cltakakpUK2yLAIDg2"
+					},
+					{
+						"key": "api-token",
+						"value": "A61d7f827b9b4994837e7dc835f87b5bd24b6597a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":34,\"STORE_LABEL\":\"Redding\",\"STORE_STATE\":\"CA\",\"STORE_ORDER_TYPE_NBR\":2383,\"STORE_TYPE_DESCRIPTION\":\"Whse 94 - Candy\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[94],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":2383,\"WAREHOUSE_NBR\":94,\"ORDER_TYPE_NBR\":10,\"RANK\":0}],\"storeTypeDesc\":\"Whse 94 - Candy\",\"whse\":[94],\"editMode\":false,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/delete",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC18_Check for Input parameter \"WAREHOUSE_NBR\" as blank",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "Le4szVj-oJ0kYRw_IRsk4K6lTOTJiSOJ3K7a4OZ3fdeekvoxeQKBEc28_UzGHdUeqR4yttj1vVa-DdwT1qEv4x3fo-41:REkuqQAnXpbMFWgrszXoGcjsWlw8boa8Q7KoQOGyl-kYSmxMEOjPC54gOyobHWyghkFiBjhvr8Ih_Rd9-kVQq4eLSGzkRm4nVpdxqQcOisroA2_eWnYR4cltakakpUK2yLAIDg2"
+					},
+					{
+						"key": "api-token",
+						"value": "A61d7f827b9b4994837e7dc835f87b5bd24b6597a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":34,\"STORE_LABEL\":\"Redding\",\"STORE_STATE\":\"CA\",\"STORE_ORDER_TYPE_NBR\":2383,\"STORE_TYPE_DESCRIPTION\":\"Whse 94 - Candy\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[94],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":2383,\"WAREHOUSE_NBR\":94,\"ORDER_TYPE_NBR\":10,\"RANK\":0}],\"storeTypeDesc\":\"Whse 94 - Candy\",\"whse\":[94],\"editMode\":false,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/delete",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC19_Schema Validation for Input parameter \"STORE_TYPE_NBR\"",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "Le4szVj-oJ0kYRw_IRsk4K6lTOTJiSOJ3K7a4OZ3fdeekvoxeQKBEc28_UzGHdUeqR4yttj1vVa-DdwT1qEv4x3fo-41:REkuqQAnXpbMFWgrszXoGcjsWlw8boa8Q7KoQOGyl-kYSmxMEOjPC54gOyobHWyghkFiBjhvr8Ih_Rd9-kVQq4eLSGzkRm4nVpdxqQcOisroA2_eWnYR4cltakakpUK2yLAIDg2"
+					},
+					{
+						"key": "api-token",
+						"value": "A61d7f827b9b4994837e7dc835f87b5bd24b6597a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":34,\"STORE_LABEL\":\"Redding\",\"STORE_STATE\":\"CA\",\"STORE_ORDER_TYPE_NBR\":2383,\"STORE_TYPE_DESCRIPTION\":\"Whse 94 - Candy\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[94],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":2383,\"WAREHOUSE_NBR\":94,\"ORDER_TYPE_NBR\":10,\"RANK\":0}],\"storeTypeDesc\":\"Whse 94 - Candy\",\"whse\":[94],\"editMode\":false,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/delete",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC20_Check for Input parameter \"STORE_TYPE_NBR\" as blank",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "Le4szVj-oJ0kYRw_IRsk4K6lTOTJiSOJ3K7a4OZ3fdeekvoxeQKBEc28_UzGHdUeqR4yttj1vVa-DdwT1qEv4x3fo-41:REkuqQAnXpbMFWgrszXoGcjsWlw8boa8Q7KoQOGyl-kYSmxMEOjPC54gOyobHWyghkFiBjhvr8Ih_Rd9-kVQq4eLSGzkRm4nVpdxqQcOisroA2_eWnYR4cltakakpUK2yLAIDg2"
+					},
+					{
+						"key": "api-token",
+						"value": "A61d7f827b9b4994837e7dc835f87b5bd24b6597a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":34,\"STORE_LABEL\":\"Redding\",\"STORE_STATE\":\"CA\",\"STORE_ORDER_TYPE_NBR\":2383,\"STORE_TYPE_DESCRIPTION\":\"Whse 94 - Candy\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[94],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":2383,\"WAREHOUSE_NBR\":94,\"ORDER_TYPE_NBR\":10,\"RANK\":0}],\"storeTypeDesc\":\"Whse 94 - Candy\",\"whse\":[94],\"editMode\":false,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/delete",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC21_Schema Validation for Input parameter \"ORDER_TYPE_NBR\"",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "Le4szVj-oJ0kYRw_IRsk4K6lTOTJiSOJ3K7a4OZ3fdeekvoxeQKBEc28_UzGHdUeqR4yttj1vVa-DdwT1qEv4x3fo-41:REkuqQAnXpbMFWgrszXoGcjsWlw8boa8Q7KoQOGyl-kYSmxMEOjPC54gOyobHWyghkFiBjhvr8Ih_Rd9-kVQq4eLSGzkRm4nVpdxqQcOisroA2_eWnYR4cltakakpUK2yLAIDg2"
+					},
+					{
+						"key": "api-token",
+						"value": "A61d7f827b9b4994837e7dc835f87b5bd24b6597a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":34,\"STORE_LABEL\":\"Redding\",\"STORE_STATE\":\"CA\",\"STORE_ORDER_TYPE_NBR\":2383,\"STORE_TYPE_DESCRIPTION\":\"Whse 94 - Candy\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[94],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":2383,\"WAREHOUSE_NBR\":94,\"ORDER_TYPE_NBR\":10,\"RANK\":0}],\"storeTypeDesc\":\"Whse 94 - Candy\",\"whse\":[94],\"editMode\":false,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/delete",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC22_Check for Input parameter \"ORDER_TYPE_NBR\" as blank",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "Le4szVj-oJ0kYRw_IRsk4K6lTOTJiSOJ3K7a4OZ3fdeekvoxeQKBEc28_UzGHdUeqR4yttj1vVa-DdwT1qEv4x3fo-41:REkuqQAnXpbMFWgrszXoGcjsWlw8boa8Q7KoQOGyl-kYSmxMEOjPC54gOyobHWyghkFiBjhvr8Ih_Rd9-kVQq4eLSGzkRm4nVpdxqQcOisroA2_eWnYR4cltakakpUK2yLAIDg2"
+					},
+					{
+						"key": "api-token",
+						"value": "A61d7f827b9b4994837e7dc835f87b5bd24b6597a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":34,\"STORE_LABEL\":\"Redding\",\"STORE_STATE\":\"CA\",\"STORE_ORDER_TYPE_NBR\":2383,\"STORE_TYPE_DESCRIPTION\":\"Whse 94 - Candy\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[94],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":2383,\"WAREHOUSE_NBR\":94,\"ORDER_TYPE_NBR\":10,\"RANK\":0}],\"storeTypeDesc\":\"Whse 94 - Candy\",\"whse\":[94],\"editMode\":false,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/delete",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC23_Check for Input parameter \"RANK\" as blank and invalid inputs",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "Le4szVj-oJ0kYRw_IRsk4K6lTOTJiSOJ3K7a4OZ3fdeekvoxeQKBEc28_UzGHdUeqR4yttj1vVa-DdwT1qEv4x3fo-41:REkuqQAnXpbMFWgrszXoGcjsWlw8boa8Q7KoQOGyl-kYSmxMEOjPC54gOyobHWyghkFiBjhvr8Ih_Rd9-kVQq4eLSGzkRm4nVpdxqQcOisroA2_eWnYR4cltakakpUK2yLAIDg2"
+					},
+					{
+						"key": "api-token",
+						"value": "A61d7f827b9b4994837e7dc835f87b5bd24b6597a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":34,\"STORE_LABEL\":\"Redding\",\"STORE_STATE\":\"CA\",\"STORE_ORDER_TYPE_NBR\":2383,\"STORE_TYPE_DESCRIPTION\":\"Whse 94 - Candy\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[94],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":2383,\"WAREHOUSE_NBR\":94,\"ORDER_TYPE_NBR\":10,\"RANK\":0}],\"storeTypeDesc\":\"Whse 94 - Candy\",\"whse\":[94],\"editMode\":false,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/delete",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC24_Check for Input parameter \"whse\" as blank and invalid inputs",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "Le4szVj-oJ0kYRw_IRsk4K6lTOTJiSOJ3K7a4OZ3fdeekvoxeQKBEc28_UzGHdUeqR4yttj1vVa-DdwT1qEv4x3fo-41:REkuqQAnXpbMFWgrszXoGcjsWlw8boa8Q7KoQOGyl-kYSmxMEOjPC54gOyobHWyghkFiBjhvr8Ih_Rd9-kVQq4eLSGzkRm4nVpdxqQcOisroA2_eWnYR4cltakakpUK2yLAIDg2"
+					},
+					{
+						"key": "api-token",
+						"value": "A61d7f827b9b4994837e7dc835f87b5bd24b6597a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":34,\"STORE_LABEL\":\"Redding\",\"STORE_STATE\":\"CA\",\"STORE_ORDER_TYPE_NBR\":2383,\"STORE_TYPE_DESCRIPTION\":\"Whse 94 - Candy\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[94],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":2383,\"WAREHOUSE_NBR\":94,\"ORDER_TYPE_NBR\":10,\"RANK\":0}],\"storeTypeDesc\":\"Whse 94 - Candy\",\"whse\":[94],\"editMode\":false,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/delete",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC25_Check for Input parameter \"editMode\" as blank and invalid inputs",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "Le4szVj-oJ0kYRw_IRsk4K6lTOTJiSOJ3K7a4OZ3fdeekvoxeQKBEc28_UzGHdUeqR4yttj1vVa-DdwT1qEv4x3fo-41:REkuqQAnXpbMFWgrszXoGcjsWlw8boa8Q7KoQOGyl-kYSmxMEOjPC54gOyobHWyghkFiBjhvr8Ih_Rd9-kVQq4eLSGzkRm4nVpdxqQcOisroA2_eWnYR4cltakakpUK2yLAIDg2"
+					},
+					{
+						"key": "api-token",
+						"value": "A61d7f827b9b4994837e7dc835f87b5bd24b6597a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":34,\"STORE_LABEL\":\"Redding\",\"STORE_STATE\":\"CA\",\"STORE_ORDER_TYPE_NBR\":2383,\"STORE_TYPE_DESCRIPTION\":\"Whse 94 - Candy\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[94],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":2383,\"WAREHOUSE_NBR\":94,\"ORDER_TYPE_NBR\":10,\"RANK\":0}],\"storeTypeDesc\":\"Whse 94 - Candy\",\"whse\":[94],\"editMode\":false,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/delete",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC26_Check for Input parameter \"processing\" as  invalid inputs",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "Le4szVj-oJ0kYRw_IRsk4K6lTOTJiSOJ3K7a4OZ3fdeekvoxeQKBEc28_UzGHdUeqR4yttj1vVa-DdwT1qEv4x3fo-41:REkuqQAnXpbMFWgrszXoGcjsWlw8boa8Q7KoQOGyl-kYSmxMEOjPC54gOyobHWyghkFiBjhvr8Ih_Rd9-kVQq4eLSGzkRm4nVpdxqQcOisroA2_eWnYR4cltakakpUK2yLAIDg2"
+					},
+					{
+						"key": "api-token",
+						"value": "A61d7f827b9b4994837e7dc835f87b5bd24b6597a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":34,\"STORE_LABEL\":\"Redding\",\"STORE_STATE\":\"CA\",\"STORE_ORDER_TYPE_NBR\":2383,\"STORE_TYPE_DESCRIPTION\":\"Whse 94 - Candy\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[94],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":2383,\"WAREHOUSE_NBR\":94,\"ORDER_TYPE_NBR\":10,\"RANK\":0}],\"storeTypeDesc\":\"Whse 94 - Candy\",\"whse\":[94],\"editMode\":false,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/delete",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC27_Check for Input parameter \"processing\" as blank inputs",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "Le4szVj-oJ0kYRw_IRsk4K6lTOTJiSOJ3K7a4OZ3fdeekvoxeQKBEc28_UzGHdUeqR4yttj1vVa-DdwT1qEv4x3fo-41:REkuqQAnXpbMFWgrszXoGcjsWlw8boa8Q7KoQOGyl-kYSmxMEOjPC54gOyobHWyghkFiBjhvr8Ih_Rd9-kVQq4eLSGzkRm4nVpdxqQcOisroA2_eWnYR4cltakakpUK2yLAIDg2"
+					},
+					{
+						"key": "api-token",
+						"value": "A61d7f827b9b4994837e7dc835f87b5bd24b6597a"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":34,\"STORE_LABEL\":\"Redding\",\"STORE_STATE\":\"CA\",\"STORE_ORDER_TYPE_NBR\":2383,\"STORE_TYPE_DESCRIPTION\":\"Whse 94 - Candy\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[94],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":2383,\"WAREHOUSE_NBR\":94,\"ORDER_TYPE_NBR\":10,\"RANK\":0}],\"storeTypeDesc\":\"Whse 94 - Candy\",\"whse\":[94],\"editMode\":false,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/delete",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

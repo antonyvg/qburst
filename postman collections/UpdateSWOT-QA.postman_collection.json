@@ -1,0 +1,3129 @@
+{
+	"info": {
+		"_postman_id": "332c22e8-7303-425c-b7cc-b6d59494f288",
+		"name": "UpdateSWOT-QA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TC01_Validate the API response for input parameter",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "8GR58-3DwXkPeVYbUa3EKgq8EKHC9xEwKf1-m2nj_7myQtd4RY8vt25N3yaolEZiQ1omivF8L3gI0Mk-nxZ3j5HGOpQ1:fEMvW94QvKApJIY4coSseA1oOGmt3twrNV2OmNbj-2oBqdU5qZNPK7XGlGiRiK3skcP9AoUxAtQE0xmDwaV4fWBVCPRpkfG7uZevryfNU5v530UjMGQcSANGF0D1pfKOt2vSLw2"
+					},
+					{
+						"key": "api-token",
+						"value": "Ac428bd4b1f01282df34aa86a0544be9b87e6a5b3"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":38,\"STORE_LABEL\":\"Boise\",\"STORE_STATE\":\"ID\",\"STORE_ORDER_TYPE_NBR\":1361,\"STORE_TYPE_DESCRIPTION\":\"Whse 90 - Wine\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[90],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":1361,\"WAREHOUSE_NBR\":90,\"ORDER_TYPE_NBR\":5,\"RANK\":0,\"whse\":90}],\"storeTypeDesc\":\"Whse 90 - Wine\",\"whse\":[90],\"editMode\":true,\"INSERT\":[],\"DELETE\":[],\"UPDATE\":[],\"show\":true,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/update",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC02_Validate the API response for input parameter",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "8GR58-3DwXkPeVYbUa3EKgq8EKHC9xEwKf1-m2nj_7myQtd4RY8vt25N3yaolEZiQ1omivF8L3gI0Mk-nxZ3j5HGOpQ1:fEMvW94QvKApJIY4coSseA1oOGmt3twrNV2OmNbj-2oBqdU5qZNPK7XGlGiRiK3skcP9AoUxAtQE0xmDwaV4fWBVCPRpkfG7uZevryfNU5v530UjMGQcSANGF0D1pfKOt2vSLw2"
+					},
+					{
+						"key": "api-token",
+						"value": "Ac428bd4b1f01282df34aa86a0544be9b87e6a5b3"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":38,\"STORE_LABEL\":\"Boise\",\"STORE_STATE\":\"ID\",\"STORE_ORDER_TYPE_NBR\":1361,\"STORE_TYPE_DESCRIPTION\":\"Whse 90 - Wine\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[90],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":1361,\"WAREHOUSE_NBR\":90,\"ORDER_TYPE_NBR\":5,\"RANK\":0,\"whse\":90}],\"storeTypeDesc\":\"Whse 90 - Wine\",\"whse\":[90],\"editMode\":true,\"INSERT\":[],\"DELETE\":[],\"UPDATE\":[],\"show\":true,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/update",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC03_Validate the API using GET method instead of POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "8GR58-3DwXkPeVYbUa3EKgq8EKHC9xEwKf1-m2nj_7myQtd4RY8vt25N3yaolEZiQ1omivF8L3gI0Mk-nxZ3j5HGOpQ1:fEMvW94QvKApJIY4coSseA1oOGmt3twrNV2OmNbj-2oBqdU5qZNPK7XGlGiRiK3skcP9AoUxAtQE0xmDwaV4fWBVCPRpkfG7uZevryfNU5v530UjMGQcSANGF0D1pfKOt2vSLw2"
+					},
+					{
+						"key": "api-token",
+						"value": "Ac428bd4b1f01282df34aa86a0544be9b87e6a5b3"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":38,\"STORE_LABEL\":\"Boise\",\"STORE_STATE\":\"ID\",\"STORE_ORDER_TYPE_NBR\":1361,\"STORE_TYPE_DESCRIPTION\":\"Whse 90 - Wine\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[90],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":1361,\"WAREHOUSE_NBR\":90,\"ORDER_TYPE_NBR\":5,\"RANK\":0,\"whse\":90}],\"storeTypeDesc\":\"Whse 90 - Wine\",\"whse\":[90],\"editMode\":true,\"INSERT\":[],\"DELETE\":[],\"UPDATE\":[],\"show\":true,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/update",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC04_Validate Response for invalid URL",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "8GR58-3DwXkPeVYbUa3EKgq8EKHC9xEwKf1-m2nj_7myQtd4RY8vt25N3yaolEZiQ1omivF8L3gI0Mk-nxZ3j5HGOpQ1:fEMvW94QvKApJIY4coSseA1oOGmt3twrNV2OmNbj-2oBqdU5qZNPK7XGlGiRiK3skcP9AoUxAtQE0xmDwaV4fWBVCPRpkfG7uZevryfNU5v530UjMGQcSANGF0D1pfKOt2vSLw2"
+					},
+					{
+						"key": "api-token",
+						"value": "Ac428bd4b1f01282df34aa86a0544be9b87e6a5b3"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":38,\"STORE_LABEL\":\"Boise\",\"STORE_STATE\":\"ID\",\"STORE_ORDER_TYPE_NBR\":1361,\"STORE_TYPE_DESCRIPTION\":\"Whse 90 - Wine\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[90],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":1361,\"WAREHOUSE_NBR\":90,\"ORDER_TYPE_NBR\":5,\"RANK\":0,\"whse\":90}],\"storeTypeDesc\":\"Whse 90 - Wine\",\"whse\":[90],\"editMode\":true,\"INSERT\":[],\"DELETE\":[],\"UPDATE\":[],\"show\":true,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/update",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC06_Schema Validation for Input parameter \"STORE_NBR\"",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "8GR58-3DwXkPeVYbUa3EKgq8EKHC9xEwKf1-m2nj_7myQtd4RY8vt25N3yaolEZiQ1omivF8L3gI0Mk-nxZ3j5HGOpQ1:fEMvW94QvKApJIY4coSseA1oOGmt3twrNV2OmNbj-2oBqdU5qZNPK7XGlGiRiK3skcP9AoUxAtQE0xmDwaV4fWBVCPRpkfG7uZevryfNU5v530UjMGQcSANGF0D1pfKOt2vSLw2"
+					},
+					{
+						"key": "api-token",
+						"value": "Ac428bd4b1f01282df34aa86a0544be9b87e6a5b3"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":38,\"STORE_LABEL\":\"Boise\",\"STORE_STATE\":\"ID\",\"STORE_ORDER_TYPE_NBR\":1361,\"STORE_TYPE_DESCRIPTION\":\"Whse 90 - Wine\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[90],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":1361,\"WAREHOUSE_NBR\":90,\"ORDER_TYPE_NBR\":5,\"RANK\":0,\"whse\":90}],\"storeTypeDesc\":\"Whse 90 - Wine\",\"whse\":[90],\"editMode\":true,\"INSERT\":[],\"DELETE\":[],\"UPDATE\":[],\"show\":true,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/update",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC07_Check for Input parameter \"STORE_NBR\" as blank",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "8GR58-3DwXkPeVYbUa3EKgq8EKHC9xEwKf1-m2nj_7myQtd4RY8vt25N3yaolEZiQ1omivF8L3gI0Mk-nxZ3j5HGOpQ1:fEMvW94QvKApJIY4coSseA1oOGmt3twrNV2OmNbj-2oBqdU5qZNPK7XGlGiRiK3skcP9AoUxAtQE0xmDwaV4fWBVCPRpkfG7uZevryfNU5v530UjMGQcSANGF0D1pfKOt2vSLw2"
+					},
+					{
+						"key": "api-token",
+						"value": "Ac428bd4b1f01282df34aa86a0544be9b87e6a5b3"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":38,\"STORE_LABEL\":\"Boise\",\"STORE_STATE\":\"ID\",\"STORE_ORDER_TYPE_NBR\":1361,\"STORE_TYPE_DESCRIPTION\":\"Whse 90 - Wine\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[90],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":1361,\"WAREHOUSE_NBR\":90,\"ORDER_TYPE_NBR\":5,\"RANK\":0,\"whse\":90}],\"storeTypeDesc\":\"Whse 90 - Wine\",\"whse\":[90],\"editMode\":true,\"INSERT\":[],\"DELETE\":[],\"UPDATE\":[],\"show\":true,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/update",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC08_Check for Input parameter \"STORE_LABEL\" as blank and invalid inputs",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "8GR58-3DwXkPeVYbUa3EKgq8EKHC9xEwKf1-m2nj_7myQtd4RY8vt25N3yaolEZiQ1omivF8L3gI0Mk-nxZ3j5HGOpQ1:fEMvW94QvKApJIY4coSseA1oOGmt3twrNV2OmNbj-2oBqdU5qZNPK7XGlGiRiK3skcP9AoUxAtQE0xmDwaV4fWBVCPRpkfG7uZevryfNU5v530UjMGQcSANGF0D1pfKOt2vSLw2"
+					},
+					{
+						"key": "api-token",
+						"value": "Ac428bd4b1f01282df34aa86a0544be9b87e6a5b3"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":38,\"STORE_LABEL\":\"Boise\",\"STORE_STATE\":\"ID\",\"STORE_ORDER_TYPE_NBR\":1361,\"STORE_TYPE_DESCRIPTION\":\"Whse 90 - Wine\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[90],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":1361,\"WAREHOUSE_NBR\":90,\"ORDER_TYPE_NBR\":5,\"RANK\":0,\"whse\":90}],\"storeTypeDesc\":\"Whse 90 - Wine\",\"whse\":[90],\"editMode\":true,\"INSERT\":[],\"DELETE\":[],\"UPDATE\":[],\"show\":true,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/update",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC09_Check for Input parameter \"STORE_STATE\" as blank and invalid inputs",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "8GR58-3DwXkPeVYbUa3EKgq8EKHC9xEwKf1-m2nj_7myQtd4RY8vt25N3yaolEZiQ1omivF8L3gI0Mk-nxZ3j5HGOpQ1:fEMvW94QvKApJIY4coSseA1oOGmt3twrNV2OmNbj-2oBqdU5qZNPK7XGlGiRiK3skcP9AoUxAtQE0xmDwaV4fWBVCPRpkfG7uZevryfNU5v530UjMGQcSANGF0D1pfKOt2vSLw2"
+					},
+					{
+						"key": "api-token",
+						"value": "Ac428bd4b1f01282df34aa86a0544be9b87e6a5b3"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":38,\"STORE_LABEL\":\"Boise\",\"STORE_STATE\":\"ID\",\"STORE_ORDER_TYPE_NBR\":1361,\"STORE_TYPE_DESCRIPTION\":\"Whse 90 - Wine\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[90],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":1361,\"WAREHOUSE_NBR\":90,\"ORDER_TYPE_NBR\":5,\"RANK\":0,\"whse\":90}],\"storeTypeDesc\":\"Whse 90 - Wine\",\"whse\":[90],\"editMode\":true,\"INSERT\":[],\"DELETE\":[],\"UPDATE\":[],\"show\":true,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/update",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC10_Schema Validation for Input parameter \"STORE_ORDER_TYPE_NBR\"",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "8GR58-3DwXkPeVYbUa3EKgq8EKHC9xEwKf1-m2nj_7myQtd4RY8vt25N3yaolEZiQ1omivF8L3gI0Mk-nxZ3j5HGOpQ1:fEMvW94QvKApJIY4coSseA1oOGmt3twrNV2OmNbj-2oBqdU5qZNPK7XGlGiRiK3skcP9AoUxAtQE0xmDwaV4fWBVCPRpkfG7uZevryfNU5v530UjMGQcSANGF0D1pfKOt2vSLw2"
+					},
+					{
+						"key": "api-token",
+						"value": "Ac428bd4b1f01282df34aa86a0544be9b87e6a5b3"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":38,\"STORE_LABEL\":\"Boise\",\"STORE_STATE\":\"ID\",\"STORE_ORDER_TYPE_NBR\":1361,\"STORE_TYPE_DESCRIPTION\":\"Whse 90 - Wine\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[90],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":1361,\"WAREHOUSE_NBR\":90,\"ORDER_TYPE_NBR\":5,\"RANK\":0,\"whse\":90}],\"storeTypeDesc\":\"Whse 90 - Wine\",\"whse\":[90],\"editMode\":true,\"INSERT\":[],\"DELETE\":[],\"UPDATE\":[],\"show\":true,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/update",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC11_Check for Input parameter \"STORE_ORDER_TYPE_NBR\" as blank",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "8GR58-3DwXkPeVYbUa3EKgq8EKHC9xEwKf1-m2nj_7myQtd4RY8vt25N3yaolEZiQ1omivF8L3gI0Mk-nxZ3j5HGOpQ1:fEMvW94QvKApJIY4coSseA1oOGmt3twrNV2OmNbj-2oBqdU5qZNPK7XGlGiRiK3skcP9AoUxAtQE0xmDwaV4fWBVCPRpkfG7uZevryfNU5v530UjMGQcSANGF0D1pfKOt2vSLw2"
+					},
+					{
+						"key": "api-token",
+						"value": "Ac428bd4b1f01282df34aa86a0544be9b87e6a5b3"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":38,\"STORE_LABEL\":\"Boise\",\"STORE_STATE\":\"ID\",\"STORE_ORDER_TYPE_NBR\":1361,\"STORE_TYPE_DESCRIPTION\":\"Whse 90 - Wine\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[90],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":1361,\"WAREHOUSE_NBR\":90,\"ORDER_TYPE_NBR\":5,\"RANK\":0,\"whse\":90}],\"storeTypeDesc\":\"Whse 90 - Wine\",\"whse\":[90],\"editMode\":true,\"INSERT\":[],\"DELETE\":[],\"UPDATE\":[],\"show\":true,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/update",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC12_Check for Input parameter \"STORE_TYPE_DESCRIPTION\" as blank and invalid inputs",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "8GR58-3DwXkPeVYbUa3EKgq8EKHC9xEwKf1-m2nj_7myQtd4RY8vt25N3yaolEZiQ1omivF8L3gI0Mk-nxZ3j5HGOpQ1:fEMvW94QvKApJIY4coSseA1oOGmt3twrNV2OmNbj-2oBqdU5qZNPK7XGlGiRiK3skcP9AoUxAtQE0xmDwaV4fWBVCPRpkfG7uZevryfNU5v530UjMGQcSANGF0D1pfKOt2vSLw2"
+					},
+					{
+						"key": "api-token",
+						"value": "Ac428bd4b1f01282df34aa86a0544be9b87e6a5b3"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":38,\"STORE_LABEL\":\"Boise\",\"STORE_STATE\":\"ID\",\"STORE_ORDER_TYPE_NBR\":1361,\"STORE_TYPE_DESCRIPTION\":\"Whse 90 - Wine\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[90],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":1361,\"WAREHOUSE_NBR\":90,\"ORDER_TYPE_NBR\":5,\"RANK\":0,\"whse\":90}],\"storeTypeDesc\":\"Whse 90 - Wine\",\"whse\":[90],\"editMode\":true,\"INSERT\":[],\"DELETE\":[],\"UPDATE\":[],\"show\":true,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/update",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC13_Schema Validation for Input parameter \"ORDER_NOW\"",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "8GR58-3DwXkPeVYbUa3EKgq8EKHC9xEwKf1-m2nj_7myQtd4RY8vt25N3yaolEZiQ1omivF8L3gI0Mk-nxZ3j5HGOpQ1:fEMvW94QvKApJIY4coSseA1oOGmt3twrNV2OmNbj-2oBqdU5qZNPK7XGlGiRiK3skcP9AoUxAtQE0xmDwaV4fWBVCPRpkfG7uZevryfNU5v530UjMGQcSANGF0D1pfKOt2vSLw2"
+					},
+					{
+						"key": "api-token",
+						"value": "Ac428bd4b1f01282df34aa86a0544be9b87e6a5b3"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":38,\"STORE_LABEL\":\"Boise\",\"STORE_STATE\":\"ID\",\"STORE_ORDER_TYPE_NBR\":1361,\"STORE_TYPE_DESCRIPTION\":\"Whse 90 - Wine\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[90],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":1361,\"WAREHOUSE_NBR\":90,\"ORDER_TYPE_NBR\":5,\"RANK\":0,\"whse\":90}],\"storeTypeDesc\":\"Whse 90 - Wine\",\"whse\":[90],\"editMode\":true,\"INSERT\":[],\"DELETE\":[],\"UPDATE\":[],\"show\":true,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/update",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC14_Check for Input parameter \"ORDER_NOW\" as blank",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "8GR58-3DwXkPeVYbUa3EKgq8EKHC9xEwKf1-m2nj_7myQtd4RY8vt25N3yaolEZiQ1omivF8L3gI0Mk-nxZ3j5HGOpQ1:fEMvW94QvKApJIY4coSseA1oOGmt3twrNV2OmNbj-2oBqdU5qZNPK7XGlGiRiK3skcP9AoUxAtQE0xmDwaV4fWBVCPRpkfG7uZevryfNU5v530UjMGQcSANGF0D1pfKOt2vSLw2"
+					},
+					{
+						"key": "api-token",
+						"value": "Ac428bd4b1f01282df34aa86a0544be9b87e6a5b3"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":38,\"STORE_LABEL\":\"Boise\",\"STORE_STATE\":\"ID\",\"STORE_ORDER_TYPE_NBR\":1361,\"STORE_TYPE_DESCRIPTION\":\"Whse 90 - Wine\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[90],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":1361,\"WAREHOUSE_NBR\":90,\"ORDER_TYPE_NBR\":5,\"RANK\":0,\"whse\":90}],\"storeTypeDesc\":\"Whse 90 - Wine\",\"whse\":[90],\"editMode\":true,\"INSERT\":[],\"DELETE\":[],\"UPDATE\":[],\"show\":true,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/update",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC15_Schema Validation for Input parameter \"ALLOW_NEW_ARRIVAL_OG\"",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "8GR58-3DwXkPeVYbUa3EKgq8EKHC9xEwKf1-m2nj_7myQtd4RY8vt25N3yaolEZiQ1omivF8L3gI0Mk-nxZ3j5HGOpQ1:fEMvW94QvKApJIY4coSseA1oOGmt3twrNV2OmNbj-2oBqdU5qZNPK7XGlGiRiK3skcP9AoUxAtQE0xmDwaV4fWBVCPRpkfG7uZevryfNU5v530UjMGQcSANGF0D1pfKOt2vSLw2"
+					},
+					{
+						"key": "api-token",
+						"value": "Ac428bd4b1f01282df34aa86a0544be9b87e6a5b3"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":38,\"STORE_LABEL\":\"Boise\",\"STORE_STATE\":\"ID\",\"STORE_ORDER_TYPE_NBR\":1361,\"STORE_TYPE_DESCRIPTION\":\"Whse 90 - Wine\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[90],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":1361,\"WAREHOUSE_NBR\":90,\"ORDER_TYPE_NBR\":5,\"RANK\":0,\"whse\":90}],\"storeTypeDesc\":\"Whse 90 - Wine\",\"whse\":[90],\"editMode\":true,\"INSERT\":[],\"DELETE\":[],\"UPDATE\":[],\"show\":true,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/update",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC16_Check for Input parameter \"ALLOW_NEW_ARRIVAL_OG\" as blank",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "8GR58-3DwXkPeVYbUa3EKgq8EKHC9xEwKf1-m2nj_7myQtd4RY8vt25N3yaolEZiQ1omivF8L3gI0Mk-nxZ3j5HGOpQ1:fEMvW94QvKApJIY4coSseA1oOGmt3twrNV2OmNbj-2oBqdU5qZNPK7XGlGiRiK3skcP9AoUxAtQE0xmDwaV4fWBVCPRpkfG7uZevryfNU5v530UjMGQcSANGF0D1pfKOt2vSLw2"
+					},
+					{
+						"key": "api-token",
+						"value": "Ac428bd4b1f01282df34aa86a0544be9b87e6a5b3"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":38,\"STORE_LABEL\":\"Boise\",\"STORE_STATE\":\"ID\",\"STORE_ORDER_TYPE_NBR\":1361,\"STORE_TYPE_DESCRIPTION\":\"Whse 90 - Wine\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[90],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":1361,\"WAREHOUSE_NBR\":90,\"ORDER_TYPE_NBR\":5,\"RANK\":0,\"whse\":90}],\"storeTypeDesc\":\"Whse 90 - Wine\",\"whse\":[90],\"editMode\":true,\"INSERT\":[],\"DELETE\":[],\"UPDATE\":[],\"show\":true,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/update",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC17_Schema Validation for Input parameter \"WAREHOUSE_NBR\"",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "8GR58-3DwXkPeVYbUa3EKgq8EKHC9xEwKf1-m2nj_7myQtd4RY8vt25N3yaolEZiQ1omivF8L3gI0Mk-nxZ3j5HGOpQ1:fEMvW94QvKApJIY4coSseA1oOGmt3twrNV2OmNbj-2oBqdU5qZNPK7XGlGiRiK3skcP9AoUxAtQE0xmDwaV4fWBVCPRpkfG7uZevryfNU5v530UjMGQcSANGF0D1pfKOt2vSLw2"
+					},
+					{
+						"key": "api-token",
+						"value": "Ac428bd4b1f01282df34aa86a0544be9b87e6a5b3"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":38,\"STORE_LABEL\":\"Boise\",\"STORE_STATE\":\"ID\",\"STORE_ORDER_TYPE_NBR\":1361,\"STORE_TYPE_DESCRIPTION\":\"Whse 90 - Wine\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[90],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":1361,\"WAREHOUSE_NBR\":90,\"ORDER_TYPE_NBR\":5,\"RANK\":0,\"whse\":90}],\"storeTypeDesc\":\"Whse 90 - Wine\",\"whse\":[90],\"editMode\":true,\"INSERT\":[],\"DELETE\":[],\"UPDATE\":[],\"show\":true,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/update",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC18_Check for Input parameter \"WAREHOUSE_NBR\" as blank",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "8GR58-3DwXkPeVYbUa3EKgq8EKHC9xEwKf1-m2nj_7myQtd4RY8vt25N3yaolEZiQ1omivF8L3gI0Mk-nxZ3j5HGOpQ1:fEMvW94QvKApJIY4coSseA1oOGmt3twrNV2OmNbj-2oBqdU5qZNPK7XGlGiRiK3skcP9AoUxAtQE0xmDwaV4fWBVCPRpkfG7uZevryfNU5v530UjMGQcSANGF0D1pfKOt2vSLw2"
+					},
+					{
+						"key": "api-token",
+						"value": "Ac428bd4b1f01282df34aa86a0544be9b87e6a5b3"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":38,\"STORE_LABEL\":\"Boise\",\"STORE_STATE\":\"ID\",\"STORE_ORDER_TYPE_NBR\":1361,\"STORE_TYPE_DESCRIPTION\":\"Whse 90 - Wine\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[90],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":1361,\"WAREHOUSE_NBR\":90,\"ORDER_TYPE_NBR\":5,\"RANK\":0,\"whse\":90}],\"storeTypeDesc\":\"Whse 90 - Wine\",\"whse\":[90],\"editMode\":true,\"INSERT\":[],\"DELETE\":[],\"UPDATE\":[],\"show\":true,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/update",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC19_Schema Validation for Input parameter \"STORE_TYPE_NBR\"",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "8GR58-3DwXkPeVYbUa3EKgq8EKHC9xEwKf1-m2nj_7myQtd4RY8vt25N3yaolEZiQ1omivF8L3gI0Mk-nxZ3j5HGOpQ1:fEMvW94QvKApJIY4coSseA1oOGmt3twrNV2OmNbj-2oBqdU5qZNPK7XGlGiRiK3skcP9AoUxAtQE0xmDwaV4fWBVCPRpkfG7uZevryfNU5v530UjMGQcSANGF0D1pfKOt2vSLw2"
+					},
+					{
+						"key": "api-token",
+						"value": "Ac428bd4b1f01282df34aa86a0544be9b87e6a5b3"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":38,\"STORE_LABEL\":\"Boise\",\"STORE_STATE\":\"ID\",\"STORE_ORDER_TYPE_NBR\":1361,\"STORE_TYPE_DESCRIPTION\":\"Whse 90 - Wine\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[90],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":1361,\"WAREHOUSE_NBR\":90,\"ORDER_TYPE_NBR\":5,\"RANK\":0,\"whse\":90}],\"storeTypeDesc\":\"Whse 90 - Wine\",\"whse\":[90],\"editMode\":true,\"INSERT\":[],\"DELETE\":[],\"UPDATE\":[],\"show\":true,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/update",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC20_Check for Input parameter \"STORE_TYPE_NBR\" as blank",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "8GR58-3DwXkPeVYbUa3EKgq8EKHC9xEwKf1-m2nj_7myQtd4RY8vt25N3yaolEZiQ1omivF8L3gI0Mk-nxZ3j5HGOpQ1:fEMvW94QvKApJIY4coSseA1oOGmt3twrNV2OmNbj-2oBqdU5qZNPK7XGlGiRiK3skcP9AoUxAtQE0xmDwaV4fWBVCPRpkfG7uZevryfNU5v530UjMGQcSANGF0D1pfKOt2vSLw2"
+					},
+					{
+						"key": "api-token",
+						"value": "Ac428bd4b1f01282df34aa86a0544be9b87e6a5b3"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":38,\"STORE_LABEL\":\"Boise\",\"STORE_STATE\":\"ID\",\"STORE_ORDER_TYPE_NBR\":1361,\"STORE_TYPE_DESCRIPTION\":\"Whse 90 - Wine\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[90],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":1361,\"WAREHOUSE_NBR\":90,\"ORDER_TYPE_NBR\":5,\"RANK\":0,\"whse\":90}],\"storeTypeDesc\":\"Whse 90 - Wine\",\"whse\":[90],\"editMode\":true,\"INSERT\":[],\"DELETE\":[],\"UPDATE\":[],\"show\":true,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/update",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC21_Schema Validation for Input parameter \"ORDER_TYPE_NBR\"",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "8GR58-3DwXkPeVYbUa3EKgq8EKHC9xEwKf1-m2nj_7myQtd4RY8vt25N3yaolEZiQ1omivF8L3gI0Mk-nxZ3j5HGOpQ1:fEMvW94QvKApJIY4coSseA1oOGmt3twrNV2OmNbj-2oBqdU5qZNPK7XGlGiRiK3skcP9AoUxAtQE0xmDwaV4fWBVCPRpkfG7uZevryfNU5v530UjMGQcSANGF0D1pfKOt2vSLw2"
+					},
+					{
+						"key": "api-token",
+						"value": "Ac428bd4b1f01282df34aa86a0544be9b87e6a5b3"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":38,\"STORE_LABEL\":\"Boise\",\"STORE_STATE\":\"ID\",\"STORE_ORDER_TYPE_NBR\":1361,\"STORE_TYPE_DESCRIPTION\":\"Whse 90 - Wine\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[90],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":1361,\"WAREHOUSE_NBR\":90,\"ORDER_TYPE_NBR\":5,\"RANK\":0,\"whse\":90}],\"storeTypeDesc\":\"Whse 90 - Wine\",\"whse\":[90],\"editMode\":true,\"INSERT\":[],\"DELETE\":[],\"UPDATE\":[],\"show\":true,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/update",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC22_Check for Input parameter \"ORDER_TYPE_NBR\" as blank",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "8GR58-3DwXkPeVYbUa3EKgq8EKHC9xEwKf1-m2nj_7myQtd4RY8vt25N3yaolEZiQ1omivF8L3gI0Mk-nxZ3j5HGOpQ1:fEMvW94QvKApJIY4coSseA1oOGmt3twrNV2OmNbj-2oBqdU5qZNPK7XGlGiRiK3skcP9AoUxAtQE0xmDwaV4fWBVCPRpkfG7uZevryfNU5v530UjMGQcSANGF0D1pfKOt2vSLw2"
+					},
+					{
+						"key": "api-token",
+						"value": "Ac428bd4b1f01282df34aa86a0544be9b87e6a5b3"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":38,\"STORE_LABEL\":\"Boise\",\"STORE_STATE\":\"ID\",\"STORE_ORDER_TYPE_NBR\":1361,\"STORE_TYPE_DESCRIPTION\":\"Whse 90 - Wine\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[90],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":1361,\"WAREHOUSE_NBR\":90,\"ORDER_TYPE_NBR\":5,\"RANK\":0,\"whse\":90}],\"storeTypeDesc\":\"Whse 90 - Wine\",\"whse\":[90],\"editMode\":true,\"INSERT\":[],\"DELETE\":[],\"UPDATE\":[],\"show\":true,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/update",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC23_Check for Input parameter \"RANK\" as blank and invalid inputs",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "8GR58-3DwXkPeVYbUa3EKgq8EKHC9xEwKf1-m2nj_7myQtd4RY8vt25N3yaolEZiQ1omivF8L3gI0Mk-nxZ3j5HGOpQ1:fEMvW94QvKApJIY4coSseA1oOGmt3twrNV2OmNbj-2oBqdU5qZNPK7XGlGiRiK3skcP9AoUxAtQE0xmDwaV4fWBVCPRpkfG7uZevryfNU5v530UjMGQcSANGF0D1pfKOt2vSLw2"
+					},
+					{
+						"key": "api-token",
+						"value": "Ac428bd4b1f01282df34aa86a0544be9b87e6a5b3"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":38,\"STORE_LABEL\":\"Boise\",\"STORE_STATE\":\"ID\",\"STORE_ORDER_TYPE_NBR\":1361,\"STORE_TYPE_DESCRIPTION\":\"Whse 90 - Wine\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[90],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":1361,\"WAREHOUSE_NBR\":90,\"ORDER_TYPE_NBR\":5,\"RANK\":0,\"whse\":90}],\"storeTypeDesc\":\"Whse 90 - Wine\",\"whse\":[90],\"editMode\":true,\"INSERT\":[],\"DELETE\":[],\"UPDATE\":[],\"show\":true,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/update",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC24_Check for Input parameter \"whse\" as blank and invalid inputs",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "8GR58-3DwXkPeVYbUa3EKgq8EKHC9xEwKf1-m2nj_7myQtd4RY8vt25N3yaolEZiQ1omivF8L3gI0Mk-nxZ3j5HGOpQ1:fEMvW94QvKApJIY4coSseA1oOGmt3twrNV2OmNbj-2oBqdU5qZNPK7XGlGiRiK3skcP9AoUxAtQE0xmDwaV4fWBVCPRpkfG7uZevryfNU5v530UjMGQcSANGF0D1pfKOt2vSLw2"
+					},
+					{
+						"key": "api-token",
+						"value": "Ac428bd4b1f01282df34aa86a0544be9b87e6a5b3"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":38,\"STORE_LABEL\":\"Boise\",\"STORE_STATE\":\"ID\",\"STORE_ORDER_TYPE_NBR\":1361,\"STORE_TYPE_DESCRIPTION\":\"Whse 90 - Wine\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[90],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":1361,\"WAREHOUSE_NBR\":90,\"ORDER_TYPE_NBR\":5,\"RANK\":0,\"whse\":90}],\"storeTypeDesc\":\"Whse 90 - Wine\",\"whse\":[90],\"editMode\":true,\"INSERT\":[],\"DELETE\":[],\"UPDATE\":[],\"show\":true,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/update",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC25_Check for Input parameter \"editMode\" as blank and invalid inputs",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "8GR58-3DwXkPeVYbUa3EKgq8EKHC9xEwKf1-m2nj_7myQtd4RY8vt25N3yaolEZiQ1omivF8L3gI0Mk-nxZ3j5HGOpQ1:fEMvW94QvKApJIY4coSseA1oOGmt3twrNV2OmNbj-2oBqdU5qZNPK7XGlGiRiK3skcP9AoUxAtQE0xmDwaV4fWBVCPRpkfG7uZevryfNU5v530UjMGQcSANGF0D1pfKOt2vSLw2"
+					},
+					{
+						"key": "api-token",
+						"value": "Ac428bd4b1f01282df34aa86a0544be9b87e6a5b3"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":38,\"STORE_LABEL\":\"Boise\",\"STORE_STATE\":\"ID\",\"STORE_ORDER_TYPE_NBR\":1361,\"STORE_TYPE_DESCRIPTION\":\"Whse 90 - Wine\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[90],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":1361,\"WAREHOUSE_NBR\":90,\"ORDER_TYPE_NBR\":5,\"RANK\":0,\"whse\":90}],\"storeTypeDesc\":\"Whse 90 - Wine\",\"whse\":[90],\"editMode\":true,\"INSERT\":[],\"DELETE\":[],\"UPDATE\":[],\"show\":true,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/update",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC26_Check for Input parameter \"INSERT\" as blank and invalid inputs",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "8GR58-3DwXkPeVYbUa3EKgq8EKHC9xEwKf1-m2nj_7myQtd4RY8vt25N3yaolEZiQ1omivF8L3gI0Mk-nxZ3j5HGOpQ1:fEMvW94QvKApJIY4coSseA1oOGmt3twrNV2OmNbj-2oBqdU5qZNPK7XGlGiRiK3skcP9AoUxAtQE0xmDwaV4fWBVCPRpkfG7uZevryfNU5v530UjMGQcSANGF0D1pfKOt2vSLw2"
+					},
+					{
+						"key": "api-token",
+						"value": "Ac428bd4b1f01282df34aa86a0544be9b87e6a5b3"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":38,\"STORE_LABEL\":\"Boise\",\"STORE_STATE\":\"ID\",\"STORE_ORDER_TYPE_NBR\":1361,\"STORE_TYPE_DESCRIPTION\":\"Whse 90 - Wine\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[90],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":1361,\"WAREHOUSE_NBR\":90,\"ORDER_TYPE_NBR\":5,\"RANK\":0,\"whse\":90}],\"storeTypeDesc\":\"Whse 90 - Wine\",\"whse\":[90],\"editMode\":true,\"INSERT\":[],\"DELETE\":[],\"UPDATE\":[],\"show\":true,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/update",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC27_Check for Input parameter \"DELETE\" as blank and invalid inputs",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "8GR58-3DwXkPeVYbUa3EKgq8EKHC9xEwKf1-m2nj_7myQtd4RY8vt25N3yaolEZiQ1omivF8L3gI0Mk-nxZ3j5HGOpQ1:fEMvW94QvKApJIY4coSseA1oOGmt3twrNV2OmNbj-2oBqdU5qZNPK7XGlGiRiK3skcP9AoUxAtQE0xmDwaV4fWBVCPRpkfG7uZevryfNU5v530UjMGQcSANGF0D1pfKOt2vSLw2"
+					},
+					{
+						"key": "api-token",
+						"value": "Ac428bd4b1f01282df34aa86a0544be9b87e6a5b3"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":38,\"STORE_LABEL\":\"Boise\",\"STORE_STATE\":\"ID\",\"STORE_ORDER_TYPE_NBR\":1361,\"STORE_TYPE_DESCRIPTION\":\"Whse 90 - Wine\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[90],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":1361,\"WAREHOUSE_NBR\":90,\"ORDER_TYPE_NBR\":5,\"RANK\":0,\"whse\":90}],\"storeTypeDesc\":\"Whse 90 - Wine\",\"whse\":[90],\"editMode\":true,\"INSERT\":[],\"DELETE\":[],\"UPDATE\":[],\"show\":true,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/update",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC28_Check for Input parameter \"UPDATE\" as blank and invalid inputs",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "8GR58-3DwXkPeVYbUa3EKgq8EKHC9xEwKf1-m2nj_7myQtd4RY8vt25N3yaolEZiQ1omivF8L3gI0Mk-nxZ3j5HGOpQ1:fEMvW94QvKApJIY4coSseA1oOGmt3twrNV2OmNbj-2oBqdU5qZNPK7XGlGiRiK3skcP9AoUxAtQE0xmDwaV4fWBVCPRpkfG7uZevryfNU5v530UjMGQcSANGF0D1pfKOt2vSLw2"
+					},
+					{
+						"key": "api-token",
+						"value": "Ac428bd4b1f01282df34aa86a0544be9b87e6a5b3"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":38,\"STORE_LABEL\":\"Boise\",\"STORE_STATE\":\"ID\",\"STORE_ORDER_TYPE_NBR\":1361,\"STORE_TYPE_DESCRIPTION\":\"Whse 90 - Wine\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[90],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":1361,\"WAREHOUSE_NBR\":90,\"ORDER_TYPE_NBR\":5,\"RANK\":0,\"whse\":90}],\"storeTypeDesc\":\"Whse 90 - Wine\",\"whse\":[90],\"editMode\":true,\"INSERT\":[],\"DELETE\":[],\"UPDATE\":[],\"show\":true,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/update",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC29_Check for Input parameter \"show\" as blank and invalid inputs",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "8GR58-3DwXkPeVYbUa3EKgq8EKHC9xEwKf1-m2nj_7myQtd4RY8vt25N3yaolEZiQ1omivF8L3gI0Mk-nxZ3j5HGOpQ1:fEMvW94QvKApJIY4coSseA1oOGmt3twrNV2OmNbj-2oBqdU5qZNPK7XGlGiRiK3skcP9AoUxAtQE0xmDwaV4fWBVCPRpkfG7uZevryfNU5v530UjMGQcSANGF0D1pfKOt2vSLw2"
+					},
+					{
+						"key": "api-token",
+						"value": "Ac428bd4b1f01282df34aa86a0544be9b87e6a5b3"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":38,\"STORE_LABEL\":\"Boise\",\"STORE_STATE\":\"ID\",\"STORE_ORDER_TYPE_NBR\":1361,\"STORE_TYPE_DESCRIPTION\":\"Whse 90 - Wine\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[90],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":1361,\"WAREHOUSE_NBR\":90,\"ORDER_TYPE_NBR\":5,\"RANK\":0,\"whse\":90}],\"storeTypeDesc\":\"Whse 90 - Wine\",\"whse\":[90],\"editMode\":true,\"INSERT\":[],\"DELETE\":[],\"UPDATE\":[],\"show\":true,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/update",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC30_Check for Input parameter \"processing\" as blank and invalid inputs",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "8GR58-3DwXkPeVYbUa3EKgq8EKHC9xEwKf1-m2nj_7myQtd4RY8vt25N3yaolEZiQ1omivF8L3gI0Mk-nxZ3j5HGOpQ1:fEMvW94QvKApJIY4coSseA1oOGmt3twrNV2OmNbj-2oBqdU5qZNPK7XGlGiRiK3skcP9AoUxAtQE0xmDwaV4fWBVCPRpkfG7uZevryfNU5v530UjMGQcSANGF0D1pfKOt2vSLw2"
+					},
+					{
+						"key": "api-token",
+						"value": "Ac428bd4b1f01282df34aa86a0544be9b87e6a5b3"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":38,\"STORE_LABEL\":\"Boise\",\"STORE_STATE\":\"ID\",\"STORE_ORDER_TYPE_NBR\":1361,\"STORE_TYPE_DESCRIPTION\":\"Whse 90 - Wine\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[90],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":1361,\"WAREHOUSE_NBR\":90,\"ORDER_TYPE_NBR\":5,\"RANK\":0,\"whse\":90}],\"storeTypeDesc\":\"Whse 90 - Wine\",\"whse\":[90],\"editMode\":true,\"INSERT\":[],\"DELETE\":[],\"UPDATE\":[],\"show\":true,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/update",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC31_Comparison  between UI Data and API Response",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "8GR58-3DwXkPeVYbUa3EKgq8EKHC9xEwKf1-m2nj_7myQtd4RY8vt25N3yaolEZiQ1omivF8L3gI0Mk-nxZ3j5HGOpQ1:fEMvW94QvKApJIY4coSseA1oOGmt3twrNV2OmNbj-2oBqdU5qZNPK7XGlGiRiK3skcP9AoUxAtQE0xmDwaV4fWBVCPRpkfG7uZevryfNU5v530UjMGQcSANGF0D1pfKOt2vSLw2"
+					},
+					{
+						"key": "api-token",
+						"value": "Ac428bd4b1f01282df34aa86a0544be9b87e6a5b3"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"STORE_NBR\":38,\"STORE_LABEL\":\"Boise\",\"STORE_STATE\":\"ID\",\"STORE_ORDER_TYPE_NBR\":1361,\"STORE_TYPE_DESCRIPTION\":\"Whse 90 - Wine\",\"ORDER_NOW\":1,\"ALLOW_NEW_ARRIVAL_OG\":1,\"WAREHOUSE_NBR\":[90],\"ORDER_TYPES\":[{\"STORE_TYPE_NBR\":1361,\"WAREHOUSE_NBR\":90,\"ORDER_TYPE_NBR\":5,\"RANK\":0,\"whse\":90}],\"storeTypeDesc\":\"Whse 90 - Wine\",\"whse\":[90],\"editMode\":true,\"INSERT\":[],\"DELETE\":[],\"UPDATE\":[],\"show\":true,\"processing\":true}"
+				},
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/rto/swot/update",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"rto",
+						"swot",
+						"update"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

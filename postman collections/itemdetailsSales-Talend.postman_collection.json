@@ -1,0 +1,369 @@
+{
+	"info": {
+		"_postman_id": "f1959421-70a8-4c83-a5f7-a338f1d29603",
+		"name": "itemdetailsSales-Talend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TC01_Validate the API response",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "nLW3trOfSYxkTflv16h729dH534q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/sales/itemdetailsSales?itemNbr=1&storeNbr=2",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"sales",
+						"itemdetailsSales"
+					],
+					"query": [
+						{
+							"key": "itemNbr",
+							"value": "1"
+						},
+						{
+							"key": "storeNbr",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC02_Validate the API accepts input parameter",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "nLW3trOfSYxkTflv16h729dH534q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/sales/itemdetailsSales?itemNbr=1&storeNbr=2",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"sales",
+						"itemdetailsSales"
+					],
+					"query": [
+						{
+							"key": "itemNbr",
+							"value": "1"
+						},
+						{
+							"key": "storeNbr",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC03_Validate the API using POST method instead of GET",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "nLW3trOfSYxkTflv16h729dH534q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/sales/itemdetailsSales?itemNbr=1&storeNbr=2",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"sales",
+						"itemdetailsSales"
+					],
+					"query": [
+						{
+							"key": "itemNbr",
+							"value": "1"
+						},
+						{
+							"key": "storeNbr",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC04_Validate Response for invalid URL",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "nLW3trOfSYxkTflv16h729dH534q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/sales/itemdetailsSales?itemNbr=1&storeNbr=2",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"sales",
+						"itemdetailsSales"
+					],
+					"query": [
+						{
+							"key": "itemNbr",
+							"value": "1"
+						},
+						{
+							"key": "storeNbr",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC05_Schema Validation for Input parameter \"itemNbr\"",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "nLW3trOfSYxkTflv16h729dH534q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/sales/itemdetailsSales?itemNbr=1&storeNbr=2",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"sales",
+						"itemdetailsSales"
+					],
+					"query": [
+						{
+							"key": "itemNbr",
+							"value": "1"
+						},
+						{
+							"key": "storeNbr",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC06_Check for Input parameter \"itemNbr\" as blank",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "nLW3trOfSYxkTflv16h729dH534q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/sales/itemdetailsSales?itemNbr=1&storeNbr=2",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"sales",
+						"itemdetailsSales"
+					],
+					"query": [
+						{
+							"key": "itemNbr",
+							"value": "1"
+						},
+						{
+							"key": "storeNbr",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC07_Schema Validation for Input parameter \"storeNbr\"",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "nLW3trOfSYxkTflv16h729dH534q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/sales/itemdetailsSales?itemNbr=1&storeNbr=2",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"sales",
+						"itemdetailsSales"
+					],
+					"query": [
+						{
+							"key": "itemNbr",
+							"value": "1"
+						},
+						{
+							"key": "storeNbr",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC08_Check for Input parameter \"storeNbr\" as blank",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "nLW3trOfSYxkTflv16h729dH534q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/sales/itemdetailsSales?itemNbr=1&storeNbr=2",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"sales",
+						"itemdetailsSales"
+					],
+					"query": [
+						{
+							"key": "itemNbr",
+							"value": "1"
+						},
+						{
+							"key": "storeNbr",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

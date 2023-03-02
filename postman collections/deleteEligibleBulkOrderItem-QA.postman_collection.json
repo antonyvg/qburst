@@ -1,0 +1,309 @@
+{
+	"info": {
+		"_postman_id": "d7bfa2e7-8c93-4da1-8ff1-f26d2af6a1ea",
+		"name": "deleteEligibleBulkOrderItem-QA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TC01_Validate the API response for input parameter",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://thevision.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://thevision.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "no request verification token"
+					},
+					{
+						"key": "api-token",
+						"value": "pfx95f37ecd-7fbe-23f3-0fc1-deaaa38bc85e"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"bulkOrderID\":3080,\"itemNbr\":547176,\"pack\":6,\"size\":\"128Z \",\"itemDesc\":\"Lady's Choice Distilled White Vinegar\",\"createdBy\":\"qb-vkannan\",\"storeNbr\":28,\"whseNbr\":95,\"startDate\":\"2022-09-20T00:00:00\",\"endDate\":\"2022-10-18T00:00:00\",\"minQty\":4,\"maxQty\":1000,\"rtoStartDate\":\"2022-09-26T21:38:53.947Z\",\"orderQty\":5,\"initOrderQty\":0,\"distributionID\":0,\"orderStatus\":null}"
+				},
+				"url": {
+					"raw": "https://svcthevision.groceryoutlet.com/api/distribution/upsertEligibleBulkOrderItem/",
+					"protocol": "https",
+					"host": [
+						"svcthevision",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"distribution",
+						"upsertEligibleBulkOrderItem",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC02_Validate the API using GET method instead of POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://thevision.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://thevision.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "no request verification token"
+					},
+					{
+						"key": "api-token",
+						"value": "pfx95f37ecd-7fbe-23f3-0fc1-deaaa38bc85e"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"bulkOrderID\":3080,\"itemNbr\":547176,\"pack\":6,\"size\":\"128Z \",\"itemDesc\":\"Lady's Choice Distilled White Vinegar\",\"createdBy\":\"qb-vkannan\",\"storeNbr\":28,\"whseNbr\":95,\"startDate\":\"2022-09-20T00:00:00\",\"endDate\":\"2022-10-18T00:00:00\",\"minQty\":4,\"maxQty\":1000,\"rtoStartDate\":\"2022-09-26T21:38:53.947Z\",\"orderQty\":5,\"initOrderQty\":0,\"distributionID\":0,\"orderStatus\":null}"
+				},
+				"url": {
+					"raw": "https://svcthevision.groceryoutlet.com/api/distribution/upsertEligibleBulkOrderItem/",
+					"protocol": "https",
+					"host": [
+						"svcthevision",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"distribution",
+						"upsertEligibleBulkOrderItem",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC03_Validate Response for invalid URL",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://thevision.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://thevision.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "no request verification token"
+					},
+					{
+						"key": "api-token",
+						"value": "pfx95f37ecd-7fbe-23f3-0fc1-deaaa38bc85e"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"bulkOrderID\":3080,\"itemNbr\":547176,\"pack\":6,\"size\":\"128Z \",\"itemDesc\":\"Lady's Choice Distilled White Vinegar\",\"createdBy\":\"qb-vkannan\",\"storeNbr\":28,\"whseNbr\":95,\"startDate\":\"2022-09-20T00:00:00\",\"endDate\":\"2022-10-18T00:00:00\",\"minQty\":4,\"maxQty\":1000,\"rtoStartDate\":\"2022-09-26T21:38:53.947Z\",\"orderQty\":5,\"initOrderQty\":0,\"distributionID\":0,\"orderStatus\":null}"
+				},
+				"url": {
+					"raw": "https://svcthevision.groceryoutlet.com/api/distribution/upsertEligibleBulkOrderItem/",
+					"protocol": "https",
+					"host": [
+						"svcthevision",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"distribution",
+						"upsertEligibleBulkOrderItem",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

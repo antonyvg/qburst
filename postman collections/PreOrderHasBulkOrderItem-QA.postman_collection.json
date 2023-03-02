@@ -1,0 +1,1059 @@
+{
+	"info": {
+		"_postman_id": "c7a9fcff-246c-473c-85c1-8d013c47aa87",
+		"name": "PreOrderHasBulkOrderItem-QA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TC01_Validate the API response",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "Q9Sls4SqH0q535cs94WCS5gPuola9jarCqSmIm15AyJicCngaasz_v8cYycYmqh7FSy6a9m8RqAV41hmLVZtIGwqbWk1:pp9UxWYVAwMu7NaGEkkoZydFuYq1DM3I5UeZFd7SL7JoWO6_aouepZ-7XM3PzVv_BgOhpQzYAcgxst_UhrQWMZnlA8HYFyM5TLGskXSS0b_k5cyp0KAAYGfrOgXgVdq-G6Nw9A2"
+					},
+					{
+						"key": "api-token",
+						"value": "Acfb70a44e2184d470651074de919490e97b5bf03"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/orderguide/preOrderHasBulkOrderItem?storeNbr=28&whseNbr=95",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"orderguide",
+						"preOrderHasBulkOrderItem"
+					],
+					"query": [
+						{
+							"key": "storeNbr",
+							"value": "28"
+						},
+						{
+							"key": "whseNbr",
+							"value": "95"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC02_Validate the API response for input parameter",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "Q9Sls4SqH0q535cs94WCS5gPuola9jarCqSmIm15AyJicCngaasz_v8cYycYmqh7FSy6a9m8RqAV41hmLVZtIGwqbWk1:pp9UxWYVAwMu7NaGEkkoZydFuYq1DM3I5UeZFd7SL7JoWO6_aouepZ-7XM3PzVv_BgOhpQzYAcgxst_UhrQWMZnlA8HYFyM5TLGskXSS0b_k5cyp0KAAYGfrOgXgVdq-G6Nw9A2"
+					},
+					{
+						"key": "api-token",
+						"value": "Acfb70a44e2184d470651074de919490e97b5bf03"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/orderguide/preOrderHasBulkOrderItem?storeNbr=28&whseNbr=95",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"orderguide",
+						"preOrderHasBulkOrderItem"
+					],
+					"query": [
+						{
+							"key": "storeNbr",
+							"value": "28"
+						},
+						{
+							"key": "whseNbr",
+							"value": "95"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC03_Validate the API using POST method instead of GET",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "Q9Sls4SqH0q535cs94WCS5gPuola9jarCqSmIm15AyJicCngaasz_v8cYycYmqh7FSy6a9m8RqAV41hmLVZtIGwqbWk1:pp9UxWYVAwMu7NaGEkkoZydFuYq1DM3I5UeZFd7SL7JoWO6_aouepZ-7XM3PzVv_BgOhpQzYAcgxst_UhrQWMZnlA8HYFyM5TLGskXSS0b_k5cyp0KAAYGfrOgXgVdq-G6Nw9A2"
+					},
+					{
+						"key": "api-token",
+						"value": "Acfb70a44e2184d470651074de919490e97b5bf03"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/orderguide/preOrderHasBulkOrderItem?storeNbr=28&whseNbr=95",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"orderguide",
+						"preOrderHasBulkOrderItem"
+					],
+					"query": [
+						{
+							"key": "storeNbr",
+							"value": "28"
+						},
+						{
+							"key": "whseNbr",
+							"value": "95"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC04_Validate Response for invalid URL",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "Q9Sls4SqH0q535cs94WCS5gPuola9jarCqSmIm15AyJicCngaasz_v8cYycYmqh7FSy6a9m8RqAV41hmLVZtIGwqbWk1:pp9UxWYVAwMu7NaGEkkoZydFuYq1DM3I5UeZFd7SL7JoWO6_aouepZ-7XM3PzVv_BgOhpQzYAcgxst_UhrQWMZnlA8HYFyM5TLGskXSS0b_k5cyp0KAAYGfrOgXgVdq-G6Nw9A2"
+					},
+					{
+						"key": "api-token",
+						"value": "Acfb70a44e2184d470651074de919490e97b5bf03"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/orderguide/preOrderHasBulkOrderItem?storeNbr=28&whseNbr=95",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"orderguide",
+						"preOrderHasBulkOrderItem"
+					],
+					"query": [
+						{
+							"key": "storeNbr",
+							"value": "28"
+						},
+						{
+							"key": "whseNbr",
+							"value": "95"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC05_UI Validation for items with bulk order",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "Q9Sls4SqH0q535cs94WCS5gPuola9jarCqSmIm15AyJicCngaasz_v8cYycYmqh7FSy6a9m8RqAV41hmLVZtIGwqbWk1:pp9UxWYVAwMu7NaGEkkoZydFuYq1DM3I5UeZFd7SL7JoWO6_aouepZ-7XM3PzVv_BgOhpQzYAcgxst_UhrQWMZnlA8HYFyM5TLGskXSS0b_k5cyp0KAAYGfrOgXgVdq-G6Nw9A2"
+					},
+					{
+						"key": "api-token",
+						"value": "Acfb70a44e2184d470651074de919490e97b5bf03"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/orderguide/preOrderHasBulkOrderItem?storeNbr=28&whseNbr=95",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"orderguide",
+						"preOrderHasBulkOrderItem"
+					],
+					"query": [
+						{
+							"key": "storeNbr",
+							"value": "28"
+						},
+						{
+							"key": "whseNbr",
+							"value": "95"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC06_UI Validation for items without bulk order",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "X0Kvp0l2CHnRB68-f8Ghvv1D5Yu2ox8_39q6q1sIFm4syIIiUu1tX5mdWkDG2gWL6bBv_UDcvl_BTFX1wdQ27-EkSmg1:fnP3tTHs0PAnAT25fOb3EpglFkmsINUhgs1433lMxOEH1RBv2xpIVZzPa6IboEb-s6JqjnKOPtzuU0aBs_R4U5lNz3aqefEBBbYe3ckjy2DWo57fvlrY6QnZQuChiBg7rydxZA2"
+					},
+					{
+						"key": "api-token",
+						"value": "Aaa4c0a0217418db029de0300055e8bec2036f060"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/orderguide/preOrderHasBulkOrderItem?storeNbr=28&whseNbr=94",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"orderguide",
+						"preOrderHasBulkOrderItem"
+					],
+					"query": [
+						{
+							"key": "storeNbr",
+							"value": "28"
+						},
+						{
+							"key": "whseNbr",
+							"value": "94"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC07_Schema Validation for Input parameter \"storeNbr\"",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "X0Kvp0l2CHnRB68-f8Ghvv1D5Yu2ox8_39q6q1sIFm4syIIiUu1tX5mdWkDG2gWL6bBv_UDcvl_BTFX1wdQ27-EkSmg1:fnP3tTHs0PAnAT25fOb3EpglFkmsINUhgs1433lMxOEH1RBv2xpIVZzPa6IboEb-s6JqjnKOPtzuU0aBs_R4U5lNz3aqefEBBbYe3ckjy2DWo57fvlrY6QnZQuChiBg7rydxZA2"
+					},
+					{
+						"key": "api-token",
+						"value": "Aaa4c0a0217418db029de0300055e8bec2036f060"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/orderguide/preOrderHasBulkOrderItem?storeNbr=28&whseNbr=94",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"orderguide",
+						"preOrderHasBulkOrderItem"
+					],
+					"query": [
+						{
+							"key": "storeNbr",
+							"value": "28"
+						},
+						{
+							"key": "whseNbr",
+							"value": "94"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC08_Check for Input parameter \"storeNbr\" as blank",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "X0Kvp0l2CHnRB68-f8Ghvv1D5Yu2ox8_39q6q1sIFm4syIIiUu1tX5mdWkDG2gWL6bBv_UDcvl_BTFX1wdQ27-EkSmg1:fnP3tTHs0PAnAT25fOb3EpglFkmsINUhgs1433lMxOEH1RBv2xpIVZzPa6IboEb-s6JqjnKOPtzuU0aBs_R4U5lNz3aqefEBBbYe3ckjy2DWo57fvlrY6QnZQuChiBg7rydxZA2"
+					},
+					{
+						"key": "api-token",
+						"value": "Aaa4c0a0217418db029de0300055e8bec2036f060"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/orderguide/preOrderHasBulkOrderItem?storeNbr=28&whseNbr=94",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"orderguide",
+						"preOrderHasBulkOrderItem"
+					],
+					"query": [
+						{
+							"key": "storeNbr",
+							"value": "28"
+						},
+						{
+							"key": "whseNbr",
+							"value": "94"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC09_Schema Validation for Input parameter \"whseNbr\"",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "X0Kvp0l2CHnRB68-f8Ghvv1D5Yu2ox8_39q6q1sIFm4syIIiUu1tX5mdWkDG2gWL6bBv_UDcvl_BTFX1wdQ27-EkSmg1:fnP3tTHs0PAnAT25fOb3EpglFkmsINUhgs1433lMxOEH1RBv2xpIVZzPa6IboEb-s6JqjnKOPtzuU0aBs_R4U5lNz3aqefEBBbYe3ckjy2DWo57fvlrY6QnZQuChiBg7rydxZA2"
+					},
+					{
+						"key": "api-token",
+						"value": "Aaa4c0a0217418db029de0300055e8bec2036f060"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/orderguide/preOrderHasBulkOrderItem?storeNbr=28&whseNbr=94",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"orderguide",
+						"preOrderHasBulkOrderItem"
+					],
+					"query": [
+						{
+							"key": "storeNbr",
+							"value": "28"
+						},
+						{
+							"key": "whseNbr",
+							"value": "94"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC10_Check for Input parameter \"whseNbr\" as blank",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1629569301.1665497888; _fbp=fb.1.1665497888654.1290370928; __qca=P0-83208946-1665497888970"
+					},
+					{
+						"key": "Expires",
+						"value": "0"
+					},
+					{
+						"key": "Origin",
+						"value": "https://test1.groceryoutlet.com"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://test1.groceryoutlet.com/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-XSRF-Token",
+						"value": "X0Kvp0l2CHnRB68-f8Ghvv1D5Yu2ox8_39q6q1sIFm4syIIiUu1tX5mdWkDG2gWL6bBv_UDcvl_BTFX1wdQ27-EkSmg1:fnP3tTHs0PAnAT25fOb3EpglFkmsINUhgs1433lMxOEH1RBv2xpIVZzPa6IboEb-s6JqjnKOPtzuU0aBs_R4U5lNz3aqefEBBbYe3ckjy2DWo57fvlrY6QnZQuChiBg7rydxZA2"
+					},
+					{
+						"key": "api-token",
+						"value": "Aaa4c0a0217418db029de0300055e8bec2036f060"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"url": {
+					"raw": "https://svctest1.groceryoutlet.com/api/orderguide/preOrderHasBulkOrderItem?storeNbr=28&whseNbr=94",
+					"protocol": "https",
+					"host": [
+						"svctest1",
+						"groceryoutlet",
+						"com"
+					],
+					"path": [
+						"api",
+						"orderguide",
+						"preOrderHasBulkOrderItem"
+					],
+					"query": [
+						{
+							"key": "storeNbr",
+							"value": "28"
+						},
+						{
+							"key": "whseNbr",
+							"value": "94"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

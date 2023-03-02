@@ -1,0 +1,499 @@
+{
+	"info": {
+		"_postman_id": "2fbb567c-8849-4d92-9236-cac3f3f51341",
+		"name": "GetItemWhse-Talend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TC01_Validate the API return success message",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "PtfA1wGuU5OPMqhzNbeGrXy98lx5",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/bq/products/GetItemWhse?itemNbr=123&whseNbr=123&distributionReason=abc",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"bq",
+						"products",
+						"GetItemWhse"
+					],
+					"query": [
+						{
+							"key": "itemNbr",
+							"value": "123"
+						},
+						{
+							"key": "whseNbr",
+							"value": "123"
+						},
+						{
+							"key": "distributionReason",
+							"value": "abc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC02_Validate the API accepts input parameter",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "PtfA1wGuU5OPMqhzNbeGrXy98lx5",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/bq/products/GetItemWhse?itemNbr=123&whseNbr=123&distributionReason=abc",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"bq",
+						"products",
+						"GetItemWhse"
+					],
+					"query": [
+						{
+							"key": "itemNbr",
+							"value": "123"
+						},
+						{
+							"key": "whseNbr",
+							"value": "123"
+						},
+						{
+							"key": "distributionReason",
+							"value": "abc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC03_Validate the API using POST method instead of GET",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "PtfA1wGuU5OPMqhzNbeGrXy98lx5",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/bq/products/GetItemWhse?itemNbr=123&whseNbr=123&distributionReason=abc",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"bq",
+						"products",
+						"GetItemWhse"
+					],
+					"query": [
+						{
+							"key": "itemNbr",
+							"value": "123"
+						},
+						{
+							"key": "whseNbr",
+							"value": "123"
+						},
+						{
+							"key": "distributionReason",
+							"value": "abc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC04_Validate Response for invalid URL",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "PtfA1wGuU5OPMqhzNbeGrXy98lx5",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/bq/products/GetItemWhse?itemNbr=123&whseNbr=123&distributionReason=abc",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"bq",
+						"products",
+						"GetItemWhse"
+					],
+					"query": [
+						{
+							"key": "itemNbr",
+							"value": "123"
+						},
+						{
+							"key": "whseNbr",
+							"value": "123"
+						},
+						{
+							"key": "distributionReason",
+							"value": "abc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC05_Schema Validation for Input parameter \"itemNbr\"",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "PtfA1wGuU5OPMqhzNbeGrXy98lx5",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/bq/products/GetItemWhse?itemNbr=123&whseNbr=123&distributionReason=abc",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"bq",
+						"products",
+						"GetItemWhse"
+					],
+					"query": [
+						{
+							"key": "itemNbr",
+							"value": "123"
+						},
+						{
+							"key": "whseNbr",
+							"value": "123"
+						},
+						{
+							"key": "distributionReason",
+							"value": "abc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC06_Check for Input parameter \"itemNbr\" as blank",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "PtfA1wGuU5OPMqhzNbeGrXy98lx5",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/bq/products/GetItemWhse?itemNbr=123&whseNbr=123&distributionReason=abc",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"bq",
+						"products",
+						"GetItemWhse"
+					],
+					"query": [
+						{
+							"key": "itemNbr",
+							"value": "123"
+						},
+						{
+							"key": "whseNbr",
+							"value": "123"
+						},
+						{
+							"key": "distributionReason",
+							"value": "abc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC07_Schema Validation for Input parameter \"whseNbr\"",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "PtfA1wGuU5OPMqhzNbeGrXy98lx5",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/bq/products/GetItemWhse?itemNbr=123&whseNbr=123&distributionReason=abc",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"bq",
+						"products",
+						"GetItemWhse"
+					],
+					"query": [
+						{
+							"key": "itemNbr",
+							"value": "123"
+						},
+						{
+							"key": "whseNbr",
+							"value": "123"
+						},
+						{
+							"key": "distributionReason",
+							"value": "abc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC08_Check for Input parameter \"whseNbr\" as blank",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "PtfA1wGuU5OPMqhzNbeGrXy98lx5",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/bq/products/GetItemWhse?itemNbr=123&whseNbr=123&distributionReason=abc",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"bq",
+						"products",
+						"GetItemWhse"
+					],
+					"query": [
+						{
+							"key": "itemNbr",
+							"value": "123"
+						},
+						{
+							"key": "whseNbr",
+							"value": "123"
+						},
+						{
+							"key": "distributionReason",
+							"value": "abc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC09_Schema Validation for Input parameter \"isExpiry\"",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "PtfA1wGuU5OPMqhzNbeGrXy98lx5",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/bq/products/GetItemWhse?itemNbr=123&whseNbr=123&distributionReason=abc",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"bq",
+						"products",
+						"GetItemWhse"
+					],
+					"query": [
+						{
+							"key": "itemNbr",
+							"value": "123"
+						},
+						{
+							"key": "whseNbr",
+							"value": "123"
+						},
+						{
+							"key": "distributionReason",
+							"value": "abc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC10_Check for Input parameter \"isExpiry\" as blank",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "PtfA1wGuU5OPMqhzNbeGrXy98lx5",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/bq/products/GetItemWhse?itemNbr=123&whseNbr=123&distributionReason=abc",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"bq",
+						"products",
+						"GetItemWhse"
+					],
+					"query": [
+						{
+							"key": "itemNbr",
+							"value": "123"
+						},
+						{
+							"key": "whseNbr",
+							"value": "123"
+						},
+						{
+							"key": "distributionReason",
+							"value": "abc"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

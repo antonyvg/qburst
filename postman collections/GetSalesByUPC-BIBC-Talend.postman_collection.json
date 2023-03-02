@@ -1,0 +1,324 @@
+{
+	"info": {
+		"_postman_id": "b12ff1f1-39f3-488b-a597-4680c99ceedd",
+		"name": "GetSalesByUPC-BIBC-Talend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TC01_Validate the API response",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "FBDz0vLCyGA4Hshox1RdqtFKxQrD",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/sales/currentDaySales?storeNbr=10&itemNbr=12",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"sales",
+						"currentDaySales"
+					],
+					"query": [
+						{
+							"key": "storeNbr",
+							"value": "10"
+						},
+						{
+							"key": "itemNbr",
+							"value": "12"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC02_Validate the API accepts input parameter",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "FBDz0vLCyGA4Hshox1RdqtFKxQrD",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/sales/currentDaySales?storeNbr=10&itemNbr=12",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"sales",
+						"currentDaySales"
+					],
+					"query": [
+						{
+							"key": "storeNbr",
+							"value": "10"
+						},
+						{
+							"key": "itemNbr",
+							"value": "12"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC03_Validate the API using POST method instead of GET",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "FBDz0vLCyGA4Hshox1RdqtFKxQrD",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/sales/currentDaySales?storeNbr=10&itemNbr=12",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"sales",
+						"currentDaySales"
+					],
+					"query": [
+						{
+							"key": "storeNbr",
+							"value": "10"
+						},
+						{
+							"key": "itemNbr",
+							"value": "12"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC04_Schema Validation for Input parameter \"storeNbr\"",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "FBDz0vLCyGA4Hshox1RdqtFKxQrD",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/sales/currentDaySales?storeNbr=10&itemNbr=12",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"sales",
+						"currentDaySales"
+					],
+					"query": [
+						{
+							"key": "storeNbr",
+							"value": "10"
+						},
+						{
+							"key": "itemNbr",
+							"value": "12"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC05_Check for Input parameter \"storeNbr\" as blank",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "FBDz0vLCyGA4Hshox1RdqtFKxQrD",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/sales/currentDaySales?storeNbr=10&itemNbr=12",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"sales",
+						"currentDaySales"
+					],
+					"query": [
+						{
+							"key": "storeNbr",
+							"value": "10"
+						},
+						{
+							"key": "itemNbr",
+							"value": "12"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC06_Schema Validation for Input parameter \"itemNbr\"",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "FBDz0vLCyGA4Hshox1RdqtFKxQrD",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/sales/currentDaySales?storeNbr=10&itemNbr=12",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"sales",
+						"currentDaySales"
+					],
+					"query": [
+						{
+							"key": "storeNbr",
+							"value": "10"
+						},
+						{
+							"key": "itemNbr",
+							"value": "12"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC07_Check for Input parameter \"itemNbr\" as blank",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "FBDz0vLCyGA4Hshox1RdqtFKxQrD",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/sales/currentDaySales?storeNbr=10&itemNbr=12",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"sales",
+						"currentDaySales"
+					],
+					"query": [
+						{
+							"key": "storeNbr",
+							"value": "10"
+						},
+						{
+							"key": "itemNbr",
+							"value": "12"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

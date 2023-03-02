@@ -1,0 +1,369 @@
+{
+	"info": {
+		"_postman_id": "acca6ed2-3d11-487b-90d3-5263d4b81c5c",
+		"name": "listmarkdown-Talend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TC11_Validate the Talend API response",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "GAG7ZnC9MKJohcAmDHvzqC3RPBBU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/bq/warehouse/listmarkdown?itemNbr=176520&storeNbr=35",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"bq",
+						"warehouse",
+						"listmarkdown"
+					],
+					"query": [
+						{
+							"key": "itemNbr",
+							"value": "176520"
+						},
+						{
+							"key": "storeNbr",
+							"value": "35"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC12_Validate the Talend API accepts input parameter",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "GAG7ZnC9MKJohcAmDHvzqC3RPBBU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/bq/warehouse/listmarkdown?itemNbr=176520&storeNbr=35",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"bq",
+						"warehouse",
+						"listmarkdown"
+					],
+					"query": [
+						{
+							"key": "itemNbr",
+							"value": "176520"
+						},
+						{
+							"key": "storeNbr",
+							"value": "35"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC13_Validate the Talend API using POST method instead of GET",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "GAG7ZnC9MKJohcAmDHvzqC3RPBBU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/bq/warehouse/listmarkdown?itemNbr=176520&storeNbr=35",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"bq",
+						"warehouse",
+						"listmarkdown"
+					],
+					"query": [
+						{
+							"key": "itemNbr",
+							"value": "176520"
+						},
+						{
+							"key": "storeNbr",
+							"value": "35"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC14_Validate Response for invalid Talend URL",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "GAG7ZnC9MKJohcAmDHvzqC3RPBBU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/bq/warehouse/listmarkdown?itemNbr=176520&storeNbr=35",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"bq",
+						"warehouse",
+						"listmarkdown"
+					],
+					"query": [
+						{
+							"key": "itemNbr",
+							"value": "176520"
+						},
+						{
+							"key": "storeNbr",
+							"value": "35"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC15_Schema Validation for Input parameter \"itemNbr\"",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "GAG7ZnC9MKJohcAmDHvzqC3RPBBU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/bq/warehouse/listmarkdown?itemNbr=176520&storeNbr=35",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"bq",
+						"warehouse",
+						"listmarkdown"
+					],
+					"query": [
+						{
+							"key": "itemNbr",
+							"value": "176520"
+						},
+						{
+							"key": "storeNbr",
+							"value": "35"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC16_Check for Input parameter \"itemNbr\" as blank",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "GAG7ZnC9MKJohcAmDHvzqC3RPBBU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/bq/warehouse/listmarkdown?itemNbr=176520&storeNbr=35",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"bq",
+						"warehouse",
+						"listmarkdown"
+					],
+					"query": [
+						{
+							"key": "itemNbr",
+							"value": "176520"
+						},
+						{
+							"key": "storeNbr",
+							"value": "35"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC17_Schema Validation for Input parameter \"Store Number\"",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "GAG7ZnC9MKJohcAmDHvzqC3RPBBU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/bq/warehouse/listmarkdown?itemNbr=176520&storeNbr=35",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"bq",
+						"warehouse",
+						"listmarkdown"
+					],
+					"query": [
+						{
+							"key": "itemNbr",
+							"value": "176520"
+						},
+						{
+							"key": "storeNbr",
+							"value": "35"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TC18_Check for Input parameter \"Store Number\" as blank",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "GAG7ZnC9MKJohcAmDHvzqC3RPBBU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/bq/warehouse/listmarkdown?itemNbr=176520&storeNbr=35",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"bq",
+						"warehouse",
+						"listmarkdown"
+					],
+					"query": [
+						{
+							"key": "itemNbr",
+							"value": "176520"
+						},
+						{
+							"key": "storeNbr",
+							"value": "35"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

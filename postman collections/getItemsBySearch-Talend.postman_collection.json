@@ -1,0 +1,53 @@
+{
+	"info": {
+		"_postman_id": "b67bd6ed-b95b-4a17-9a70-e9d74105651a",
+		"name": "getItemsBySearch-Talend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TC01_Validate the API response",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "ozuJaHHj5JAVUpQtjacGdPcEwd2l",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"itemNbrs\":null,\n    \"isUpcSearch\":false,\n    \"searchText\":\"ABC\",\n    \"limit\": 500\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.cfgodigital.com/services/go/v1/dw/product/mergedItemDetails",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"cfgodigital",
+						"com"
+					],
+					"path": [
+						"services",
+						"go",
+						"v1",
+						"dw",
+						"product",
+						"mergedItemDetails"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
